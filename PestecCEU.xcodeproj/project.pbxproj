@@ -1,0 +1,583 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EF29836C196A574F000A6BE0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF29836B196A574F000A6BE0 /* Foundation.framework */; };
+		EF29836E196A574F000A6BE0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF29836D196A574F000A6BE0 /* CoreGraphics.framework */; };
+		EF298370196A574F000A6BE0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF29836F196A574F000A6BE0 /* UIKit.framework */; };
+		EF298376196A574F000A6BE0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EF298374196A574F000A6BE0 /* InfoPlist.strings */; };
+		EF298378196A574F000A6BE0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EF298377196A574F000A6BE0 /* main.m */; };
+		EF29837C196A574F000A6BE0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EF29837B196A574F000A6BE0 /* AppDelegate.m */; };
+		EF29837F196A574F000A6BE0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF29837D196A574F000A6BE0 /* Main.storyboard */; };
+		EF298382196A574F000A6BE0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF298381196A574F000A6BE0 /* ViewController.m */; };
+		EF298384196A574F000A6BE0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF298383196A574F000A6BE0 /* Images.xcassets */; };
+		EF29838B196A574F000A6BE0 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF29838A196A574F000A6BE0 /* XCTest.framework */; };
+		EF29838C196A574F000A6BE0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF29836B196A574F000A6BE0 /* Foundation.framework */; };
+		EF29838D196A574F000A6BE0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF29836F196A574F000A6BE0 /* UIKit.framework */; };
+		EF298395196A574F000A6BE0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EF298393196A574F000A6BE0 /* InfoPlist.strings */; };
+		EF298397196A574F000A6BE0 /* Pestec_CEUTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EF298396196A574F000A6BE0 /* Pestec_CEUTests.m */; };
+		EF2983A2196A5A66000A6BE0 /* LicenseTypeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF2983A1196A5A66000A6BE0 /* LicenseTypeViewController.m */; };
+		EF2983A5196A5B43000A6BE0 /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF2983A4196A5B43000A6BE0 /* ProfileViewController.m */; };
+		EF2983A8196A6015000A6BE0 /* ApplicatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF2983A7196A6015000A6BE0 /* ApplicatorViewController.m */; };
+		EF5B574F196BA39B00883F6A /* MainStoryboard_ipad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF5B574D196BA39B00883F6A /* MainStoryboard_ipad.storyboard */; };
+		EF5D112A196A656D00539B3E /* ladybug.png in Resources */ = {isa = PBXBuildFile; fileRef = EF5D1128196A656D00539B3E /* ladybug.png */; };
+		EF5D112B196A656D00539B3E /* ladybug@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EF5D1129196A656D00539B3E /* ladybug@2x.png */; };
+		EF5D112E196A664C00539B3E /* FieldRepViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5D112D196A664C00539B3E /* FieldRepViewController.m */; };
+		EF5D1131196A669700539B3E /* OperatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5D1130196A669700539B3E /* OperatorViewController.m */; };
+		EF5D1134196A6BAF00539B3E /* ApplicatorCoursesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5D1133196A6BAF00539B3E /* ApplicatorCoursesViewController.m */; };
+		EF5D1137196A6BC300539B3E /* FieldRepCoursesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5D1136196A6BC300539B3E /* FieldRepCoursesViewController.m */; };
+		EF5D113A196A6BD600539B3E /* OperatorCoursesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5D1139196A6BD600539B3E /* OperatorCoursesViewController.m */; };
+		EF5D113D196A73EC00539B3E /* ApplicatorRulesCourseTopic1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5D113C196A73EC00539B3E /* ApplicatorRulesCourseTopic1ViewController.m */; };
+		EF5D1140196A740300539B3E /* ApplicatorRulesCourseTopic2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5D113F196A740300539B3E /* ApplicatorRulesCourseTopic2ViewController.m */; };
+		EF5D1143196A741400539B3E /* ApplicatorRulesCourseTopic3ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5D1142196A741400539B3E /* ApplicatorRulesCourseTopic3ViewController.m */; };
+		EF5D1146196A775C00539B3E /* ApplicatorsCoursesCompletedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5D1145196A775C00539B3E /* ApplicatorsCoursesCompletedViewController.m */; };
+		EF5D1149196A777C00539B3E /* FieldRepCoursesCompletedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5D1148196A777C00539B3E /* FieldRepCoursesCompletedViewController.m */; };
+		EF5D114C196A779500539B3E /* OperatorCoursesCompletedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5D114B196A779500539B3E /* OperatorCoursesCompletedViewController.m */; };
+		EFFD7FE2196B9ABD0041ECD3 /* ApplicatorRulesCourseTopic4ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFFD7FE1196B9ABD0041ECD3 /* ApplicatorRulesCourseTopic4ViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EF29838E196A574F000A6BE0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EF298360196A574F000A6BE0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EF298367196A574F000A6BE0;
+			remoteInfo = "Pestec CEU";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EF298368196A574F000A6BE0 /* PestecCEU.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PestecCEU.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF29836B196A574F000A6BE0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		EF29836D196A574F000A6BE0 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		EF29836F196A574F000A6BE0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		EF298373196A574F000A6BE0 /* PestecCEU-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PestecCEU-Info.plist"; sourceTree = "<group>"; };
+		EF298375196A574F000A6BE0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EF298377196A574F000A6BE0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EF298379196A574F000A6BE0 /* PestecCEU-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PestecCEU-Prefix.pch"; sourceTree = "<group>"; };
+		EF29837A196A574F000A6BE0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EF29837B196A574F000A6BE0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EF29837E196A574F000A6BE0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EF298380196A574F000A6BE0 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		EF298381196A574F000A6BE0 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		EF298383196A574F000A6BE0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		EF298389196A574F000A6BE0 /* PestecCEUTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PestecCEUTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF29838A196A574F000A6BE0 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		EF298392196A574F000A6BE0 /* PestecCEUTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PestecCEUTests-Info.plist"; sourceTree = "<group>"; };
+		EF298394196A574F000A6BE0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EF298396196A574F000A6BE0 /* Pestec_CEUTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Pestec_CEUTests.m; sourceTree = "<group>"; };
+		EF2983A0196A5A66000A6BE0 /* LicenseTypeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LicenseTypeViewController.h; sourceTree = "<group>"; };
+		EF2983A1196A5A66000A6BE0 /* LicenseTypeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LicenseTypeViewController.m; sourceTree = "<group>"; };
+		EF2983A3196A5B43000A6BE0 /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
+		EF2983A4196A5B43000A6BE0 /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
+		EF2983A6196A6015000A6BE0 /* ApplicatorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApplicatorViewController.h; sourceTree = "<group>"; };
+		EF2983A7196A6015000A6BE0 /* ApplicatorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApplicatorViewController.m; sourceTree = "<group>"; };
+		EF5B574E196BA39B00883F6A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainStoryboard_ipad.storyboard; sourceTree = "<group>"; };
+		EF5D1128196A656D00539B3E /* ladybug.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ladybug.png; path = "../../k9 certificates/ladybug.png"; sourceTree = "<group>"; };
+		EF5D1129196A656D00539B3E /* ladybug@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ladybug@2x.png"; path = "../../k9 certificates/ladybug@2x.png"; sourceTree = "<group>"; };
+		EF5D112C196A664C00539B3E /* FieldRepViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FieldRepViewController.h; sourceTree = "<group>"; };
+		EF5D112D196A664C00539B3E /* FieldRepViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FieldRepViewController.m; sourceTree = "<group>"; };
+		EF5D112F196A669700539B3E /* OperatorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OperatorViewController.h; sourceTree = "<group>"; };
+		EF5D1130196A669700539B3E /* OperatorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OperatorViewController.m; sourceTree = "<group>"; };
+		EF5D1132196A6BAF00539B3E /* ApplicatorCoursesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApplicatorCoursesViewController.h; sourceTree = "<group>"; };
+		EF5D1133196A6BAF00539B3E /* ApplicatorCoursesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApplicatorCoursesViewController.m; sourceTree = "<group>"; };
+		EF5D1135196A6BC300539B3E /* FieldRepCoursesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FieldRepCoursesViewController.h; sourceTree = "<group>"; };
+		EF5D1136196A6BC300539B3E /* FieldRepCoursesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FieldRepCoursesViewController.m; sourceTree = "<group>"; };
+		EF5D1138196A6BD600539B3E /* OperatorCoursesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OperatorCoursesViewController.h; sourceTree = "<group>"; };
+		EF5D1139196A6BD600539B3E /* OperatorCoursesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OperatorCoursesViewController.m; sourceTree = "<group>"; };
+		EF5D113B196A73EC00539B3E /* ApplicatorRulesCourseTopic1ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApplicatorRulesCourseTopic1ViewController.h; sourceTree = "<group>"; };
+		EF5D113C196A73EC00539B3E /* ApplicatorRulesCourseTopic1ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApplicatorRulesCourseTopic1ViewController.m; sourceTree = "<group>"; };
+		EF5D113E196A740300539B3E /* ApplicatorRulesCourseTopic2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApplicatorRulesCourseTopic2ViewController.h; sourceTree = "<group>"; };
+		EF5D113F196A740300539B3E /* ApplicatorRulesCourseTopic2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApplicatorRulesCourseTopic2ViewController.m; sourceTree = "<group>"; };
+		EF5D1141196A741400539B3E /* ApplicatorRulesCourseTopic3ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApplicatorRulesCourseTopic3ViewController.h; sourceTree = "<group>"; };
+		EF5D1142196A741400539B3E /* ApplicatorRulesCourseTopic3ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApplicatorRulesCourseTopic3ViewController.m; sourceTree = "<group>"; };
+		EF5D1144196A775C00539B3E /* ApplicatorsCoursesCompletedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApplicatorsCoursesCompletedViewController.h; sourceTree = "<group>"; };
+		EF5D1145196A775C00539B3E /* ApplicatorsCoursesCompletedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApplicatorsCoursesCompletedViewController.m; sourceTree = "<group>"; };
+		EF5D1147196A777C00539B3E /* FieldRepCoursesCompletedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FieldRepCoursesCompletedViewController.h; sourceTree = "<group>"; };
+		EF5D1148196A777C00539B3E /* FieldRepCoursesCompletedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FieldRepCoursesCompletedViewController.m; sourceTree = "<group>"; };
+		EF5D114A196A779500539B3E /* OperatorCoursesCompletedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OperatorCoursesCompletedViewController.h; sourceTree = "<group>"; };
+		EF5D114B196A779500539B3E /* OperatorCoursesCompletedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OperatorCoursesCompletedViewController.m; sourceTree = "<group>"; };
+		EFFD7FE0196B9ABD0041ECD3 /* ApplicatorRulesCourseTopic4ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApplicatorRulesCourseTopic4ViewController.h; sourceTree = "<group>"; };
+		EFFD7FE1196B9ABD0041ECD3 /* ApplicatorRulesCourseTopic4ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApplicatorRulesCourseTopic4ViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EF298365196A574F000A6BE0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF29836E196A574F000A6BE0 /* CoreGraphics.framework in Frameworks */,
+				EF298370196A574F000A6BE0 /* UIKit.framework in Frameworks */,
+				EF29836C196A574F000A6BE0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF298386196A574F000A6BE0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF29838B196A574F000A6BE0 /* XCTest.framework in Frameworks */,
+				EF29838D196A574F000A6BE0 /* UIKit.framework in Frameworks */,
+				EF29838C196A574F000A6BE0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EF29835F196A574F000A6BE0 = {
+			isa = PBXGroup;
+			children = (
+				EF298371196A574F000A6BE0 /* Pestec CEU */,
+				EF298390196A574F000A6BE0 /* Pestec CEUTests */,
+				EF29836A196A574F000A6BE0 /* Frameworks */,
+				EF298369196A574F000A6BE0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EF298369196A574F000A6BE0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EF298368196A574F000A6BE0 /* PestecCEU.app */,
+				EF298389196A574F000A6BE0 /* PestecCEUTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EF29836A196A574F000A6BE0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EF29836B196A574F000A6BE0 /* Foundation.framework */,
+				EF29836D196A574F000A6BE0 /* CoreGraphics.framework */,
+				EF29836F196A574F000A6BE0 /* UIKit.framework */,
+				EF29838A196A574F000A6BE0 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EF298371196A574F000A6BE0 /* Pestec CEU */ = {
+			isa = PBXGroup;
+			children = (
+				EF29837A196A574F000A6BE0 /* AppDelegate.h */,
+				EF29837B196A574F000A6BE0 /* AppDelegate.m */,
+				EF29837D196A574F000A6BE0 /* Main.storyboard */,
+				EF5B574D196BA39B00883F6A /* MainStoryboard_ipad.storyboard */,
+				EF5D1128196A656D00539B3E /* ladybug.png */,
+				EF5D1129196A656D00539B3E /* ladybug@2x.png */,
+				EF298380196A574F000A6BE0 /* ViewController.h */,
+				EF298381196A574F000A6BE0 /* ViewController.m */,
+				EF2983A0196A5A66000A6BE0 /* LicenseTypeViewController.h */,
+				EF2983A1196A5A66000A6BE0 /* LicenseTypeViewController.m */,
+				EF2983A3196A5B43000A6BE0 /* ProfileViewController.h */,
+				EF2983A4196A5B43000A6BE0 /* ProfileViewController.m */,
+				EF2983A6196A6015000A6BE0 /* ApplicatorViewController.h */,
+				EF2983A7196A6015000A6BE0 /* ApplicatorViewController.m */,
+				EF5D112C196A664C00539B3E /* FieldRepViewController.h */,
+				EF5D112D196A664C00539B3E /* FieldRepViewController.m */,
+				EF5D112F196A669700539B3E /* OperatorViewController.h */,
+				EF5D1130196A669700539B3E /* OperatorViewController.m */,
+				EF5D1132196A6BAF00539B3E /* ApplicatorCoursesViewController.h */,
+				EF5D1133196A6BAF00539B3E /* ApplicatorCoursesViewController.m */,
+				EF5D113B196A73EC00539B3E /* ApplicatorRulesCourseTopic1ViewController.h */,
+				EF5D113C196A73EC00539B3E /* ApplicatorRulesCourseTopic1ViewController.m */,
+				EF5D113E196A740300539B3E /* ApplicatorRulesCourseTopic2ViewController.h */,
+				EF5D113F196A740300539B3E /* ApplicatorRulesCourseTopic2ViewController.m */,
+				EF5D1141196A741400539B3E /* ApplicatorRulesCourseTopic3ViewController.h */,
+				EF5D1142196A741400539B3E /* ApplicatorRulesCourseTopic3ViewController.m */,
+				EFFD7FE0196B9ABD0041ECD3 /* ApplicatorRulesCourseTopic4ViewController.h */,
+				EFFD7FE1196B9ABD0041ECD3 /* ApplicatorRulesCourseTopic4ViewController.m */,
+				EF5D1144196A775C00539B3E /* ApplicatorsCoursesCompletedViewController.h */,
+				EF5D1145196A775C00539B3E /* ApplicatorsCoursesCompletedViewController.m */,
+				EF5D1135196A6BC300539B3E /* FieldRepCoursesViewController.h */,
+				EF5D1136196A6BC300539B3E /* FieldRepCoursesViewController.m */,
+				EF5D1147196A777C00539B3E /* FieldRepCoursesCompletedViewController.h */,
+				EF5D1148196A777C00539B3E /* FieldRepCoursesCompletedViewController.m */,
+				EF5D1138196A6BD600539B3E /* OperatorCoursesViewController.h */,
+				EF5D1139196A6BD600539B3E /* OperatorCoursesViewController.m */,
+				EF5D114A196A779500539B3E /* OperatorCoursesCompletedViewController.h */,
+				EF5D114B196A779500539B3E /* OperatorCoursesCompletedViewController.m */,
+				EF298383196A574F000A6BE0 /* Images.xcassets */,
+				EF298372196A574F000A6BE0 /* Supporting Files */,
+			);
+			path = "Pestec CEU";
+			sourceTree = "<group>";
+		};
+		EF298372196A574F000A6BE0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EF298373196A574F000A6BE0 /* PestecCEU-Info.plist */,
+				EF298374196A574F000A6BE0 /* InfoPlist.strings */,
+				EF298377196A574F000A6BE0 /* main.m */,
+				EF298379196A574F000A6BE0 /* PestecCEU-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EF298390196A574F000A6BE0 /* Pestec CEUTests */ = {
+			isa = PBXGroup;
+			children = (
+				EF298396196A574F000A6BE0 /* Pestec_CEUTests.m */,
+				EF298391196A574F000A6BE0 /* Supporting Files */,
+			);
+			path = "Pestec CEUTests";
+			sourceTree = "<group>";
+		};
+		EF298391196A574F000A6BE0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EF298392196A574F000A6BE0 /* PestecCEUTests-Info.plist */,
+				EF298393196A574F000A6BE0 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EF298367196A574F000A6BE0 /* PestecCEU */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF29839A196A574F000A6BE0 /* Build configuration list for PBXNativeTarget "PestecCEU" */;
+			buildPhases = (
+				EF298364196A574F000A6BE0 /* Sources */,
+				EF298365196A574F000A6BE0 /* Frameworks */,
+				EF298366196A574F000A6BE0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PestecCEU;
+			productName = "Pestec CEU";
+			productReference = EF298368196A574F000A6BE0 /* PestecCEU.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EF298388196A574F000A6BE0 /* PestecCEUTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF29839D196A574F000A6BE0 /* Build configuration list for PBXNativeTarget "PestecCEUTests" */;
+			buildPhases = (
+				EF298385196A574F000A6BE0 /* Sources */,
+				EF298386196A574F000A6BE0 /* Frameworks */,
+				EF298387196A574F000A6BE0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EF29838F196A574F000A6BE0 /* PBXTargetDependency */,
+			);
+			name = PestecCEUTests;
+			productName = "Pestec CEUTests";
+			productReference = EF298389196A574F000A6BE0 /* PestecCEUTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EF298360196A574F000A6BE0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = Gabriel;
+				TargetAttributes = {
+					EF298388196A574F000A6BE0 = {
+						TestTargetID = EF298367196A574F000A6BE0;
+					};
+				};
+			};
+			buildConfigurationList = EF298363196A574F000A6BE0 /* Build configuration list for PBXProject "PestecCEU" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EF29835F196A574F000A6BE0;
+			productRefGroup = EF298369196A574F000A6BE0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EF298367196A574F000A6BE0 /* PestecCEU */,
+				EF298388196A574F000A6BE0 /* PestecCEUTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EF298366196A574F000A6BE0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF298384196A574F000A6BE0 /* Images.xcassets in Resources */,
+				EF5D112B196A656D00539B3E /* ladybug@2x.png in Resources */,
+				EF5B574F196BA39B00883F6A /* MainStoryboard_ipad.storyboard in Resources */,
+				EF298376196A574F000A6BE0 /* InfoPlist.strings in Resources */,
+				EF5D112A196A656D00539B3E /* ladybug.png in Resources */,
+				EF29837F196A574F000A6BE0 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF298387196A574F000A6BE0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF298395196A574F000A6BE0 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EF298364196A574F000A6BE0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF298382196A574F000A6BE0 /* ViewController.m in Sources */,
+				EF5D1146196A775C00539B3E /* ApplicatorsCoursesCompletedViewController.m in Sources */,
+				EF5D112E196A664C00539B3E /* FieldRepViewController.m in Sources */,
+				EF29837C196A574F000A6BE0 /* AppDelegate.m in Sources */,
+				EF2983A2196A5A66000A6BE0 /* LicenseTypeViewController.m in Sources */,
+				EF5D1143196A741400539B3E /* ApplicatorRulesCourseTopic3ViewController.m in Sources */,
+				EF5D113D196A73EC00539B3E /* ApplicatorRulesCourseTopic1ViewController.m in Sources */,
+				EF2983A8196A6015000A6BE0 /* ApplicatorViewController.m in Sources */,
+				EF5D1140196A740300539B3E /* ApplicatorRulesCourseTopic2ViewController.m in Sources */,
+				EF298378196A574F000A6BE0 /* main.m in Sources */,
+				EF5D114C196A779500539B3E /* OperatorCoursesCompletedViewController.m in Sources */,
+				EF5D1137196A6BC300539B3E /* FieldRepCoursesViewController.m in Sources */,
+				EF5D1134196A6BAF00539B3E /* ApplicatorCoursesViewController.m in Sources */,
+				EF5D1131196A669700539B3E /* OperatorViewController.m in Sources */,
+				EF5D113A196A6BD600539B3E /* OperatorCoursesViewController.m in Sources */,
+				EF5D1149196A777C00539B3E /* FieldRepCoursesCompletedViewController.m in Sources */,
+				EF2983A5196A5B43000A6BE0 /* ProfileViewController.m in Sources */,
+				EFFD7FE2196B9ABD0041ECD3 /* ApplicatorRulesCourseTopic4ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF298385196A574F000A6BE0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF298397196A574F000A6BE0 /* Pestec_CEUTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EF29838F196A574F000A6BE0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EF298367196A574F000A6BE0 /* PestecCEU */;
+			targetProxy = EF29838E196A574F000A6BE0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EF298374196A574F000A6BE0 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF298375196A574F000A6BE0 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		EF29837D196A574F000A6BE0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF29837E196A574F000A6BE0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EF298393196A574F000A6BE0 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF298394196A574F000A6BE0 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		EF5B574D196BA39B00883F6A /* MainStoryboard_ipad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF5B574E196BA39B00883F6A /* Base */,
+			);
+			name = MainStoryboard_ipad.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EF298398196A574F000A6BE0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		EF298399196A574F000A6BE0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EF29839B196A574F000A6BE0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Pestec CEU/PestecCEU-Prefix.pch";
+				INFOPLIST_FILE = "Pestec CEU/PestecCEU-Info.plist";
+				PRODUCT_NAME = PestecCEU;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		EF29839C196A574F000A6BE0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Pestec CEU/PestecCEU-Prefix.pch";
+				INFOPLIST_FILE = "Pestec CEU/PestecCEU-Info.plist";
+				PRODUCT_NAME = PestecCEU;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		EF29839E196A574F000A6BE0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Pestec CEU.app/Pestec CEU";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Pestec CEU/Pestec CEU-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Pestec CEUTests/PestecCEUTests-Info.plist";
+				PRODUCT_NAME = PestecCEUTests;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		EF29839F196A574F000A6BE0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Pestec CEU.app/Pestec CEU";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Pestec CEU/Pestec CEU-Prefix.pch";
+				INFOPLIST_FILE = "Pestec CEUTests/PestecCEUTests-Info.plist";
+				PRODUCT_NAME = PestecCEUTests;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EF298363196A574F000A6BE0 /* Build configuration list for PBXProject "PestecCEU" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF298398196A574F000A6BE0 /* Debug */,
+				EF298399196A574F000A6BE0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF29839A196A574F000A6BE0 /* Build configuration list for PBXNativeTarget "PestecCEU" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF29839B196A574F000A6BE0 /* Debug */,
+				EF29839C196A574F000A6BE0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF29839D196A574F000A6BE0 /* Build configuration list for PBXNativeTarget "PestecCEUTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF29839E196A574F000A6BE0 /* Debug */,
+				EF29839F196A574F000A6BE0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EF298360196A574F000A6BE0 /* Project object */;
+}

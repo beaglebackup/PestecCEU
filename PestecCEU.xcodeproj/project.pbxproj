@@ -33,12 +33,9 @@
 		EF5D1137196A6BC300539B3E /* FieldRepCoursesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5D1136196A6BC300539B3E /* FieldRepCoursesViewController.m */; };
 		EF5D113A196A6BD600539B3E /* OperatorCoursesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5D1139196A6BD600539B3E /* OperatorCoursesViewController.m */; };
 		EF5D113D196A73EC00539B3E /* ApplicatorRulesCourseTopic1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5D113C196A73EC00539B3E /* ApplicatorRulesCourseTopic1ViewController.m */; };
-		EF5D1140196A740300539B3E /* ApplicatorRulesCourseTopic2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5D113F196A740300539B3E /* ApplicatorRulesCourseTopic2ViewController.m */; };
-		EF5D1143196A741400539B3E /* ApplicatorRulesCourseTopic3ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5D1142196A741400539B3E /* ApplicatorRulesCourseTopic3ViewController.m */; };
 		EF5D1146196A775C00539B3E /* ApplicatorsCoursesCompletedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5D1145196A775C00539B3E /* ApplicatorsCoursesCompletedViewController.m */; };
 		EF5D1149196A777C00539B3E /* FieldRepCoursesCompletedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5D1148196A777C00539B3E /* FieldRepCoursesCompletedViewController.m */; };
 		EF5D114C196A779500539B3E /* OperatorCoursesCompletedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5D114B196A779500539B3E /* OperatorCoursesCompletedViewController.m */; };
-		EFFD7FE2196B9ABD0041ECD3 /* ApplicatorRulesCourseTopic4ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFFD7FE1196B9ABD0041ECD3 /* ApplicatorRulesCourseTopic4ViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,18 +89,12 @@
 		EF5D1139196A6BD600539B3E /* OperatorCoursesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OperatorCoursesViewController.m; sourceTree = "<group>"; };
 		EF5D113B196A73EC00539B3E /* ApplicatorRulesCourseTopic1ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApplicatorRulesCourseTopic1ViewController.h; sourceTree = "<group>"; };
 		EF5D113C196A73EC00539B3E /* ApplicatorRulesCourseTopic1ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApplicatorRulesCourseTopic1ViewController.m; sourceTree = "<group>"; };
-		EF5D113E196A740300539B3E /* ApplicatorRulesCourseTopic2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApplicatorRulesCourseTopic2ViewController.h; sourceTree = "<group>"; };
-		EF5D113F196A740300539B3E /* ApplicatorRulesCourseTopic2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApplicatorRulesCourseTopic2ViewController.m; sourceTree = "<group>"; };
-		EF5D1141196A741400539B3E /* ApplicatorRulesCourseTopic3ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApplicatorRulesCourseTopic3ViewController.h; sourceTree = "<group>"; };
-		EF5D1142196A741400539B3E /* ApplicatorRulesCourseTopic3ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApplicatorRulesCourseTopic3ViewController.m; sourceTree = "<group>"; };
 		EF5D1144196A775C00539B3E /* ApplicatorsCoursesCompletedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApplicatorsCoursesCompletedViewController.h; sourceTree = "<group>"; };
 		EF5D1145196A775C00539B3E /* ApplicatorsCoursesCompletedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApplicatorsCoursesCompletedViewController.m; sourceTree = "<group>"; };
 		EF5D1147196A777C00539B3E /* FieldRepCoursesCompletedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FieldRepCoursesCompletedViewController.h; sourceTree = "<group>"; };
 		EF5D1148196A777C00539B3E /* FieldRepCoursesCompletedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FieldRepCoursesCompletedViewController.m; sourceTree = "<group>"; };
 		EF5D114A196A779500539B3E /* OperatorCoursesCompletedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OperatorCoursesCompletedViewController.h; sourceTree = "<group>"; };
 		EF5D114B196A779500539B3E /* OperatorCoursesCompletedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OperatorCoursesCompletedViewController.m; sourceTree = "<group>"; };
-		EFFD7FE0196B9ABD0041ECD3 /* ApplicatorRulesCourseTopic4ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApplicatorRulesCourseTopic4ViewController.h; sourceTree = "<group>"; };
-		EFFD7FE1196B9ABD0041ECD3 /* ApplicatorRulesCourseTopic4ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApplicatorRulesCourseTopic4ViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +121,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		841A321D19AE91C6000BCFD9 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				EF298380196A574F000A6BE0 /* ViewController.h */,
+				EF298381196A574F000A6BE0 /* ViewController.m */,
+				EF2983A0196A5A66000A6BE0 /* LicenseTypeViewController.h */,
+				EF2983A1196A5A66000A6BE0 /* LicenseTypeViewController.m */,
+				EF2983A3196A5B43000A6BE0 /* ProfileViewController.h */,
+				EF2983A4196A5B43000A6BE0 /* ProfileViewController.m */,
+				EF2983A6196A6015000A6BE0 /* ApplicatorViewController.h */,
+				EF2983A7196A6015000A6BE0 /* ApplicatorViewController.m */,
+				EF5D112C196A664C00539B3E /* FieldRepViewController.h */,
+				EF5D112D196A664C00539B3E /* FieldRepViewController.m */,
+				EF5D112F196A669700539B3E /* OperatorViewController.h */,
+				EF5D1130196A669700539B3E /* OperatorViewController.m */,
+				EF5D1132196A6BAF00539B3E /* ApplicatorCoursesViewController.h */,
+				EF5D1133196A6BAF00539B3E /* ApplicatorCoursesViewController.m */,
+				EF5D113B196A73EC00539B3E /* ApplicatorRulesCourseTopic1ViewController.h */,
+				EF5D113C196A73EC00539B3E /* ApplicatorRulesCourseTopic1ViewController.m */,
+				EF5D1144196A775C00539B3E /* ApplicatorsCoursesCompletedViewController.h */,
+				EF5D1145196A775C00539B3E /* ApplicatorsCoursesCompletedViewController.m */,
+				EF5D1135196A6BC300539B3E /* FieldRepCoursesViewController.h */,
+				EF5D1136196A6BC300539B3E /* FieldRepCoursesViewController.m */,
+				EF5D1147196A777C00539B3E /* FieldRepCoursesCompletedViewController.h */,
+				EF5D1148196A777C00539B3E /* FieldRepCoursesCompletedViewController.m */,
+				EF5D1138196A6BD600539B3E /* OperatorCoursesViewController.h */,
+				EF5D1139196A6BD600539B3E /* OperatorCoursesViewController.m */,
+				EF5D114A196A779500539B3E /* OperatorCoursesCompletedViewController.h */,
+				EF5D114B196A779500539B3E /* OperatorCoursesCompletedViewController.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
 		EF29835F196A574F000A6BE0 = {
 			isa = PBXGroup;
 			children = (
@@ -163,44 +187,13 @@
 		EF298371196A574F000A6BE0 /* Pestec CEU */ = {
 			isa = PBXGroup;
 			children = (
+				841A321D19AE91C6000BCFD9 /* ViewControllers */,
 				EF29837A196A574F000A6BE0 /* AppDelegate.h */,
 				EF29837B196A574F000A6BE0 /* AppDelegate.m */,
 				EF29837D196A574F000A6BE0 /* Main.storyboard */,
 				EF5B574D196BA39B00883F6A /* MainStoryboard_ipad.storyboard */,
 				EF5D1128196A656D00539B3E /* ladybug.png */,
 				EF5D1129196A656D00539B3E /* ladybug@2x.png */,
-				EF298380196A574F000A6BE0 /* ViewController.h */,
-				EF298381196A574F000A6BE0 /* ViewController.m */,
-				EF2983A0196A5A66000A6BE0 /* LicenseTypeViewController.h */,
-				EF2983A1196A5A66000A6BE0 /* LicenseTypeViewController.m */,
-				EF2983A3196A5B43000A6BE0 /* ProfileViewController.h */,
-				EF2983A4196A5B43000A6BE0 /* ProfileViewController.m */,
-				EF2983A6196A6015000A6BE0 /* ApplicatorViewController.h */,
-				EF2983A7196A6015000A6BE0 /* ApplicatorViewController.m */,
-				EF5D112C196A664C00539B3E /* FieldRepViewController.h */,
-				EF5D112D196A664C00539B3E /* FieldRepViewController.m */,
-				EF5D112F196A669700539B3E /* OperatorViewController.h */,
-				EF5D1130196A669700539B3E /* OperatorViewController.m */,
-				EF5D1132196A6BAF00539B3E /* ApplicatorCoursesViewController.h */,
-				EF5D1133196A6BAF00539B3E /* ApplicatorCoursesViewController.m */,
-				EF5D113B196A73EC00539B3E /* ApplicatorRulesCourseTopic1ViewController.h */,
-				EF5D113C196A73EC00539B3E /* ApplicatorRulesCourseTopic1ViewController.m */,
-				EF5D113E196A740300539B3E /* ApplicatorRulesCourseTopic2ViewController.h */,
-				EF5D113F196A740300539B3E /* ApplicatorRulesCourseTopic2ViewController.m */,
-				EF5D1141196A741400539B3E /* ApplicatorRulesCourseTopic3ViewController.h */,
-				EF5D1142196A741400539B3E /* ApplicatorRulesCourseTopic3ViewController.m */,
-				EFFD7FE0196B9ABD0041ECD3 /* ApplicatorRulesCourseTopic4ViewController.h */,
-				EFFD7FE1196B9ABD0041ECD3 /* ApplicatorRulesCourseTopic4ViewController.m */,
-				EF5D1144196A775C00539B3E /* ApplicatorsCoursesCompletedViewController.h */,
-				EF5D1145196A775C00539B3E /* ApplicatorsCoursesCompletedViewController.m */,
-				EF5D1135196A6BC300539B3E /* FieldRepCoursesViewController.h */,
-				EF5D1136196A6BC300539B3E /* FieldRepCoursesViewController.m */,
-				EF5D1147196A777C00539B3E /* FieldRepCoursesCompletedViewController.h */,
-				EF5D1148196A777C00539B3E /* FieldRepCoursesCompletedViewController.m */,
-				EF5D1138196A6BD600539B3E /* OperatorCoursesViewController.h */,
-				EF5D1139196A6BD600539B3E /* OperatorCoursesViewController.m */,
-				EF5D114A196A779500539B3E /* OperatorCoursesCompletedViewController.h */,
-				EF5D114B196A779500539B3E /* OperatorCoursesCompletedViewController.m */,
 				EF298383196A574F000A6BE0 /* Images.xcassets */,
 				EF298372196A574F000A6BE0 /* Supporting Files */,
 			);
@@ -341,10 +334,8 @@
 				EF5D112E196A664C00539B3E /* FieldRepViewController.m in Sources */,
 				EF29837C196A574F000A6BE0 /* AppDelegate.m in Sources */,
 				EF2983A2196A5A66000A6BE0 /* LicenseTypeViewController.m in Sources */,
-				EF5D1143196A741400539B3E /* ApplicatorRulesCourseTopic3ViewController.m in Sources */,
 				EF5D113D196A73EC00539B3E /* ApplicatorRulesCourseTopic1ViewController.m in Sources */,
 				EF2983A8196A6015000A6BE0 /* ApplicatorViewController.m in Sources */,
-				EF5D1140196A740300539B3E /* ApplicatorRulesCourseTopic2ViewController.m in Sources */,
 				EF298378196A574F000A6BE0 /* main.m in Sources */,
 				EF5D114C196A779500539B3E /* OperatorCoursesCompletedViewController.m in Sources */,
 				EF5D1137196A6BC300539B3E /* FieldRepCoursesViewController.m in Sources */,
@@ -353,7 +344,6 @@
 				EF5D113A196A6BD600539B3E /* OperatorCoursesViewController.m in Sources */,
 				EF5D1149196A777C00539B3E /* FieldRepCoursesCompletedViewController.m in Sources */,
 				EF2983A5196A5B43000A6BE0 /* ProfileViewController.m in Sources */,
-				EFFD7FE2196B9ABD0041ECD3 /* ApplicatorRulesCourseTopic4ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -14,6 +14,9 @@
 @dynamic lastName;
 @dynamic license;
 @dynamic position;
+@dynamic courses;
+
+@dynamic userCourses;
 
 
 + (NSString *)firstNameKey {
@@ -30,6 +33,10 @@
 
 + (NSString *)positionKey {
     return @"position";
+}
+
++ (NSString *)coursesKey {
+    return @"courses";
 }
 
 

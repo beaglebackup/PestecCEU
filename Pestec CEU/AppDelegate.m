@@ -11,6 +11,8 @@
 #import "JTSignUpViewController.h"
 #import "JTWelcomeViewController.h"
 #import "User.h"
+#import "Course.h"
+#import "UserCourse.h"
 
 
 @interface AppDelegate ()
@@ -27,7 +29,9 @@
 {
     // Register Parse data subclasses
     [User registerSubclass];
-    
+    [Course registerSubclass];
+    [UserCourse registerSubclass];
+
     
     // Initialize Parse
     [Parse setApplicationId:@"2RpKPCSxc376LSvgHc5S6TYODqDmIzcEfrbhZsHj"
@@ -41,6 +45,10 @@
     
     self.navController = (UINavigationController*)self.window.rootViewController;
     self.welcomeController = (JTWelcomeViewController*)[self.navController.viewControllers objectAtIndex:0];
+    
+    
+    // Admin
+    [JTDatabaseManager copyClass:@"Topic" toClass:@"Course"];
 
 
     

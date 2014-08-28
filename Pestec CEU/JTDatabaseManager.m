@@ -8,6 +8,7 @@
 
 #import "JTDatabaseManager.h"
 #import "User.h"
+#import "Course.h"
 
 @implementation JTDatabaseManager
 
@@ -20,89 +21,146 @@
     return self;
 }
 
-#pragma mark - Queries
-//+ (void)queryForTypesWithCallback:(void(^)(NSArray *types, NSError *error))callback{
-//    
-//    PFQuery *typeQuery = [Type query];
-//    
-//    [typeQuery orderByAscending:[Type nameKey]];
-//    [typeQuery includeKey:[Type subtypesKey]];
-//
-//    [typeQuery findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
-//        if (objects) {
-//            
-//            NSLog(@"DB -- queryForTypesWithCallback -- self.object.count = %lu",(unsigned long)objects.count);
-//
-//            callback(objects,nil);
-//        }
-//        else {
-//            
-//            NSLog(@"DB -- queryForTypesWithCallback -- error = %@",error);
-//
-//            
-//            callback(nil,error);
-//        }
-//    }];
-//}
-//
-//+ (void)queryForSubtypes:(NSString*)type withCallback:(void(^)(NSArray *types, NSError *error))callback{
-//    
-//    PFQuery *subtypeQuery = [Subtype query];
-//    
-//    NSLog(@"queryForSubtypes -- type = %@",type);
-//    
-//    [subtypeQuery whereKey:[Subtype parentStringKey] equalTo:type];
-//    
-//    // Only include basic keys
-//    NSArray* keys = [NSArray arrayWithObjects:[Subtype nameKey],
-//                                             [Subtype parentStringKey],
-//                                             nil];
-//    [subtypeQuery selectKeys:keys];
-//    
-//    [subtypeQuery includeKey:[Subtype textPointerKey]];
-//    
-//    [subtypeQuery orderByAscending:[Subtype nameKey]];
-//    
-//    [subtypeQuery findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
-//        if (objects) {
-//            callback(objects,nil);
-//        }
-//    }];
-//}
-//
-//
-//+ (void)getAllKeysForSubtype:(Subtype*)subtype withCallback:(void(^)(Subtype* theSubtype, NSError *error))callback{
-//    
-//    // Requery without any key restraints (get all keys)
-//    PFQuery *subtypeQuery = [Subtype query];
-//    
-//    [subtypeQuery includeKey:[Subtype textPointerKey]];
-//    
-//    [subtypeQuery getObjectInBackgroundWithId:[subtype objectId] block:^(PFObject *object, NSError *error) {
-//        
-//    
-//        callback(object, error);
-//    }];
-//
-//    
-// 
-//}
+#pragma mark - Reads
++ (void)queryForCourse:(NSNumber*)tag workerType:(NSString*)workerType withCallback:(void(^)(Course *course, NSError *error))callback {
+    
+    PFQuery* courseQuery = [PFQuery queryWithClassName:[Course parseClassName]];
+    [courseQuery whereKey:[Course tagKey] equalTo:tag];
+    [courseQuery whereKey:[Course workerTypeKey] equalTo:workerType];
+    
+    [courseQuery getFirstObjectInBackgroundWithBlock:^(PFObject *object, NSError *error) {
+        callback((Course*)object, error);
+    }];
+}
 
+
++ (void)queryForUserCourse:(Course*)course user:(User*)user withCallback:(void(^)(UserCourse *course, NSError *error))callback {
+ 
+    PFQuery* userCourseQuery = [PFQuery queryWithClassName:[UserCourse parseClassName]];
+    [userCourseQuery whereKey:[UserCourse userKey] equalTo:user];
+    [userCourseQuery whereKey:[UserCourse courseKey] equalTo:course];
+    
+    [userCourseQuery getFirstObjectInBackgroundWithBlock:^(PFObject *object, NSError *error) {
+        callback((UserCourse*)object, error);
+    }];
+}
+
+
+
+#pragma mark - Creates
++ (void)createUserCourse:(Course*)course user:(User*)user withCallback:(void(^)(UserCourse *course, NSError *error))callback {
+    
+    UserCourse* userCourse = [UserCourse object];
+    userCourse.course = course;
+    userCourse.user = user;
+    userCourse.timePassed = [NSNumber numberWithFloat:0.0f];
+    
+    [userCourse saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+        
+        // Add the Course to the User
+        NSMutableArray* coursesForUser = [user.courses mutableCopy];
+        
+        if (!coursesForUser) {
+            coursesForUser = [NSMutableArray new];
+        }
+        
+        [coursesForUser addObject:course];
+        user.courses = coursesForUser;
+        
+        [user saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+            callback(userCourse, error);
+        }];
+        
+        
+    }];
+    
+}
 
 #pragma mark - Updates
-+ (void)updateUserProfile:(PFUser*)user firstName:(NSString*)firstName lastName:(NSString*)lastName license:(NSString*)license position:(NSString*)position withCallback:(void(^)(BOOL succeeded, NSError *error))callback {
++ (void)updateUserProfile:(User*)user firstName:(NSString*)firstName lastName:(NSString*)lastName license:(NSString*)license position:(NSString*)position withCallback:(void(^)(BOOL succeeded, NSError *error))callback {
     
-    [user setObject:firstName forKey:[User firstNameKey]];
-    [user setObject:lastName forKey:[User lastNameKey]];
-    [user setObject:license forKey:[User licenseKey]];
-    [user setObject:position forKey:[User positionKey]];
+    user.firstName = firstName;
+    user.lastName = lastName;
+    user.license = license;
+    user.position = position;
+    
+//    [user setObject:firstName forKey:[User firstNameKey]];
+//    [user setObject:lastName forKey:[User lastNameKey]];
+//    [user setObject:license forKey:[User licenseKey]];
+//    [user setObject:position forKey:[User positionKey]];
     
     [user saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
         callback(succeeded,error);
     }];
+}
 
++ (void)updateUserCourse:(UserCourse*)userCourse withTime:(NSNumber*)time withCallback:(void(^)(BOOL succeeded, NSError *error))callback {
+
+    userCourse.timePassed = time;
+    
+    [userCourse saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+        callback(succeeded,error);
+    }];
+}
+
+
+#pragma mark - Utility
++ (BOOL)user:(User*)user hasCourse:(Course*)course {
+    
+    __block BOOL hasCourse = NO;
+    
+    NSArray* courses = user.courses;
+    
+    [courses enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+        
+        Course* courseUser = (Course*)obj;
+        
+        if ([course.objectId isEqualToString:courseUser.objectId]) {
+            hasCourse = YES;
+            *stop = YES;
+        }
+    }];
+  
+    return hasCourse;
     
 }
+
+
+#pragma mark - Admin
++ (void)copyClass:(NSString*)originalClass toClass:(NSString*)newClass {
+    
+    PFQuery* classQuery = [PFQuery queryWithClassName:originalClass];
+    [classQuery findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+        
+        if (objects) {
+            
+            
+            [objects enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+                
+                PFObject* object = (PFObject*)obj;
+                PFObject *clone = [PFObject objectWithClassName:newClass];
+                NSArray *keys = [object allKeys];
+                for (NSString *key in keys) {
+                    [clone setObject:[object objectForKey:key] forKey:key];
+                }
+                
+                [clone saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+                    
+                    if (succeeded) {
+                        
+                    }
+                    else {
+                        
+                    }
+                    
+                }];
+            }];
+        }
+    }];
+}
+
+
+
 
 
 @end

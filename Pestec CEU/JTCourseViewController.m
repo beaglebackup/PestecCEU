@@ -8,9 +8,14 @@
 
 #import "JTCourseViewController.h"
 #import "MZTimerLabel.h"
+#import "User.h"
+#import "UserCourse.h"
+#import "NSNumber+NSTimeInterval.h"
 
 @interface JTCourseViewController ()
 
+@property (nonatomic, strong) User* user;
+@property (nonatomic, strong) UserCourse* userCourse;
 
 @end
 
@@ -29,16 +34,97 @@
 {
     [super viewDidLoad];
     
+    
+    self.user = (User*)[PFUser currentUser];
+    
     NSLog(@"_workerType = %@",_workerType);
     NSLog(@"_tag = %@",_tag);
+    
+    
+    [self loadObjects];
 
     // Do any additional setup after loading the view.
+}
+
+- (void)viewWillDisappear:(BOOL)animated {
+    
+    [super viewWillDisappear:animated];
+    
+    NSNumber* timePassed = [NSNumber numberWithNSTimeInterval:[self.courseTimer getTimeCounted]];
+    
+    NSLog(@"timePassed = %@",timePassed);
+    
+    [JTDatabaseManager updateUserCourse:self.userCourse withTime:timePassed withCallback:^(BOOL succeeded, NSError *error) {
+        
+        if (error) {
+            NSLog(@"error = %@",error);
+            return;
+        }
+    }];
+    
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void) loadObjects {
+    
+    // Get the course object
+    [JTDatabaseManager queryForCourse:self.tag workerType:self.workerType withCallback:^(Course *course, NSError *error) {
+        if (error) {
+            NSLog(@"error = %@",error);
+            return;
+        }
+        
+        self.course = course;
+        
+        // Does the user have the course
+        if ([JTDatabaseManager user:self.user hasCourse:self.course]) {
+            
+            // Get the UserCourse object
+            [JTDatabaseManager queryForUserCourse:self.course user:self.user withCallback:^(UserCourse *course, NSError *error) {
+                if (error) {
+                    
+                    NSLog(@"error = %@",error);
+                    return;
+                }
+                
+                self.userCourse = course;
+                
+                [self objectsDidLoad];
+            }];
+        }
+        
+        // ELSE create a new UserCourse
+        else {
+            [JTDatabaseManager createUserCourse:self.course user:self.user withCallback:^(UserCourse *course, NSError *error) {
+                if (error) {
+                    NSLog(@"error = %@",error);
+                    return;
+                }
+                
+                self.userCourse = course;
+                
+                [self objectsDidLoad];
+            }];
+        }
+    }];
+}
+
+- (void) objectsDidLoad {
+    
+    NSTimeInterval timeInterval = [self.userCourse.timePassed NSTimeIntervalValue];
+    
+    NSLog(@"timeInterval = %f",timeInterval);
+    
+    [self.courseTimer setStopWatchTime:timeInterval];
+    
+    [self.courseTimer start];
+    
+    
 }
 
 /*

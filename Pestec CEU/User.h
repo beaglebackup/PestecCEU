@@ -17,6 +17,10 @@
 @property (retain) NSString *lastName;
 @property (retain) NSString *license;
 @property (retain) NSString *position;
+@property (retain) NSArray *courses;
+
+
+@property (retain) NSArray *userCourses;
 
 
 
@@ -24,6 +28,7 @@
 + (NSString *)lastNameKey;
 + (NSString *)licenseKey;
 + (NSString *)positionKey;
++ (NSString *)coursesKey;
 
 
 

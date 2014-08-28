@@ -31,6 +31,9 @@
 		841A325A19AEB826000BCFD9 /* JTTopicBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 841A325919AEB826000BCFD9 /* JTTopicBaseViewController.m */; };
 		8434C51719AFB28F00245F05 /* MZTimerLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8434C51619AFB28F00245F05 /* MZTimerLabel.m */; };
 		8434C51B19AFB50F00245F05 /* NSNumber+NSTimeInterval.m in Sources */ = {isa = PBXBuildFile; fileRef = 8434C51A19AFB50F00245F05 /* NSNumber+NSTimeInterval.m */; };
+		8434C51E19AFB5AD00245F05 /* UserCourse.m in Sources */ = {isa = PBXBuildFile; fileRef = 8434C51D19AFB5AD00245F05 /* UserCourse.m */; };
+		8434C52119AFB60E00245F05 /* Course.m in Sources */ = {isa = PBXBuildFile; fileRef = 8434C52019AFB60E00245F05 /* Course.m */; };
+		8434C52519AFB8F700245F05 /* PFObject+Copy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8434C52419AFB8F700245F05 /* PFObject+Copy.m */; };
 		EF29836C196A574F000A6BE0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF29836B196A574F000A6BE0 /* Foundation.framework */; };
 		EF29836E196A574F000A6BE0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF29836D196A574F000A6BE0 /* CoreGraphics.framework */; };
 		EF298370196A574F000A6BE0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF29836F196A574F000A6BE0 /* UIKit.framework */; };
@@ -106,6 +109,12 @@
 		8434C51619AFB28F00245F05 /* MZTimerLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MZTimerLabel.m; sourceTree = "<group>"; };
 		8434C51919AFB50F00245F05 /* NSNumber+NSTimeInterval.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNumber+NSTimeInterval.h"; sourceTree = "<group>"; };
 		8434C51A19AFB50F00245F05 /* NSNumber+NSTimeInterval.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+NSTimeInterval.m"; sourceTree = "<group>"; };
+		8434C51C19AFB5AD00245F05 /* UserCourse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserCourse.h; sourceTree = "<group>"; };
+		8434C51D19AFB5AD00245F05 /* UserCourse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserCourse.m; sourceTree = "<group>"; };
+		8434C51F19AFB60E00245F05 /* Course.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Course.h; sourceTree = "<group>"; };
+		8434C52019AFB60E00245F05 /* Course.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Course.m; sourceTree = "<group>"; };
+		8434C52319AFB8F700245F05 /* PFObject+Copy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PFObject+Copy.h"; sourceTree = "<group>"; };
+		8434C52419AFB8F700245F05 /* PFObject+Copy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "PFObject+Copy.m"; sourceTree = "<group>"; };
 		EF298368196A574F000A6BE0 /* PestecCEU.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PestecCEU.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF29836B196A574F000A6BE0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		EF29836D196A574F000A6BE0 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -224,6 +233,8 @@
 				841A324B19AEA406000BCFD9 /* UIImage+Extensions.h */,
 				841A323619AE9463000BCFD9 /* UIColor+Extensions.h */,
 				841A323719AE9463000BCFD9 /* UIColor+Extensions.m */,
+				8434C52319AFB8F700245F05 /* PFObject+Copy.h */,
+				8434C52419AFB8F700245F05 /* PFObject+Copy.m */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -246,6 +257,10 @@
 			children = (
 				841A324719AE984B000BCFD9 /* User.h */,
 				841A324819AE984B000BCFD9 /* User.m */,
+				8434C51C19AFB5AD00245F05 /* UserCourse.h */,
+				8434C51D19AFB5AD00245F05 /* UserCourse.m */,
+				8434C51F19AFB60E00245F05 /* Course.h */,
+				8434C52019AFB60E00245F05 /* Course.m */,
 			);
 			name = Data;
 			sourceTree = "<group>";
@@ -518,11 +533,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8434C52519AFB8F700245F05 /* PFObject+Copy.m in Sources */,
 				EF298382196A574F000A6BE0 /* ViewController.m in Sources */,
 				EF5D1146196A775C00539B3E /* ApplicatorsCoursesCompletedViewController.m in Sources */,
 				EF5D112E196A664C00539B3E /* FieldRepViewController.m in Sources */,
 				841A325619AEB5B5000BCFD9 /* JTTopicButton.m in Sources */,
 				841A324419AE9559000BCFD9 /* JTLogInViewController.m in Sources */,
+				8434C52119AFB60E00245F05 /* Course.m in Sources */,
+				8434C51E19AFB5AD00245F05 /* UserCourse.m in Sources */,
 				8434C51719AFB28F00245F05 /* MZTimerLabel.m in Sources */,
 				841A325A19AEB826000BCFD9 /* JTTopicBaseViewController.m in Sources */,
 				EF29837C196A574F000A6BE0 /* AppDelegate.m in Sources */,

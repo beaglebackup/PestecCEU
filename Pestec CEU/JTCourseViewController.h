@@ -8,9 +8,12 @@
 
 #import <UIKit/UIKit.h>
 #import "MZTimerLabel.h"
+#import "Course.h"
 
 @interface JTCourseViewController : UIViewController
 
+
+@property (nonatomic, strong) Course* course;
 
 @property (nonatomic, strong) NSString* workerType;
 @property (nonatomic, strong) NSNumber* tag;

@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MZTimerLabel.h"
 
 @interface JTCourseViewController : UIViewController
 
@@ -18,9 +19,9 @@
 
 
 //label
-@property (strong, nonatomic) IBOutlet UILabel *applicatorsTopic1Label;
-@property (strong, nonatomic) IBOutlet UILabel *applicatorsTopic1RulesLabel;
-@property (strong, nonatomic) IBOutlet UILabel *applicatorsTopic1TimeLabel;
+@property (strong, nonatomic) IBOutlet UILabel *workerLabel;
+@property (strong, nonatomic) IBOutlet UILabel *categoryLabel;
+@property (strong, nonatomic) IBOutlet MZTimerLabel *courseTimer;
 
 //textview
 @property (strong, nonatomic) IBOutlet UITextView *applicatorsTopic1TextView;

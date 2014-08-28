@@ -603,7 +603,7 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Running Time 00:00 AM" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5hI-R6-DE6">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Running Time 00:00 AM" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5hI-R6-DE6" customClass="MZTimerLabel">
                                 <rect key="frame" x="110" y="446" width="185" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -631,12 +631,12 @@
                     </view>
                     <navigationItem key="navigationItem" id="TxN-kN-4jT"/>
                     <connections>
-                        <outlet property="applicatorsTopic1Label" destination="49a-BS-kcj" id="Xde-br-KXV"/>
                         <outlet property="applicatorsTopic1QuizButton" destination="aED-5m-4cb" id="wQA-7K-QAa"/>
-                        <outlet property="applicatorsTopic1RulesLabel" destination="OT4-p7-ITW" id="iVF-gR-ZoO"/>
                         <outlet property="applicatorsTopic1SaveExitButton" destination="O4E-Q8-oUA" id="SMm-mu-11P"/>
                         <outlet property="applicatorsTopic1TextView" destination="heZ-1n-WPN" id="KDp-LX-D1r"/>
-                        <outlet property="applicatorsTopic1TimeLabel" destination="5hI-R6-DE6" id="lfh-GN-lE8"/>
+                        <outlet property="categoryLabel" destination="OT4-p7-ITW" id="Hb2-oe-fFf"/>
+                        <outlet property="courseTimer" destination="5hI-R6-DE6" id="a1a-OT-KnB"/>
+                        <outlet property="workerLabel" destination="49a-BS-kcj" id="m0n-xm-mD6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IYc-Yj-M5F" userLabel="First Responder" sceneMemberID="firstResponder"/>

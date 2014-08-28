@@ -19,6 +19,7 @@
 @property (nonatomic, strong) NSNumber* tag;
 
 
+@property (strong, nonatomic) IBOutlet UIView *loadingView;
 
 
 //label

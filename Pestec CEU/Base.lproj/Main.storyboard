@@ -578,6 +578,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
+                            <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zbf-FE-q91">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </view>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="heZ-1n-WPN">
                                 <rect key="frame" x="13" y="140" width="294" height="254"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -628,6 +633,12 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.49051842350000002" green="0.57323511380000003" blue="0.92055606840000004" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Zbf-FE-q91" firstAttribute="leading" secondItem="euh-c4-qcC" secondAttribute="leading" id="1Tk-WW-sBf"/>
+                            <constraint firstItem="tQJ-Lz-YCs" firstAttribute="top" secondItem="Zbf-FE-q91" secondAttribute="bottom" id="HG7-kq-tmZ"/>
+                            <constraint firstItem="Zbf-FE-q91" firstAttribute="top" secondItem="euh-c4-qcC" secondAttribute="top" id="SJA-ce-EuX"/>
+                            <constraint firstAttribute="trailing" secondItem="Zbf-FE-q91" secondAttribute="trailing" id="b1j-J1-NL2"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="TxN-kN-4jT"/>
                     <connections>
@@ -636,6 +647,7 @@
                         <outlet property="applicatorsTopic1TextView" destination="heZ-1n-WPN" id="KDp-LX-D1r"/>
                         <outlet property="categoryLabel" destination="OT4-p7-ITW" id="Hb2-oe-fFf"/>
                         <outlet property="courseTimer" destination="5hI-R6-DE6" id="a1a-OT-KnB"/>
+                        <outlet property="loadingView" destination="Zbf-FE-q91" id="RKQ-CQ-KaY"/>
                         <outlet property="workerLabel" destination="49a-BS-kcj" id="m0n-xm-mD6"/>
                     </connections>
                 </viewController>

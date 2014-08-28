@@ -11,11 +11,14 @@
 #import "User.h"
 #import "UserCourse.h"
 #import "NSNumber+NSTimeInterval.h"
+#import "JGProgressHUD.h"
 
 @interface JTCourseViewController ()
 
 @property (nonatomic, strong) User* user;
 @property (nonatomic, strong) UserCourse* userCourse;
+
+@property (nonatomic, strong) JGProgressHUD* progressHUD;
 
 @end
 
@@ -37,15 +40,25 @@
     
     self.user = (User*)[PFUser currentUser];
     
-    NSLog(@"_workerType = %@",_workerType);
-    NSLog(@"_tag = %@",_tag);
-    
     
     [self loadObjects];
 
     // Do any additional setup after loading the view.
 }
 
+
+- (void) viewWillAppear:(BOOL)animated {
+    
+    [super viewWillAppear:animated];
+    
+    [self.view bringSubviewToFront:self.loadingView];
+    self.loadingView.hidden = NO;
+    self.progressHUD = [JGProgressHUD progressHUDWithStyle:JGProgressHUDStyleLight];
+    self.progressHUD.textLabel.text = @"Loading Course";
+    [self.progressHUD showInView:self.view];
+
+    
+}
 - (void)viewWillDisappear:(BOOL)animated {
     
     [super viewWillDisappear:animated];
@@ -115,6 +128,9 @@
 }
 
 - (void) objectsDidLoad {
+    
+    [self.progressHUD dismissAnimated:YES];
+    self.loadingView.hidden = YES;
     
     NSTimeInterval timeInterval = [self.userCourse.timePassed NSTimeIntervalValue];
     

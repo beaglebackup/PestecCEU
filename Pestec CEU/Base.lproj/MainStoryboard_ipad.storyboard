@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13C64" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="d0m-V6-0pZ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="12F45" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="d0m-V6-0pZ">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
@@ -539,10 +539,10 @@
             </objects>
             <point key="canvasLocation" x="2590" y="-1059"/>
         </scene>
-        <!--Applicator Rules Course Topic1 View Controller-->
+        <!--Course View Controller-->
         <scene sceneID="P9h-qv-Jb2">
             <objects>
-                <viewController id="MEQ-rZ-FOc" customClass="ApplicatorRulesCourseTopic1ViewController" sceneMemberID="viewController">
+                <viewController id="MEQ-rZ-FOc" customClass="JTCourseViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="n72-Mh-jEA"/>
                         <viewControllerLayoutGuide type="bottom" id="tQJ-Lz-YCs"/>

@@ -7,10 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "JTTopicBaseViewController.h"
+@interface FieldRepCoursesViewController : JTTopicBaseViewController
 
-@interface FieldRepCoursesViewController : UIViewController{
-    
-}
 @property (strong, nonatomic) IBOutlet UILabel *fieldRepLabel;
 @property (strong, nonatomic) IBOutlet UILabel *fieldRepCoursesAvailableLabel;
 @property (strong, nonatomic) IBOutlet UILabel *fieldRepRulesLabel;

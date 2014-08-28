@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "JTTopicBaseViewController.h"
 
-@interface OperatorCoursesViewController : UIViewController
+@interface OperatorCoursesViewController : JTTopicBaseViewController
 
 @property (strong, nonatomic) IBOutlet UILabel *operatorsLabel;
 @property (strong, nonatomic) IBOutlet UILabel *operatorCoursesAvailableLabel;

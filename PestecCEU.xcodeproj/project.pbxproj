@@ -7,6 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		841A321F19AE9323000BCFD9 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 841A321E19AE9323000BCFD9 /* Bolts.framework */; };
+		841A322119AE932C000BCFD9 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 841A322019AE932C000BCFD9 /* Parse.framework */; };
+		841A322319AE939F000BCFD9 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 841A322219AE939F000BCFD9 /* AudioToolbox.framework */; };
+		841A322519AE93A6000BCFD9 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 841A322419AE93A6000BCFD9 /* CFNetwork.framework */; };
+		841A322719AE93B3000BCFD9 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 841A322619AE93B3000BCFD9 /* CoreLocation.framework */; };
+		841A322919AE93BC000BCFD9 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 841A322819AE93BC000BCFD9 /* libz.dylib */; };
+		841A322B19AE93C3000BCFD9 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 841A322A19AE93C3000BCFD9 /* MobileCoreServices.framework */; };
+		841A322D19AE93D3000BCFD9 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 841A322C19AE93D3000BCFD9 /* QuartzCore.framework */; };
+		841A322F19AE93D9000BCFD9 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 841A322E19AE93D9000BCFD9 /* Security.framework */; };
+		841A323119AE93E3000BCFD9 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 841A323019AE93E3000BCFD9 /* StoreKit.framework */; };
+		841A323319AE93EA000BCFD9 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 841A323219AE93EA000BCFD9 /* SystemConfiguration.framework */; };
+		841A323819AE9463000BCFD9 /* UIColor+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 841A323719AE9463000BCFD9 /* UIColor+Extensions.m */; };
+		841A323B19AE946A000BCFD9 /* JTDatabaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 841A323A19AE946A000BCFD9 /* JTDatabaseManager.m */; };
+		841A324319AE9559000BCFD9 /* JTWelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 841A323E19AE9559000BCFD9 /* JTWelcomeViewController.m */; };
+		841A324419AE9559000BCFD9 /* JTLogInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 841A324019AE9559000BCFD9 /* JTLogInViewController.m */; };
+		841A324519AE9559000BCFD9 /* JTSignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 841A324219AE9559000BCFD9 /* JTSignUpViewController.m */; };
+		841A324919AE984B000BCFD9 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 841A324819AE984B000BCFD9 /* User.m */; };
+		841A324C19AEA406000BCFD9 /* UIImage+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 841A324A19AEA406000BCFD9 /* UIImage+Extensions.m */; };
+		841A324E19AEA435000BCFD9 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 841A324D19AEA435000BCFD9 /* Accounts.framework */; };
+		841A325019AEA43A000BCFD9 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 841A324F19AEA43A000BCFD9 /* Social.framework */; };
+		841A325619AEB5B5000BCFD9 /* JTTopicButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 841A325519AEB5B5000BCFD9 /* JTTopicButton.m */; };
+		841A325A19AEB826000BCFD9 /* JTTopicBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 841A325919AEB826000BCFD9 /* JTTopicBaseViewController.m */; };
+		8434C51719AFB28F00245F05 /* MZTimerLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8434C51619AFB28F00245F05 /* MZTimerLabel.m */; };
 		EF29836C196A574F000A6BE0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF29836B196A574F000A6BE0 /* Foundation.framework */; };
 		EF29836E196A574F000A6BE0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF29836D196A574F000A6BE0 /* CoreGraphics.framework */; };
 		EF298370196A574F000A6BE0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF29836F196A574F000A6BE0 /* UIKit.framework */; };
@@ -25,14 +48,12 @@
 		EF2983A5196A5B43000A6BE0 /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF2983A4196A5B43000A6BE0 /* ProfileViewController.m */; };
 		EF2983A8196A6015000A6BE0 /* ApplicatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF2983A7196A6015000A6BE0 /* ApplicatorViewController.m */; };
 		EF5B574F196BA39B00883F6A /* MainStoryboard_ipad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF5B574D196BA39B00883F6A /* MainStoryboard_ipad.storyboard */; };
-		EF5D112A196A656D00539B3E /* ladybug.png in Resources */ = {isa = PBXBuildFile; fileRef = EF5D1128196A656D00539B3E /* ladybug.png */; };
-		EF5D112B196A656D00539B3E /* ladybug@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EF5D1129196A656D00539B3E /* ladybug@2x.png */; };
 		EF5D112E196A664C00539B3E /* FieldRepViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5D112D196A664C00539B3E /* FieldRepViewController.m */; };
 		EF5D1131196A669700539B3E /* OperatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5D1130196A669700539B3E /* OperatorViewController.m */; };
 		EF5D1134196A6BAF00539B3E /* ApplicatorCoursesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5D1133196A6BAF00539B3E /* ApplicatorCoursesViewController.m */; };
 		EF5D1137196A6BC300539B3E /* FieldRepCoursesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5D1136196A6BC300539B3E /* FieldRepCoursesViewController.m */; };
 		EF5D113A196A6BD600539B3E /* OperatorCoursesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5D1139196A6BD600539B3E /* OperatorCoursesViewController.m */; };
-		EF5D113D196A73EC00539B3E /* ApplicatorRulesCourseTopic1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5D113C196A73EC00539B3E /* ApplicatorRulesCourseTopic1ViewController.m */; };
+		EF5D113D196A73EC00539B3E /* JTCourseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5D113C196A73EC00539B3E /* JTCourseViewController.m */; };
 		EF5D1146196A775C00539B3E /* ApplicatorsCoursesCompletedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5D1145196A775C00539B3E /* ApplicatorsCoursesCompletedViewController.m */; };
 		EF5D1149196A777C00539B3E /* FieldRepCoursesCompletedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5D1148196A777C00539B3E /* FieldRepCoursesCompletedViewController.m */; };
 		EF5D114C196A779500539B3E /* OperatorCoursesCompletedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5D114B196A779500539B3E /* OperatorCoursesCompletedViewController.m */; };
@@ -49,6 +70,39 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		841A321E19AE9323000BCFD9 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		841A322019AE932C000BCFD9 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		841A322219AE939F000BCFD9 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		841A322419AE93A6000BCFD9 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		841A322619AE93B3000BCFD9 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		841A322819AE93BC000BCFD9 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		841A322A19AE93C3000BCFD9 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		841A322C19AE93D3000BCFD9 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		841A322E19AE93D9000BCFD9 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		841A323019AE93E3000BCFD9 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		841A323219AE93EA000BCFD9 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		841A323619AE9463000BCFD9 /* UIColor+Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Extensions.h"; sourceTree = "<group>"; };
+		841A323719AE9463000BCFD9 /* UIColor+Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Extensions.m"; sourceTree = "<group>"; };
+		841A323919AE946A000BCFD9 /* JTDatabaseManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTDatabaseManager.h; sourceTree = "<group>"; };
+		841A323A19AE946A000BCFD9 /* JTDatabaseManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTDatabaseManager.m; sourceTree = "<group>"; };
+		841A323D19AE9559000BCFD9 /* JTWelcomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTWelcomeViewController.h; sourceTree = "<group>"; };
+		841A323E19AE9559000BCFD9 /* JTWelcomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTWelcomeViewController.m; sourceTree = "<group>"; };
+		841A323F19AE9559000BCFD9 /* JTLogInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTLogInViewController.h; sourceTree = "<group>"; };
+		841A324019AE9559000BCFD9 /* JTLogInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTLogInViewController.m; sourceTree = "<group>"; };
+		841A324119AE9559000BCFD9 /* JTSignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTSignUpViewController.h; sourceTree = "<group>"; };
+		841A324219AE9559000BCFD9 /* JTSignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTSignUpViewController.m; sourceTree = "<group>"; };
+		841A324719AE984B000BCFD9 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		841A324819AE984B000BCFD9 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		841A324A19AEA406000BCFD9 /* UIImage+Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Extensions.m"; sourceTree = "<group>"; };
+		841A324B19AEA406000BCFD9 /* UIImage+Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Extensions.h"; sourceTree = "<group>"; };
+		841A324D19AEA435000BCFD9 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		841A324F19AEA43A000BCFD9 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		841A325419AEB5B5000BCFD9 /* JTTopicButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTTopicButton.h; sourceTree = "<group>"; };
+		841A325519AEB5B5000BCFD9 /* JTTopicButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTTopicButton.m; sourceTree = "<group>"; };
+		841A325819AEB826000BCFD9 /* JTTopicBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTTopicBaseViewController.h; sourceTree = "<group>"; };
+		841A325919AEB826000BCFD9 /* JTTopicBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTTopicBaseViewController.m; sourceTree = "<group>"; };
+		8434C51519AFB28F00245F05 /* MZTimerLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MZTimerLabel.h; sourceTree = "<group>"; };
+		8434C51619AFB28F00245F05 /* MZTimerLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MZTimerLabel.m; sourceTree = "<group>"; };
 		EF298368196A574F000A6BE0 /* PestecCEU.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PestecCEU.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF29836B196A574F000A6BE0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		EF29836D196A574F000A6BE0 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -75,8 +129,6 @@
 		EF2983A6196A6015000A6BE0 /* ApplicatorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApplicatorViewController.h; sourceTree = "<group>"; };
 		EF2983A7196A6015000A6BE0 /* ApplicatorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApplicatorViewController.m; sourceTree = "<group>"; };
 		EF5B574E196BA39B00883F6A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainStoryboard_ipad.storyboard; sourceTree = "<group>"; };
-		EF5D1128196A656D00539B3E /* ladybug.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ladybug.png; path = "../../k9 certificates/ladybug.png"; sourceTree = "<group>"; };
-		EF5D1129196A656D00539B3E /* ladybug@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ladybug@2x.png"; path = "../../k9 certificates/ladybug@2x.png"; sourceTree = "<group>"; };
 		EF5D112C196A664C00539B3E /* FieldRepViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FieldRepViewController.h; sourceTree = "<group>"; };
 		EF5D112D196A664C00539B3E /* FieldRepViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FieldRepViewController.m; sourceTree = "<group>"; };
 		EF5D112F196A669700539B3E /* OperatorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OperatorViewController.h; sourceTree = "<group>"; };
@@ -87,8 +139,8 @@
 		EF5D1136196A6BC300539B3E /* FieldRepCoursesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FieldRepCoursesViewController.m; sourceTree = "<group>"; };
 		EF5D1138196A6BD600539B3E /* OperatorCoursesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OperatorCoursesViewController.h; sourceTree = "<group>"; };
 		EF5D1139196A6BD600539B3E /* OperatorCoursesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OperatorCoursesViewController.m; sourceTree = "<group>"; };
-		EF5D113B196A73EC00539B3E /* ApplicatorRulesCourseTopic1ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApplicatorRulesCourseTopic1ViewController.h; sourceTree = "<group>"; };
-		EF5D113C196A73EC00539B3E /* ApplicatorRulesCourseTopic1ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApplicatorRulesCourseTopic1ViewController.m; sourceTree = "<group>"; };
+		EF5D113B196A73EC00539B3E /* JTCourseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTCourseViewController.h; sourceTree = "<group>"; };
+		EF5D113C196A73EC00539B3E /* JTCourseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTCourseViewController.m; sourceTree = "<group>"; };
 		EF5D1144196A775C00539B3E /* ApplicatorsCoursesCompletedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApplicatorsCoursesCompletedViewController.h; sourceTree = "<group>"; };
 		EF5D1145196A775C00539B3E /* ApplicatorsCoursesCompletedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApplicatorsCoursesCompletedViewController.m; sourceTree = "<group>"; };
 		EF5D1147196A777C00539B3E /* FieldRepCoursesCompletedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FieldRepCoursesCompletedViewController.h; sourceTree = "<group>"; };
@@ -102,9 +154,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				841A325019AEA43A000BCFD9 /* Social.framework in Frameworks */,
+				841A324E19AEA435000BCFD9 /* Accounts.framework in Frameworks */,
+				841A323319AE93EA000BCFD9 /* SystemConfiguration.framework in Frameworks */,
+				841A323119AE93E3000BCFD9 /* StoreKit.framework in Frameworks */,
+				841A322F19AE93D9000BCFD9 /* Security.framework in Frameworks */,
+				841A322D19AE93D3000BCFD9 /* QuartzCore.framework in Frameworks */,
+				841A322B19AE93C3000BCFD9 /* MobileCoreServices.framework in Frameworks */,
+				841A322919AE93BC000BCFD9 /* libz.dylib in Frameworks */,
+				841A322719AE93B3000BCFD9 /* CoreLocation.framework in Frameworks */,
 				EF29836E196A574F000A6BE0 /* CoreGraphics.framework in Frameworks */,
+				841A322519AE93A6000BCFD9 /* CFNetwork.framework in Frameworks */,
+				841A322319AE939F000BCFD9 /* AudioToolbox.framework in Frameworks */,
 				EF298370196A574F000A6BE0 /* UIKit.framework in Frameworks */,
 				EF29836C196A574F000A6BE0 /* Foundation.framework in Frameworks */,
+				841A321F19AE9323000BCFD9 /* Bolts.framework in Frameworks */,
+				841A322119AE932C000BCFD9 /* Parse.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -124,35 +189,132 @@
 		841A321D19AE91C6000BCFD9 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				841A325719AEB6EC000BCFD9 /* Course */,
+				841A325319AEB594000BCFD9 /* Completed */,
+				841A325219AEB574000BCFD9 /* Workers */,
+				841A325119AEB557000BCFD9 /* Topics */,
+				841A323C19AE954F000BCFD9 /* Login */,
 				EF298380196A574F000A6BE0 /* ViewController.h */,
 				EF298381196A574F000A6BE0 /* ViewController.m */,
 				EF2983A0196A5A66000A6BE0 /* LicenseTypeViewController.h */,
 				EF2983A1196A5A66000A6BE0 /* LicenseTypeViewController.m */,
 				EF2983A3196A5B43000A6BE0 /* ProfileViewController.h */,
 				EF2983A4196A5B43000A6BE0 /* ProfileViewController.m */,
+				EF5D114B196A779500539B3E /* OperatorCoursesCompletedViewController.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		841A323419AE9454000BCFD9 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				841A323919AE946A000BCFD9 /* JTDatabaseManager.h */,
+				841A323A19AE946A000BCFD9 /* JTDatabaseManager.m */,
+			);
+			name = Managers;
+			sourceTree = "<group>";
+		};
+		841A323519AE9458000BCFD9 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				841A324A19AEA406000BCFD9 /* UIImage+Extensions.m */,
+				841A324B19AEA406000BCFD9 /* UIImage+Extensions.h */,
+				841A323619AE9463000BCFD9 /* UIColor+Extensions.h */,
+				841A323719AE9463000BCFD9 /* UIColor+Extensions.m */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		841A323C19AE954F000BCFD9 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				841A323D19AE9559000BCFD9 /* JTWelcomeViewController.h */,
+				841A323E19AE9559000BCFD9 /* JTWelcomeViewController.m */,
+				841A323F19AE9559000BCFD9 /* JTLogInViewController.h */,
+				841A324019AE9559000BCFD9 /* JTLogInViewController.m */,
+				841A324119AE9559000BCFD9 /* JTSignUpViewController.h */,
+				841A324219AE9559000BCFD9 /* JTSignUpViewController.m */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
+		841A324619AE9825000BCFD9 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				841A324719AE984B000BCFD9 /* User.h */,
+				841A324819AE984B000BCFD9 /* User.m */,
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
+		841A325119AEB557000BCFD9 /* Topics */ = {
+			isa = PBXGroup;
+			children = (
+				EF5D1135196A6BC300539B3E /* FieldRepCoursesViewController.h */,
+				EF5D1136196A6BC300539B3E /* FieldRepCoursesViewController.m */,
+				EF5D1138196A6BD600539B3E /* OperatorCoursesViewController.h */,
+				EF5D1139196A6BD600539B3E /* OperatorCoursesViewController.m */,
+				EF5D1132196A6BAF00539B3E /* ApplicatorCoursesViewController.h */,
+				EF5D1133196A6BAF00539B3E /* ApplicatorCoursesViewController.m */,
+				841A325419AEB5B5000BCFD9 /* JTTopicButton.h */,
+				841A325519AEB5B5000BCFD9 /* JTTopicButton.m */,
+				841A325819AEB826000BCFD9 /* JTTopicBaseViewController.h */,
+				841A325919AEB826000BCFD9 /* JTTopicBaseViewController.m */,
+			);
+			name = Topics;
+			sourceTree = "<group>";
+		};
+		841A325219AEB574000BCFD9 /* Workers */ = {
+			isa = PBXGroup;
+			children = (
 				EF2983A6196A6015000A6BE0 /* ApplicatorViewController.h */,
 				EF2983A7196A6015000A6BE0 /* ApplicatorViewController.m */,
 				EF5D112C196A664C00539B3E /* FieldRepViewController.h */,
 				EF5D112D196A664C00539B3E /* FieldRepViewController.m */,
 				EF5D112F196A669700539B3E /* OperatorViewController.h */,
 				EF5D1130196A669700539B3E /* OperatorViewController.m */,
-				EF5D1132196A6BAF00539B3E /* ApplicatorCoursesViewController.h */,
-				EF5D1133196A6BAF00539B3E /* ApplicatorCoursesViewController.m */,
-				EF5D113B196A73EC00539B3E /* ApplicatorRulesCourseTopic1ViewController.h */,
-				EF5D113C196A73EC00539B3E /* ApplicatorRulesCourseTopic1ViewController.m */,
+			);
+			name = Workers;
+			sourceTree = "<group>";
+		};
+		841A325319AEB594000BCFD9 /* Completed */ = {
+			isa = PBXGroup;
+			children = (
 				EF5D1144196A775C00539B3E /* ApplicatorsCoursesCompletedViewController.h */,
 				EF5D1145196A775C00539B3E /* ApplicatorsCoursesCompletedViewController.m */,
-				EF5D1135196A6BC300539B3E /* FieldRepCoursesViewController.h */,
-				EF5D1136196A6BC300539B3E /* FieldRepCoursesViewController.m */,
 				EF5D1147196A777C00539B3E /* FieldRepCoursesCompletedViewController.h */,
 				EF5D1148196A777C00539B3E /* FieldRepCoursesCompletedViewController.m */,
-				EF5D1138196A6BD600539B3E /* OperatorCoursesViewController.h */,
-				EF5D1139196A6BD600539B3E /* OperatorCoursesViewController.m */,
 				EF5D114A196A779500539B3E /* OperatorCoursesCompletedViewController.h */,
-				EF5D114B196A779500539B3E /* OperatorCoursesCompletedViewController.m */,
 			);
-			name = ViewControllers;
+			name = Completed;
 			sourceTree = "<group>";
+		};
+		841A325719AEB6EC000BCFD9 /* Course */ = {
+			isa = PBXGroup;
+			children = (
+				EF5D113B196A73EC00539B3E /* JTCourseViewController.h */,
+				EF5D113C196A73EC00539B3E /* JTCourseViewController.m */,
+			);
+			name = Course;
+			sourceTree = "<group>";
+		};
+		8434C51019AFB09900245F05 /* Externals */ = {
+			isa = PBXGroup;
+			children = (
+				8434C51419AFB28F00245F05 /* MZTimerLabel */,
+			);
+			name = Externals;
+			sourceTree = "<group>";
+		};
+		8434C51419AFB28F00245F05 /* MZTimerLabel */ = {
+			isa = PBXGroup;
+			children = (
+				8434C51519AFB28F00245F05 /* MZTimerLabel.h */,
+				8434C51619AFB28F00245F05 /* MZTimerLabel.m */,
+			);
+			name = MZTimerLabel;
+			path = Externals/MZTimerLabel;
+			sourceTree = SOURCE_ROOT;
 		};
 		EF29835F196A574F000A6BE0 = {
 			isa = PBXGroup;
@@ -176,6 +338,19 @@
 		EF29836A196A574F000A6BE0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				841A324F19AEA43A000BCFD9 /* Social.framework */,
+				841A324D19AEA435000BCFD9 /* Accounts.framework */,
+				841A323219AE93EA000BCFD9 /* SystemConfiguration.framework */,
+				841A323019AE93E3000BCFD9 /* StoreKit.framework */,
+				841A322E19AE93D9000BCFD9 /* Security.framework */,
+				841A322C19AE93D3000BCFD9 /* QuartzCore.framework */,
+				841A322A19AE93C3000BCFD9 /* MobileCoreServices.framework */,
+				841A322819AE93BC000BCFD9 /* libz.dylib */,
+				841A322619AE93B3000BCFD9 /* CoreLocation.framework */,
+				841A322419AE93A6000BCFD9 /* CFNetwork.framework */,
+				841A322219AE939F000BCFD9 /* AudioToolbox.framework */,
+				841A322019AE932C000BCFD9 /* Parse.framework */,
+				841A321E19AE9323000BCFD9 /* Bolts.framework */,
 				EF29836B196A574F000A6BE0 /* Foundation.framework */,
 				EF29836D196A574F000A6BE0 /* CoreGraphics.framework */,
 				EF29836F196A574F000A6BE0 /* UIKit.framework */,
@@ -187,13 +362,15 @@
 		EF298371196A574F000A6BE0 /* Pestec CEU */ = {
 			isa = PBXGroup;
 			children = (
+				8434C51019AFB09900245F05 /* Externals */,
+				841A324619AE9825000BCFD9 /* Data */,
+				841A323519AE9458000BCFD9 /* Extensions */,
+				841A323419AE9454000BCFD9 /* Managers */,
 				841A321D19AE91C6000BCFD9 /* ViewControllers */,
 				EF29837A196A574F000A6BE0 /* AppDelegate.h */,
 				EF29837B196A574F000A6BE0 /* AppDelegate.m */,
 				EF29837D196A574F000A6BE0 /* Main.storyboard */,
 				EF5B574D196BA39B00883F6A /* MainStoryboard_ipad.storyboard */,
-				EF5D1128196A656D00539B3E /* ladybug.png */,
-				EF5D1129196A656D00539B3E /* ladybug@2x.png */,
 				EF298383196A574F000A6BE0 /* Images.xcassets */,
 				EF298372196A574F000A6BE0 /* Supporting Files */,
 			);
@@ -306,10 +483,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF298384196A574F000A6BE0 /* Images.xcassets in Resources */,
-				EF5D112B196A656D00539B3E /* ladybug@2x.png in Resources */,
 				EF5B574F196BA39B00883F6A /* MainStoryboard_ipad.storyboard in Resources */,
 				EF298376196A574F000A6BE0 /* InfoPlist.strings in Resources */,
-				EF5D112A196A656D00539B3E /* ladybug.png in Resources */,
 				EF29837F196A574F000A6BE0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -332,17 +507,27 @@
 				EF298382196A574F000A6BE0 /* ViewController.m in Sources */,
 				EF5D1146196A775C00539B3E /* ApplicatorsCoursesCompletedViewController.m in Sources */,
 				EF5D112E196A664C00539B3E /* FieldRepViewController.m in Sources */,
+				841A325619AEB5B5000BCFD9 /* JTTopicButton.m in Sources */,
+				841A324419AE9559000BCFD9 /* JTLogInViewController.m in Sources */,
+				8434C51719AFB28F00245F05 /* MZTimerLabel.m in Sources */,
+				841A325A19AEB826000BCFD9 /* JTTopicBaseViewController.m in Sources */,
 				EF29837C196A574F000A6BE0 /* AppDelegate.m in Sources */,
 				EF2983A2196A5A66000A6BE0 /* LicenseTypeViewController.m in Sources */,
-				EF5D113D196A73EC00539B3E /* ApplicatorRulesCourseTopic1ViewController.m in Sources */,
+				841A324519AE9559000BCFD9 /* JTSignUpViewController.m in Sources */,
+				EF5D113D196A73EC00539B3E /* JTCourseViewController.m in Sources */,
 				EF2983A8196A6015000A6BE0 /* ApplicatorViewController.m in Sources */,
+				841A323819AE9463000BCFD9 /* UIColor+Extensions.m in Sources */,
 				EF298378196A574F000A6BE0 /* main.m in Sources */,
+				841A324C19AEA406000BCFD9 /* UIImage+Extensions.m in Sources */,
 				EF5D114C196A779500539B3E /* OperatorCoursesCompletedViewController.m in Sources */,
 				EF5D1137196A6BC300539B3E /* FieldRepCoursesViewController.m in Sources */,
 				EF5D1134196A6BAF00539B3E /* ApplicatorCoursesViewController.m in Sources */,
 				EF5D1131196A669700539B3E /* OperatorViewController.m in Sources */,
+				841A324319AE9559000BCFD9 /* JTWelcomeViewController.m in Sources */,
 				EF5D113A196A6BD600539B3E /* OperatorCoursesViewController.m in Sources */,
 				EF5D1149196A777C00539B3E /* FieldRepCoursesCompletedViewController.m in Sources */,
+				841A323B19AE946A000BCFD9 /* JTDatabaseManager.m in Sources */,
+				841A324919AE984B000BCFD9 /* User.m in Sources */,
 				EF2983A5196A5B43000A6BE0 /* ProfileViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -476,6 +661,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Pestec CEU/PestecCEU-Prefix.pch";
 				INFOPLIST_FILE = "Pestec CEU/PestecCEU-Info.plist";
@@ -489,6 +678,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Pestec CEU/PestecCEU-Prefix.pch";
 				INFOPLIST_FILE = "Pestec CEU/PestecCEU-Info.plist";

@@ -7,11 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "JTTopicBaseViewController.h"
 
-@interface ApplicatorCoursesViewController : UIViewController {
-    
-}
-
+@interface ApplicatorCoursesViewController : JTTopicBaseViewController
 
 
 @property (strong, nonatomic) IBOutlet UILabel *applicatorsLabel;

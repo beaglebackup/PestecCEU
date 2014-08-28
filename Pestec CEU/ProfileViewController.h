@@ -8,7 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ProfileViewController : UIViewController
+@interface ProfileViewController : UIViewController <UITextFieldDelegate, UIScrollViewDelegate>
+
+@property (strong, nonatomic) IBOutlet UIScrollView *scrollView;
 
 //labels
 @property (strong, nonatomic) IBOutlet UILabel *userProfileLabel;
@@ -30,6 +32,8 @@
 @property (strong, nonatomic) IBOutlet UIButton *editButton;
 @property (strong, nonatomic) IBOutlet UIButton *backButton;
 
+- (IBAction)didTapSave:(id)sender;
+- (IBAction)didTapEdit:(id)sender;
 
 
 

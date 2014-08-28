@@ -26,7 +26,10 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    }
+    
+    self.workerType = @"fieldRep";
+
+}
 
 - (void)didReceiveMemoryWarning
 {

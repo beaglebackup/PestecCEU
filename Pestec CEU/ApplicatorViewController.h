@@ -7,10 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "JTWorkerBaseViewController.h"
 
-@interface ApplicatorViewController : UIViewController
+@interface ApplicatorViewController : JTWorkerBaseViewController
 
-//scollview
 
 
 //labels

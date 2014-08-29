@@ -15,7 +15,7 @@
 
 @property (nonatomic, strong) Course* course;
 
-@property (nonatomic, strong) NSString* workerType;
+@property (assign) JTWorkerTypeIndex workerType;
 @property (nonatomic, strong) NSNumber* tag;
 
 

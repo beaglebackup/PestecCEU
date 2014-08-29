@@ -1,19 +1,19 @@
 //
-//  LicenseTypeViewController.m
-//  Pestec CEU
+//  JTWorkerBaseViewController.m
+//  PestecCEU
 //
-//  Created by Gabriel on 7/6/14.
+//  Created by Admin on 8/28/14.
 //  Copyright (c) 2014 Gabriel. All rights reserved.
 //
 
-#import "LicenseTypeViewController.h"
 #import "JTWorkerBaseViewController.h"
+#import "JTTopicBaseViewController.h"
 
-@interface LicenseTypeViewController ()
+@interface JTWorkerBaseViewController ()
 
 @end
 
-@implementation LicenseTypeViewController
+@implementation JTWorkerBaseViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -27,7 +27,17 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    self.title = self.navTitle;
+
+
+//    UILabel *label = [[UILabel alloc]initWithFrame:CGRectMake(0.0, 0.0, 320.0, 44.0)];
+//    [label setBackgroundColor:[UIColor clearColor]];
+//    [label setNumberOfLines:0];
+//    [label setTextColor:[UIColor whiteColor]];
+//    [label setTextAlignment:NSTextAlignmentCenter];
+//    [label setText:self.navTitle];
+//    self.navigationItem.titleView = label;
 }
 
 - (void)didReceiveMemoryWarning
@@ -36,27 +46,25 @@
     // Dispose of any resources that can be recreated.
 }
 
-
 #pragma mark - Navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     UIButton* button = (UIButton*)sender;
     
-    if ([[segue identifier] isEqualToString:@"licenseToWorker"])
+    if ([[segue identifier] isEqualToString:@"workerToTopics"])
     {
-        JTWorkerBaseViewController *workerVC = [segue destinationViewController];
+        JTTopicBaseViewController *topicVC = [segue destinationViewController];
         
-        workerVC.navTitle = @"CEU Requirements";
-        
+
         switch (button.tag) {
             case JTWorkerTypeApplicator:
-                workerVC.workerType = JTWorkerTypeApplicator;
+                topicVC.workerType = JTWorkerTypeApplicator;
                 break;
             case JTWorkerTypeFieldRep:
-                workerVC.workerType = JTWorkerTypeFieldRep;
+                topicVC.workerType = JTWorkerTypeFieldRep;
                 break;
             case JTWorkerTypeOperator:
-                workerVC.workerType = JTWorkerTypeOperator;
+                topicVC.workerType = JTWorkerTypeOperator;
                 break;
                 
             default:
@@ -64,6 +72,5 @@
         }
     }
 }
-
 
 @end

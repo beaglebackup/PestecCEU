@@ -29,9 +29,10 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-
+    
     // Set the title
-    self.title = [NSString stringWithFormat:@"%@ Courses", self.workerType];
+    NSString* workerString = [JTDatabaseManager workerString:self.workerType];
+    self.title = [NSString stringWithFormat:@"%@ Courses", workerString];
     
     // UITableView
     self.tableView.sectionFooterHeight = 0.0;
@@ -48,9 +49,11 @@
 
 #pragma mark - Data
 - (void) loadObjects {
+
     
     // Get the course object
-    [JTDatabaseManager queryForCourses:self.workerType withCallback:^(NSArray *courses, NSError *error) {
+    NSString* workerString = [JTDatabaseManager workerString:self.workerType];
+    [JTDatabaseManager queryForCourses:workerString withCallback:^(NSArray *courses, NSError *error) {
         if (error) {
             NSLog(@"error = %@",error);
             return;
@@ -65,6 +68,7 @@
 
 
 - (void) objectsDidLoad {
+    
     
     [self.tableView reloadData];
     

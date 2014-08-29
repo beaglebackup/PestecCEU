@@ -176,6 +176,27 @@
     
 }
 
++ (NSString*)workerString:(JTWorkerTypeIndex)workerType {
+    
+    
+    switch (workerType) {
+        case JTWorkerTypeApplicator:
+            return @"Applicator";
+            break;
+        case JTWorkerTypeFieldRep:
+            return @"Field Rep";
+            break;
+        case JTWorkerTypeOperator:
+            return @"Operator";
+            break;
+            
+        default:
+            return nil;
+            break;
+    }
+    
+}
+
 
 #pragma mark - Background Tasks
 - (void) beginBackgroundUpdateTask

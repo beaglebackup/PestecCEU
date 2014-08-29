@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "UserCourse.h"
-
+#import "JTCEUConstants.h"
 
 @interface JTDatabaseManager : NSObject
 
@@ -32,7 +32,7 @@
 
 #pragma mark - Utility
 + (BOOL)user:(User*)user hasCourse:(Course*)course;
-
++ (NSString*)workerString:(JTWorkerTypeIndex)workerType;
 
 #pragma mark - Admin
 + (void)copyClass:(NSString*)originalClass toClass:(NSString*)newClass;

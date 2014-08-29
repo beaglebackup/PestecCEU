@@ -281,10 +281,10 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="4PA-iY-gcx" kind="push" id="Wns-oF-8qK"/>
+                                    <segue destination="4PA-iY-gcx" kind="push" identifier="licenseToWorker" id="Wns-oF-8qK"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s5P-sb-uxC">
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s5P-sb-uxC">
                                 <rect key="frame" x="73" y="266" width="175" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
@@ -292,10 +292,10 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="btx-6H-swg" kind="push" id="E0Z-Js-DpN"/>
+                                    <segue destination="btx-6H-swg" kind="push" identifier="licenseToWorker" id="E0Z-Js-DpN"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6jb-TR-uAd">
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6jb-TR-uAd">
                                 <rect key="frame" x="73" y="345" width="175" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
@@ -303,7 +303,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="oKT-4I-aL4" kind="push" id="Lxa-7e-TbS"/>
+                                    <segue destination="oKT-4I-aL4" kind="push" identifier="licenseToWorker" id="Lxa-7e-TbS"/>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="License Type:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jDe-Wx-1X5">
@@ -328,7 +328,7 @@
             </objects>
             <point key="canvasLocation" x="940" y="139"/>
         </scene>
-        <!--Applicator View Controller - APPLICATOR CEU Requirements-->
+        <!--Applicator View Controller-->
         <scene sceneID="v4t-C6-4Fs">
             <objects>
                 <viewController id="4PA-iY-gcx" customClass="ApplicatorViewController" sceneMemberID="viewController">
@@ -340,8 +340,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="APPLICATOR CEU Requirements" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GjS-cE-44q">
-                                <rect key="frame" x="19" y="83" width="294" height="24"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Applicator" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GjS-cE-44q">
+                                <rect key="frame" x="115" y="88" width="90" height="24"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -390,7 +390,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="DfO-6n-jPU" kind="push" id="SOe-jq-PRj"/>
+                                    <segue destination="DfO-6n-jPU" kind="push" identifier="workerToTopics" id="SOe-jq-PRj"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7v5-Fh-9mD">
@@ -408,21 +408,21 @@
                         </subviews>
                         <color key="backgroundColor" red="0.42082377300000001" green="0.72347119950000005" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" title="APPLICATOR CEU Requirements" id="31N-3m-5Nm"/>
+                    <navigationItem key="navigationItem" id="31N-3m-5Nm"/>
                     <connections>
                         <outlet property="applicatorCoursesAvailableButton" destination="lcQ-fl-1Rf" id="H52-1k-PWa"/>
                         <outlet property="applicatorCoursesCompletedButton" destination="7v5-Fh-9mD" id="mwy-yk-gq4"/>
                         <outlet property="applicatorIPMLabel" destination="dqw-II-J0t" id="X0s-SD-lfS"/>
                         <outlet property="applicatorPesticideLabel" destination="Mzs-Us-UTj" id="fqw-gg-KIY"/>
                         <outlet property="applicatorProofTextView" destination="FWt-Qs-vrr" id="lT8-9g-Q6g"/>
-                        <outlet property="applicatorRequirementsLabel" destination="GjS-cE-44q" id="Naj-nf-cQv"/>
+                        <outlet property="applicatorRequirementsLabel" destination="GjS-cE-44q" id="iw5-Zm-cas"/>
                         <outlet property="applicatorRequirementsTextView" destination="8Kg-Ka-etu" id="4hw-Fw-Olt"/>
-                        <outlet property="applicatorRulesLabel" destination="dnj-P5-hQo" id="Cn9-F2-zbr"/>
+                        <outlet property="applicatorRulesLabel" destination="Mzs-Us-UTj" id="Ygy-qx-M2L"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mav-ND-jGt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1340" y="139"/>
+            <point key="canvasLocation" x="1365" y="240"/>
         </scene>
         <!--Applicator Courses View Controller-->
         <scene sceneID="grd-BU-DCV">
@@ -497,7 +497,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4og-SC-ubp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1814" y="117"/>
+            <point key="canvasLocation" x="1902" y="221"/>
         </scene>
         <!--Course View Controller-->
         <scene sceneID="P9h-qv-Jb2">
@@ -597,7 +597,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IYc-Yj-M5F" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2276" y="117"/>
+            <point key="canvasLocation" x="2364" y="221"/>
         </scene>
         <!--Field Rep View Controller-->
         <scene sceneID="oGR-ap-q4o">
@@ -611,8 +611,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="FIELD REP CEU Requirements" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H5l-NV-msZ">
-                                <rect key="frame" x="24" y="75" width="272" height="24"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Field Rep" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H5l-NV-msZ">
+                                <rect key="frame" x="115" y="75" width="91" height="24"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -757,7 +757,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VZv-kz-i9K" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1658" y="795"/>
+            <point key="canvasLocation" x="1790" y="845"/>
         </scene>
         <!--Quiz View Controller-->
         <scene sceneID="o1T-DT-Oo2">
@@ -785,7 +785,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VnQ-Y7-nMg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2710" y="117"/>
+            <point key="canvasLocation" x="2798" y="221"/>
         </scene>
         <!--Field Rep Courses View Controller-->
         <scene sceneID="B4h-dS-X19">
@@ -961,8 +961,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="OPERATOR CEU Requirements" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RA0-wK-xP7">
-                                <rect key="frame" x="24" y="80" width="278" height="24"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Operator" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RA0-wK-xP7">
+                                <rect key="frame" x="116" y="80" width="89" height="24"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>

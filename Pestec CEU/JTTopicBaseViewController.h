@@ -12,7 +12,7 @@
 
 @interface JTTopicBaseViewController : UIViewController <JTTopicButtonDelegate>
 
-@property (nonatomic, strong) NSString* workerType;
+@property (assign) JTWorkerTypeIndex workerType;
 
 @property (strong, nonatomic) IBOutlet UITableView *tableView;
 

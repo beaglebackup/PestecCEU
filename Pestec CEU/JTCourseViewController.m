@@ -41,7 +41,7 @@
 {
     [super viewDidLoad];
     
-    NSLog(@"self.workerType = %@",self.workerType);
+    NSLog(@"self.workerType = %u",self.workerType);
     NSLog(@"self.tag = %@",self.tag);
 
     
@@ -107,7 +107,8 @@
 - (void) loadObjects {
     
     // Get the course object
-    [JTDatabaseManager queryForCourse:self.tag workerType:self.workerType withCallback:^(Course *course, NSError *error) {
+    NSString* workerString = [JTDatabaseManager workerString:self.workerType];
+    [JTDatabaseManager queryForCourse:self.tag workerType:workerString withCallback:^(Course *course, NSError *error) {
         if (error) {
             NSLog(@"error = %@",error);
             return;

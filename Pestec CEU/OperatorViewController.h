@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "JTWorkerBaseViewController.h"
 
-@interface OperatorViewController : UIViewController
+@interface OperatorViewController : JTWorkerBaseViewController
 
 //labels
 @property (strong, nonatomic) IBOutlet UILabel *operatorRequirementsLabel;

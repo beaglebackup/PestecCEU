@@ -27,8 +27,6 @@
 {
     [super viewDidLoad];
 
-    self.workerType = @"operator";
-
 }
 
 - (void)didReceiveMemoryWarning

@@ -8,7 +8,7 @@
 
 
 
-typedef enum {
+typedef enum JTCourseStatusIndex : NSUInteger {
     JTCourseStatusNotStarted = 0,
 	JTCourseStatusStarted,
     JTCourseStatusRead,
@@ -16,11 +16,13 @@ typedef enum {
 } JTCourseStatusIndex;
 
 
-typedef enum {
+typedef enum JTWorkerTypeIndex : NSUInteger {
     JTWorkerTypeApplicator = 0,
     JTWorkerTypeFieldRep,
     JTWorkerTypeOperator
 } JTWorkerTypeIndex;
+
+
 
 
 #pragma mark - tableView constaints
@@ -75,3 +77,12 @@ typedef enum {
 #pragma mark - other
 
 #define courseLength 10
+
+
+#pragma mark - Strings
+
+#define workerReqsListApplicatorRules @"4 HRS Rules & Regs";
+
+#define workerReqsListApplicator @"4 HRS Rules & Regs\n 6 HRS Pesticde Use & App\n "
+
+

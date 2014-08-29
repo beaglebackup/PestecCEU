@@ -292,10 +292,10 @@
             </objects>
             <point key="canvasLocation" x="800" y="-1049"/>
         </scene>
-        <!--Applicator View Controller-->
+        <!--Worker Controller-->
         <scene sceneID="v4t-C6-4Fs">
             <objects>
-                <viewController id="4PA-iY-gcx" customClass="ApplicatorViewController" sceneMemberID="viewController">
+                <viewController id="4PA-iY-gcx" customClass="JTWorkerController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="aNJ-Zt-gmX"/>
                         <viewControllerLayoutGuide type="bottom" id="uLk-in-qb4"/>
@@ -379,9 +379,9 @@
                         <outlet property="applicatorIPMLabel" destination="dqw-II-J0t" id="X0s-SD-lfS"/>
                         <outlet property="applicatorPesticideLabel" destination="Mzs-Us-UTj" id="fqw-gg-KIY"/>
                         <outlet property="applicatorProofTextView" destination="FWt-Qs-vrr" id="lT8-9g-Q6g"/>
-                        <outlet property="applicatorRequirementsLabel" destination="GjS-cE-44q" id="Naj-nf-cQv"/>
                         <outlet property="applicatorRequirementsTextView" destination="8Kg-Ka-etu" id="4hw-Fw-Olt"/>
-                        <outlet property="applicatorRulesLabel" destination="dnj-P5-hQo" id="Cn9-F2-zbr"/>
+                        <outlet property="rulesLabel" destination="dnj-P5-hQo" id="xgo-mK-Flu"/>
+                        <outlet property="workerTypeLabel" destination="GjS-cE-44q" id="K9z-Pb-ghM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mav-ND-jGt" userLabel="First Responder" sceneMemberID="firstResponder"/>

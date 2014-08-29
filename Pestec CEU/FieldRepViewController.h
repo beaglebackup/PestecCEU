@@ -7,8 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "JTWorkerBaseViewController.h"
 
-@interface FieldRepViewController : UIViewController
+
+@interface FieldRepViewController : JTWorkerBaseViewController
 
 //labels
 @property (strong, nonatomic) IBOutlet UILabel *fieldRepRequirementsLabel;

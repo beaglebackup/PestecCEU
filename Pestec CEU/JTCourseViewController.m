@@ -41,6 +41,10 @@
 {
     [super viewDidLoad];
     
+    NSLog(@"self.workerType = %@",self.workerType);
+    NSLog(@"self.tag = %@",self.tag);
+
+    
     // Loading HUD
     [self.view bringSubviewToFront:self.loadingView];
     self.loadingView.hidden = NO;

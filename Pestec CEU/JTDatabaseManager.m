@@ -32,14 +32,32 @@
 }
 
 #pragma mark - Reads
++ (void)queryForCourses:(NSString*)workerType withCallback:(void(^)(NSArray* courses, NSError *error))callback {
+
+    PFQuery* coursesQuery = [PFQuery queryWithClassName:[Course parseClassName]];
+    [coursesQuery whereKey:[Course workerTypeKey] equalTo:workerType];
+    
+    [coursesQuery orderByAscending:[Course tagKey]];
+    
+    [coursesQuery findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+        callback(objects, error);
+    }];
+}
+
+
 + (void)queryForCourse:(NSNumber*)tag workerType:(NSString*)workerType withCallback:(void(^)(Course *course, NSError *error))callback {
+    
+    
+    
     
     PFQuery* courseQuery = [PFQuery queryWithClassName:[Course parseClassName]];
     [courseQuery whereKey:[Course tagKey] equalTo:tag];
     [courseQuery whereKey:[Course workerTypeKey] equalTo:workerType];
     
     [courseQuery getFirstObjectInBackgroundWithBlock:^(PFObject *object, NSError *error) {
+        
         callback((Course*)object, error);
+        
     }];
 }
 

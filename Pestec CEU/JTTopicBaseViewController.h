@@ -14,4 +14,12 @@
 
 @property (nonatomic, strong) NSString* workerType;
 
+@property (strong, nonatomic) IBOutlet UITableView *tableView;
+
+@property (nonatomic, strong) NSArray* objects;
+
+
+- (void) loadObjects;
+
+
 @end

@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Pestec CEU/JTTopicBaseViewController.m"
-            timestampString = "430961376.178812"
+            timestampString = "430980337.152341"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "52"
-            endingLineNumber = "52"
+            startingLineNumber = "87"
+            endingLineNumber = "87"
             landmarkName = "-prepareForSegue:sender:"
             landmarkType = "5">
          </BreakpointContent>
@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Pestec CEU/JTTopicBaseViewController.m"
-            timestampString = "430961437.432258"
+            timestampString = "430980337.152341"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "63"
-            endingLineNumber = "63"
+            startingLineNumber = "98"
+            endingLineNumber = "98"
             landmarkName = "-didTapTopicButton:"
             landmarkType = "5">
          </BreakpointContent>
@@ -42,43 +42,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Pestec CEU/JTCourseViewController.m"
-            timestampString = "430971003.238211"
+            timestampString = "430975898.178851"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "109"
-            endingLineNumber = "109"
+            startingLineNumber = "113"
+            endingLineNumber = "113"
             landmarkName = "-loadObjects"
             landmarkType = "5">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "-[JTCourseViewController loadObjects]"
-                  moduleName = "PestecCEU"
-                  urlString = "file://localhost/Users/admin/Dropbox/Apps/CEU/Pestec%20CEU/JTCourseViewController.m"
-                  timestampString = "430981051.480002"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "110"
-                  endingLineNumber = "110"
-                  offsetFromSymbolStart = "46">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "__37-[JTCourseViewController loadObjects]_block_invoke"
-                  moduleName = "PestecCEU"
-                  urlString = "file://localhost/Users/admin/Dropbox/Apps/CEU/Pestec%20CEU/JTCourseViewController.m"
-                  timestampString = "430981051.480359"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "110"
-                  endingLineNumber = "110"
-                  offsetFromSymbolStart = "54">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -88,43 +58,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Pestec CEU/JTCourseViewController.m"
-            timestampString = "430971003.238211"
+            timestampString = "430975898.178851"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "122"
-            endingLineNumber = "122"
+            startingLineNumber = "126"
+            endingLineNumber = "126"
             landmarkName = "-loadObjects"
             landmarkType = "5">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "__37-[JTCourseViewController loadObjects]_block_invoke"
-                  moduleName = "PestecCEU"
-                  urlString = "file://localhost/Users/admin/Dropbox/Apps/CEU/Pestec%20CEU/JTCourseViewController.m"
-                  timestampString = "430981051.677478"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "122"
-                  endingLineNumber = "122"
-                  offsetFromSymbolStart = "374">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "__37-[JTCourseViewController loadObjects]_block_invoke_2"
-                  moduleName = "PestecCEU"
-                  urlString = "file://localhost/Users/admin/Dropbox/Apps/CEU/Pestec%20CEU/JTCourseViewController.m"
-                  timestampString = "430981051.678022"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "122"
-                  endingLineNumber = "122"
-                  offsetFromSymbolStart = "54">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -134,43 +74,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Pestec CEU/JTCourseViewController.m"
-            timestampString = "430971003.238211"
+            timestampString = "430975898.178851"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "136"
-            endingLineNumber = "136"
+            startingLineNumber = "140"
+            endingLineNumber = "140"
             landmarkName = "-loadObjects"
             landmarkType = "5">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "__37-[JTCourseViewController loadObjects]_block_invoke"
-                  moduleName = "PestecCEU"
-                  urlString = "file://localhost/Users/admin/Dropbox/Apps/CEU/Pestec%20CEU/JTCourseViewController.m"
-                  timestampString = "430981051.799893"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "137"
-                  endingLineNumber = "137"
-                  offsetFromSymbolStart = "666">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "__37-[JTCourseViewController loadObjects]_block_invoke73"
-                  moduleName = "PestecCEU"
-                  urlString = "file://localhost/Users/admin/Dropbox/Apps/CEU/Pestec%20CEU/JTCourseViewController.m"
-                  timestampString = "430981051.800224"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "137"
-                  endingLineNumber = "137"
-                  offsetFromSymbolStart = "54">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -196,12 +106,44 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Pestec CEU/JTCourseViewController.m"
-            timestampString = "430971003.238211"
+            timestampString = "430975898.178851"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "250"
-            endingLineNumber = "250"
+            startingLineNumber = "254"
+            endingLineNumber = "254"
             landmarkName = "-didTapQuizButton:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Pestec CEU/JTCourseViewController.m"
+            timestampString = "430975898.178851"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "47"
+            endingLineNumber = "47"
+            landmarkName = "-viewDidLoad"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Pestec CEU/JTApplicatorCoursesViewController.m"
+            timestampString = "430975854.55445"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "185"
+            endingLineNumber = "185"
+            landmarkName = "-didTapTopicButton:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

@@ -6,14 +6,14 @@
 //  Copyright (c) 2014 Gabriel. All rights reserved.
 //
 
-#import "LicenseTypeViewController.h"
+#import "JTLicenseMenuController.h"
 #import "JTWorkerBaseViewController.h"
 
-@interface LicenseTypeViewController ()
+@interface JTLicenseMenuController ()
 
 @end
 
-@implementation LicenseTypeViewController
+@implementation JTLicenseMenuController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -27,7 +27,11 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+
+
+    // Hide back button for this view
+    [self.navigationItem setHidesBackButton:YES animated:YES];
+    [self.navigationItem setBackBarButtonItem:nil];
 }
 
 - (void)didReceiveMemoryWarning

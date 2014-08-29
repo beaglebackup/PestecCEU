@@ -213,10 +213,10 @@
             </objects>
             <point key="canvasLocation" x="808" y="-2394"/>
         </scene>
-        <!--License Type View Controller-->
+        <!--License Menu Controller-->
         <scene sceneID="nu0-nH-cI6">
             <objects>
-                <viewController id="KAT-vh-x1t" customClass="LicenseTypeViewController" sceneMemberID="viewController">
+                <viewController id="KAT-vh-x1t" customClass="JTLicenseMenuController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="K0f-1Y-myA"/>
                         <viewControllerLayoutGuide type="bottom" id="DN5-yU-26Q"/>

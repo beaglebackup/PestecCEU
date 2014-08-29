@@ -34,89 +34,12 @@
                     </view>
                     <navigationItem key="navigationItem" id="1od-Cf-FJ1"/>
                     <connections>
-                        <segue destination="vXZ-lx-hvc" kind="push" identifier="welcomeToMain" id="RhG-MN-MZK"/>
+                        <segue destination="KAT-vh-x1t" kind="push" identifier="welcomeToMain" id="V1M-Zb-mv8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8rj-hB-VmY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-28" y="131"/>
-        </scene>
-        <!--View Controller - Continuing Education-->
-        <scene sceneID="ufC-wZ-h7g">
-            <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
-                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Pestec" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eOx-mV-FVy">
-                                <rect key="frame" x="43" y="99" width="124" height="29"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="User" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6rx-d0-D8e">
-                                <rect key="frame" x="43" y="306" width="36" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Password" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yXV-P3-260">
-                                <rect key="frame" x="43" y="372" width="76" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LzN-Le-2ZJ">
-                                <rect key="frame" x="172" y="438" width="74" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <state key="normal" title="Enter">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="KAT-vh-x1t" kind="push" id="DZo-1S-zev"/>
-                                </connections>
-                            </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="HpJ-w7-bzE">
-                                <rect key="frame" x="43" y="336" width="247" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="Fz9-Gm-cEq">
-                                <rect key="frame" x="43" y="396" width="247" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
-                            </textField>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ladybug.png" translatesAutoresizingMaskIntoConstraints="NO" id="GlU-hM-7rj">
-                                <rect key="frame" x="50" y="136" width="210" height="151"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                        </subviews>
-                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="Continuing Education" id="TZj-Km-JDh"/>
-                    <connections>
-                        <outlet property="enterButton" destination="LzN-Le-2ZJ" id="NwJ-Jb-s4g"/>
-                        <outlet property="logoImage" destination="GlU-hM-7rj" id="OS3-MW-poV"/>
-                        <outlet property="passwordLabel" destination="yXV-P3-260" id="bCh-Pp-BGq"/>
-                        <outlet property="passwordTextField" destination="Fz9-Gm-cEq" id="mOp-cj-cE6"/>
-                        <outlet property="pestecLogoLabel" destination="eOx-mV-FVy" id="Xi4-zo-6VJ"/>
-                        <outlet property="userLabel" destination="6rx-d0-D8e" id="x4o-9V-pd6"/>
-                        <outlet property="userTextField" destination="HpJ-w7-bzE" id="CJe-yr-M4g"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="421" y="159"/>
+            <point key="canvasLocation" x="311" y="104"/>
         </scene>
         <!--Profile View Controller - User Profile-->
         <scene sceneID="0qU-4L-pCl">
@@ -241,10 +164,10 @@
             </objects>
             <point key="canvasLocation" x="896" y="-678"/>
         </scene>
-        <!--License Type View Controller - Pestec CEU-->
+        <!--License Menu Controller - Pestec CEU-->
         <scene sceneID="nu0-nH-cI6">
             <objects>
-                <viewController id="KAT-vh-x1t" customClass="LicenseTypeViewController" sceneMemberID="viewController">
+                <viewController id="KAT-vh-x1t" customClass="JTLicenseMenuController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="K0f-1Y-myA"/>
                         <viewControllerLayoutGuide type="bottom" id="DN5-yU-26Q"/>
@@ -868,16 +791,13 @@
             <point key="canvasLocation" x="1394" y="1667"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="ladybug.png" width="80" height="81"/>
-    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="DZo-1S-zev"/>
+        <segue reference="V1M-Zb-mv8"/>
         <segue reference="koD-58-mPc"/>
         <segue reference="cEW-RZ-SD3"/>
     </inferredMetricsTieBreakers>

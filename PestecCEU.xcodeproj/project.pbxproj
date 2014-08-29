@@ -63,7 +63,7 @@
 		EF29838D196A574F000A6BE0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF29836F196A574F000A6BE0 /* UIKit.framework */; };
 		EF298395196A574F000A6BE0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EF298393196A574F000A6BE0 /* InfoPlist.strings */; };
 		EF298397196A574F000A6BE0 /* Pestec_CEUTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EF298396196A574F000A6BE0 /* Pestec_CEUTests.m */; };
-		EF2983A2196A5A66000A6BE0 /* LicenseTypeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF2983A1196A5A66000A6BE0 /* LicenseTypeViewController.m */; };
+		EF2983A2196A5A66000A6BE0 /* JTLicenseMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF2983A1196A5A66000A6BE0 /* JTLicenseMenuController.m */; };
 		EF2983A5196A5B43000A6BE0 /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF2983A4196A5B43000A6BE0 /* ProfileViewController.m */; };
 		EF2983A8196A6015000A6BE0 /* ApplicatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF2983A7196A6015000A6BE0 /* ApplicatorViewController.m */; };
 		EF5B574F196BA39B00883F6A /* MainStoryboard_ipad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF5B574D196BA39B00883F6A /* MainStoryboard_ipad.storyboard */; };
@@ -176,8 +176,8 @@
 		EF298392196A574F000A6BE0 /* PestecCEUTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PestecCEUTests-Info.plist"; sourceTree = "<group>"; };
 		EF298394196A574F000A6BE0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		EF298396196A574F000A6BE0 /* Pestec_CEUTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Pestec_CEUTests.m; sourceTree = "<group>"; };
-		EF2983A0196A5A66000A6BE0 /* LicenseTypeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LicenseTypeViewController.h; sourceTree = "<group>"; };
-		EF2983A1196A5A66000A6BE0 /* LicenseTypeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LicenseTypeViewController.m; sourceTree = "<group>"; };
+		EF2983A0196A5A66000A6BE0 /* JTLicenseMenuController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTLicenseMenuController.h; sourceTree = "<group>"; };
+		EF2983A1196A5A66000A6BE0 /* JTLicenseMenuController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTLicenseMenuController.m; sourceTree = "<group>"; };
 		EF2983A3196A5B43000A6BE0 /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
 		EF2983A4196A5B43000A6BE0 /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
 		EF2983A6196A6015000A6BE0 /* ApplicatorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApplicatorViewController.h; sourceTree = "<group>"; };
@@ -247,8 +247,8 @@
 				841A323C19AE954F000BCFD9 /* Login */,
 				EF298380196A574F000A6BE0 /* ViewController.h */,
 				EF298381196A574F000A6BE0 /* ViewController.m */,
-				EF2983A0196A5A66000A6BE0 /* LicenseTypeViewController.h */,
-				EF2983A1196A5A66000A6BE0 /* LicenseTypeViewController.m */,
+				EF2983A0196A5A66000A6BE0 /* JTLicenseMenuController.h */,
+				EF2983A1196A5A66000A6BE0 /* JTLicenseMenuController.m */,
 				EF2983A3196A5B43000A6BE0 /* ProfileViewController.h */,
 				EF2983A4196A5B43000A6BE0 /* ProfileViewController.m */,
 			);
@@ -632,7 +632,7 @@
 				8434C55019B017AD00245F05 /* JTQuizViewController.m in Sources */,
 				8434C54419AFD1EF00245F05 /* JGProgressHUDPieIndicatorView.m in Sources */,
 				8434C54519AFD1EF00245F05 /* JGProgressHUDRingIndicatorView.m in Sources */,
-				EF2983A2196A5A66000A6BE0 /* LicenseTypeViewController.m in Sources */,
+				EF2983A2196A5A66000A6BE0 /* JTLicenseMenuController.m in Sources */,
 				841A324519AE9559000BCFD9 /* JTSignUpViewController.m in Sources */,
 				8434C51B19AFB50F00245F05 /* NSNumber+NSTimeInterval.m in Sources */,
 				8434C54119AFD1EF00245F05 /* JGProgressHUDFadeZoomAnimation.m in Sources */,

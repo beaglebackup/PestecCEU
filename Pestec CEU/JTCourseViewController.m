@@ -10,13 +10,17 @@
 #import "MZTimerLabel.h"
 #import "User.h"
 #import "UserCourse.h"
-#import "NSNumber+NSTimeInterval.h"
 #import "JGProgressHUD.h"
+#import "JTCourseManager.h"
+#import "NSNumber+NSTimeInterval.h"
+#import "JTQuizViewController.h"
+
+//#define courseLength 3600
+
+
+
 
 @interface JTCourseViewController ()
-
-@property (nonatomic, strong) User* user;
-@property (nonatomic, strong) UserCourse* userCourse;
 
 @property (nonatomic, strong) JGProgressHUD* progressHUD;
 
@@ -37,20 +41,7 @@
 {
     [super viewDidLoad];
     
-    
-    self.user = (User*)[PFUser currentUser];
-    
-    
-    [self loadObjects];
-
-    // Do any additional setup after loading the view.
-}
-
-
-- (void) viewWillAppear:(BOOL)animated {
-    
-    [super viewWillAppear:animated];
-    
+    // Loading HUD
     [self.view bringSubviewToFront:self.loadingView];
     self.loadingView.hidden = NO;
     self.progressHUD = [JGProgressHUD progressHUDWithStyle:JGProgressHUDStyleLight];
@@ -58,24 +49,48 @@
     [self.progressHUD showInView:self.view];
 
     
+    // Setup JTCourseManager
+    [[JTCourseManager shared] setCourseTimer:self.courseTimer];
+    self.courseTimer.delegate = self;
+    
+    
+    // Other view stuff
+    [self setQuizButtonState];
+
+    
+    // Register for Notifications
+    [self registerForNotifications];
+    
+    
+    // Load Data
+    [self loadObjects];
+}
+
+
+- (void) viewWillAppear:(BOOL)animated {
+    
+    [super viewWillAppear:animated];
+    
+   
+    
 }
 - (void)viewWillDisappear:(BOOL)animated {
     
     [super viewWillDisappear:animated];
     
-    NSNumber* timePassed = [NSNumber numberWithNSTimeInterval:[self.courseTimer getTimeCounted]];
+    [[JTCourseManager shared] pauseTimerAndUpdate];
     
-    NSLog(@"timePassed = %@",timePassed);
-    
-    [JTDatabaseManager updateUserCourse:self.userCourse withTime:timePassed withCallback:^(BOOL succeeded, NSError *error) {
-        
-        if (error) {
-            NSLog(@"error = %@",error);
-            return;
-        }
-    }];
+//    NSNumber* timePassed = [NSNumber numberWithNSTimeInterval:[[[JTCourseManager shared] courseTimer] getTimeCounted]];
+//    [JTDatabaseManager updateUserCourse:[[JTCourseManager shared] userCourse] withTime:timePassed withCallback:^(BOOL succeeded, NSError *error) {
+//        
+//        if (error) {
+//            NSLog(@"error = %@",error);
+//            return;
+//        }
+//    }];
     
 }
+
 
 - (void)didReceiveMemoryWarning
 {
@@ -83,6 +98,8 @@
     // Dispose of any resources that can be recreated.
 }
 
+
+#pragma mark - Data
 - (void) loadObjects {
     
     // Get the course object
@@ -95,17 +112,17 @@
         self.course = course;
         
         // Does the user have the course
-        if ([JTDatabaseManager user:self.user hasCourse:self.course]) {
+        if ([JTDatabaseManager user:(User*)[PFUser currentUser] hasCourse:self.course]) {
             
             // Get the UserCourse object
-            [JTDatabaseManager queryForUserCourse:self.course user:self.user withCallback:^(UserCourse *course, NSError *error) {
+            [JTDatabaseManager queryForUserCourse:self.course user:(User*)[PFUser currentUser] withCallback:^(UserCourse *course, NSError *error) {
                 if (error) {
                     
                     NSLog(@"error = %@",error);
                     return;
                 }
                 
-                self.userCourse = course;
+                [[JTCourseManager shared] setUserCourse:course];
                 
                 [self objectsDidLoad];
             }];
@@ -113,13 +130,13 @@
         
         // ELSE create a new UserCourse
         else {
-            [JTDatabaseManager createUserCourse:self.course user:self.user withCallback:^(UserCourse *course, NSError *error) {
+            [JTDatabaseManager createUserCourse:self.course user:(User*)[PFUser currentUser] withCallback:^(UserCourse *course, NSError *error) {
                 if (error) {
                     NSLog(@"error = %@",error);
                     return;
                 }
                 
-                self.userCourse = course;
+                [[JTCourseManager shared] setNewUserCourse:course];
                 
                 [self objectsDidLoad];
             }];
@@ -132,15 +149,37 @@
     [self.progressHUD dismissAnimated:YES];
     self.loadingView.hidden = YES;
     
-    NSTimeInterval timeInterval = [self.userCourse.timePassed NSTimeIntervalValue];
     
-    NSLog(@"timeInterval = %f",timeInterval);
+    [[JTCourseManager shared] setupTimer];
+
+//    NSTimeInterval timeInterval = [[JTCourseManager shared].userCourse.timePassed NSTimeIntervalValue];
+//    
+//    NSLog(@"timeInterval = %f",timeInterval);
+//    
+//    [[JTCourseManager shared].courseTimer setStopWatchTime:timeInterval];
+//    [[JTCourseManager shared].courseTimer start];
     
-    [self.courseTimer setStopWatchTime:timeInterval];
     
-    [self.courseTimer start];
+}
+
+#pragma mark - NSNotifications
+- (void) registerForNotifications {
     
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(applicationDidEnterBackground) name:UIApplicationDidEnterBackgroundNotification object:nil];
+
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(applicationDidBecomeActive) name:UIApplicationDidBecomeActiveNotification object:nil];
+}
+
+- (void) applicationDidEnterBackground {
     
+    [[JTCourseManager shared] pauseTimerAndUpdate];
+
+}
+
+- (void) applicationDidBecomeActive {
+    
+    [[JTCourseManager shared] startTimer];
+
 }
 
 /*
@@ -153,5 +192,78 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+#pragma mark - MZTimerLabel Delegate
+-(void)timerLabel:(MZTimerLabel*)timerLabel countingTo:(NSTimeInterval)time timertype:(MZTimerLabelType)timerType {
+    
+    if (time >= courseLength) {
+        
+        NSInteger courseStatus = [[[[JTCourseManager shared] userCourse] status] integerValue];
+
+        if (courseStatus < JTCourseStatusRead) {
+            
+            // Show alert if userCourse.status is not yet read
+            UIAlertView* alertView = [[UIAlertView alloc] initWithTitle:@"Congratulations!" message:@"You can now take the quiz." delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+            [alertView show];
+            
+            
+            // Stop the timer and set the course status as read
+            [[JTCourseManager shared] stopTimerAndSetComplete];
+        }
+
+        
+        // Set quiz button state
+        [self setQuizButtonState];
+        
+       
+    }
+    
+}
+
+
+//courseToQuiz
+
+#pragma mark - Navigation
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    UIButton* button = (UIButton*)sender;
+    
+    if ([[segue identifier] isEqualToString:@"courseToQuiz"])
+    {
+        JTQuizViewController *quizVC = [segue destinationViewController];
+    }
+}
+
+
+#pragma mark - ()
+
+
+#pragma mark - Buttons
+- (IBAction)didTapSaveButton:(id)sender {
+    
+    
+}
+
+- (IBAction)didTapQuizButton:(id)sender {
+    
+    if ([[JTCourseManager shared] isCourseRead]) {
+        [self performSegueWithIdentifier:@"courseToQuiz" sender:sender];
+    }
+    else {
+        UIAlertView* alertView = [[UIAlertView alloc] initWithTitle:@"Keep Studying!" message:@"You can only take the quiz after 60 minutes of study." delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+        [alertView show];
+    }
+}
+
+- (void) setQuizButtonState {
+    
+    // Set color based on the course status
+    if ([[JTCourseManager shared] isCourseRead]) {
+        [self.quizButton setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
+    }
+    else {
+        [self.quizButton setTitleColor:[UIColor darkGrayColor] forState:UIControlStateNormal];
+    }
+}
 
 @end

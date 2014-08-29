@@ -604,11 +604,11 @@
                     </view>
                     <navigationItem key="navigationItem" id="TxN-kN-4jT"/>
                     <connections>
-                        <outlet property="applicatorsTopic1QuizButton" destination="aED-5m-4cb" id="wQA-7K-QAa"/>
-                        <outlet property="applicatorsTopic1SaveExitButton" destination="O4E-Q8-oUA" id="SMm-mu-11P"/>
-                        <outlet property="applicatorsTopic1TextView" destination="heZ-1n-WPN" id="KDp-LX-D1r"/>
                         <outlet property="categoryLabel" destination="OT4-p7-ITW" id="vpO-Ap-vow"/>
                         <outlet property="courseTimer" destination="5hI-R6-DE6" id="Ip5-3E-qfF"/>
+                        <outlet property="quizButton" destination="aED-5m-4cb" id="eif-7d-zQD"/>
+                        <outlet property="saveButton" destination="O4E-Q8-oUA" id="fiM-N5-ili"/>
+                        <outlet property="textView" destination="heZ-1n-WPN" id="b7W-Ui-l47"/>
                         <outlet property="workerLabel" destination="49a-BS-kcj" id="F7x-WS-Wij"/>
                     </connections>
                 </viewController>

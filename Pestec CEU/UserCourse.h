@@ -16,8 +16,18 @@
 @property (retain) Course *course;
 @property (retain) NSNumber *timePassed;
 
+/**
+ What stage the user is at in the course
+ '1' -- Reading
+ '2' -- Completed reading, taking quiz
+ '3' -- Completed quiz
+ @see JTCourseStatusIndex
+ */
+@property (retain) NSNumber *status;
+
 + (NSString *)parseClassName;
 + (NSString *)userKey;
 + (NSString *)courseKey;
++ (NSString *)statusKey;
 
 @end

@@ -13,6 +13,7 @@
 @dynamic user;
 @dynamic course;
 @dynamic timePassed;
+@dynamic status;
 
 + (NSString *)parseClassName {
     return @"UserCourse";
@@ -24,6 +25,10 @@
 
 + (NSString *)courseKey {
     return @"course";
+}
+
++ (NSString *)statusKey {
+    return @"status";
 }
 
 

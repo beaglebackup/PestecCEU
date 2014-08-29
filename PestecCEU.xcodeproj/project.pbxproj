@@ -73,9 +73,7 @@
 		EF5D1137196A6BC300539B3E /* FieldRepCoursesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5D1136196A6BC300539B3E /* FieldRepCoursesViewController.m */; };
 		EF5D113A196A6BD600539B3E /* OperatorCoursesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5D1139196A6BD600539B3E /* OperatorCoursesViewController.m */; };
 		EF5D113D196A73EC00539B3E /* JTCourseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5D113C196A73EC00539B3E /* JTCourseViewController.m */; };
-		EF5D1146196A775C00539B3E /* ApplicatorsCoursesCompletedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5D1145196A775C00539B3E /* ApplicatorsCoursesCompletedViewController.m */; };
-		EF5D1149196A777C00539B3E /* FieldRepCoursesCompletedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5D1148196A777C00539B3E /* FieldRepCoursesCompletedViewController.m */; };
-		EF5D114C196A779500539B3E /* OperatorCoursesCompletedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5D114B196A779500539B3E /* OperatorCoursesCompletedViewController.m */; };
+		EF5D1146196A775C00539B3E /* JTCompletedCoursesController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5D1145196A775C00539B3E /* JTCompletedCoursesController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -197,12 +195,8 @@
 		EF5D1139196A6BD600539B3E /* OperatorCoursesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OperatorCoursesViewController.m; sourceTree = "<group>"; };
 		EF5D113B196A73EC00539B3E /* JTCourseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTCourseViewController.h; sourceTree = "<group>"; };
 		EF5D113C196A73EC00539B3E /* JTCourseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTCourseViewController.m; sourceTree = "<group>"; };
-		EF5D1144196A775C00539B3E /* ApplicatorsCoursesCompletedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApplicatorsCoursesCompletedViewController.h; sourceTree = "<group>"; };
-		EF5D1145196A775C00539B3E /* ApplicatorsCoursesCompletedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApplicatorsCoursesCompletedViewController.m; sourceTree = "<group>"; };
-		EF5D1147196A777C00539B3E /* FieldRepCoursesCompletedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FieldRepCoursesCompletedViewController.h; sourceTree = "<group>"; };
-		EF5D1148196A777C00539B3E /* FieldRepCoursesCompletedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FieldRepCoursesCompletedViewController.m; sourceTree = "<group>"; };
-		EF5D114A196A779500539B3E /* OperatorCoursesCompletedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OperatorCoursesCompletedViewController.h; sourceTree = "<group>"; };
-		EF5D114B196A779500539B3E /* OperatorCoursesCompletedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OperatorCoursesCompletedViewController.m; sourceTree = "<group>"; };
+		EF5D1144196A775C00539B3E /* JTCompletedCoursesController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTCompletedCoursesController.h; sourceTree = "<group>"; };
+		EF5D1145196A775C00539B3E /* JTCompletedCoursesController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTCompletedCoursesController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -346,12 +340,8 @@
 		841A325319AEB594000BCFD9 /* Completed */ = {
 			isa = PBXGroup;
 			children = (
-				EF5D1144196A775C00539B3E /* ApplicatorsCoursesCompletedViewController.h */,
-				EF5D1145196A775C00539B3E /* ApplicatorsCoursesCompletedViewController.m */,
-				EF5D1147196A777C00539B3E /* FieldRepCoursesCompletedViewController.h */,
-				EF5D114B196A779500539B3E /* OperatorCoursesCompletedViewController.m */,
-				EF5D1148196A777C00539B3E /* FieldRepCoursesCompletedViewController.m */,
-				EF5D114A196A779500539B3E /* OperatorCoursesCompletedViewController.h */,
+				EF5D1144196A775C00539B3E /* JTCompletedCoursesController.h */,
+				EF5D1145196A775C00539B3E /* JTCompletedCoursesController.m */,
 			);
 			name = Completed;
 			sourceTree = "<group>";
@@ -627,7 +617,7 @@
 				8434C52519AFB8F700245F05 /* PFObject+Copy.m in Sources */,
 				8434C54619AFD1EF00245F05 /* JGProgressHUDSuccessIndicatorView.m in Sources */,
 				EF298382196A574F000A6BE0 /* ViewController.m in Sources */,
-				EF5D1146196A775C00539B3E /* ApplicatorsCoursesCompletedViewController.m in Sources */,
+				EF5D1146196A775C00539B3E /* JTCompletedCoursesController.m in Sources */,
 				EF5D112E196A664C00539B3E /* FieldRepViewController.m in Sources */,
 				841A325619AEB5B5000BCFD9 /* JTTopicButton.m in Sources */,
 				841A324419AE9559000BCFD9 /* JTLogInViewController.m in Sources */,
@@ -653,13 +643,11 @@
 				EF298378196A574F000A6BE0 /* main.m in Sources */,
 				8434C54319AFD1EF00245F05 /* JGProgressHUDIndicatorView.m in Sources */,
 				841A324C19AEA406000BCFD9 /* UIImage+Extensions.m in Sources */,
-				EF5D114C196A779500539B3E /* OperatorCoursesCompletedViewController.m in Sources */,
 				EF5D1137196A6BC300539B3E /* FieldRepCoursesViewController.m in Sources */,
 				EF5D1134196A6BAF00539B3E /* JTApplicatorCoursesViewController.m in Sources */,
 				EF5D1131196A669700539B3E /* OperatorViewController.m in Sources */,
 				841A324319AE9559000BCFD9 /* JTWelcomeViewController.m in Sources */,
 				EF5D113A196A6BD600539B3E /* OperatorCoursesViewController.m in Sources */,
-				EF5D1149196A777C00539B3E /* FieldRepCoursesCompletedViewController.m in Sources */,
 				841A323B19AE946A000BCFD9 /* JTDatabaseManager.m in Sources */,
 				8434C53E19AFD1EF00245F05 /* JGProgressHUDAnimation.m in Sources */,
 				8434C55619B046C700245F05 /* JTWorkerBaseViewController.m in Sources */,

@@ -17,7 +17,7 @@
 + (void)queryForCourses:(NSString*)workerType withCallback:(void(^)(NSArray* courses, NSError *error))callback;
 + (void)queryForCourse:(NSNumber*)tag workerType:(NSString*)workerType withCallback:(void(^)(Course *course, NSError *error))callback;
 + (void)queryForUserCourse:(Course*)course user:(User*)user withCallback:(void(^)(UserCourse *course, NSError *error))callback;
-
++ (void)queryForCompletedCourses:(User*)user withCallback:(void(^)(NSArray *completedCourses, NSError *error))callback;
 
 #pragma mark - Creates
 + (void)createUserCourse:(Course*)course user:(User*)user withCallback:(void(^)(UserCourse *course, NSError *error))callback;

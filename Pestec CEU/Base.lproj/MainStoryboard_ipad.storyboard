@@ -950,10 +950,10 @@
             </objects>
             <point key="canvasLocation" x="1650" y="1379"/>
         </scene>
-        <!--Applicators Courses Completed View Controller-->
+        <!--Completed Courses Controller-->
         <scene sceneID="yjZ-e4-hcu">
             <objects>
-                <viewController id="x3M-0y-I1y" customClass="ApplicatorsCoursesCompletedViewController" sceneMemberID="viewController">
+                <viewController id="x3M-0y-I1y" customClass="JTCompletedCoursesController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="AdE-6v-yXE"/>
                         <viewControllerLayoutGuide type="bottom" id="YOS-oL-5kY"/>

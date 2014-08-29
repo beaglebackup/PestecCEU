@@ -73,6 +73,19 @@
     }];
 }
 
++ (void)queryForCompletedCourses:(User*)user withCallback:(void(^)(NSArray *completedCourses, NSError *error))callback {
+
+    PFQuery* completedCourses = [PFQuery queryWithClassName:[UserCourse parseClassName]];
+    [completedCourses whereKey:[UserCourse userKey] equalTo:user];
+    [completedCourses whereKey:[UserCourse statusKey] equalTo:[NSNumber numberWithInt:JTCourseStatusCompleted]];
+    
+    [completedCourses includeKey:[UserCourse courseKey]];
+    
+    [completedCourses findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+        callback(objects, error);
+    }];
+
+}
 
 
 #pragma mark - Creates

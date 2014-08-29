@@ -10,9 +10,9 @@
 
 typedef enum JTCourseStatusIndex : NSUInteger {
     JTCourseStatusNotStarted = 0,
-	JTCourseStatusStarted,
-    JTCourseStatusRead,
-    JTCourseStatusCompleted
+	JTCourseStatusStarted = 1,
+    JTCourseStatusRead = 2,
+    JTCourseStatusCompleted = 3
 } JTCourseStatusIndex;
 
 

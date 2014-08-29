@@ -638,6 +638,10 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="x3M-0y-I1y" id="pIv-x4-afM"/>
+                                    <outlet property="delegate" destination="x3M-0y-I1y" id="Thf-1F-aVG"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -646,11 +650,57 @@
                     <navigationItem key="navigationItem" title="Completed Courses" id="Smg-CN-zKy"/>
                     <connections>
                         <outlet property="tableView" destination="xNo-ht-HKj" id="UVb-XZ-Yo5"/>
+                        <segue destination="Hvk-Fz-2hM" kind="push" identifier="toCertificate" id="NOX-t7-RiJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VZv-kz-i9K" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2060" y="1617"/>
+        </scene>
+        <!--Certificate View Controller - Your Certificate-->
+        <scene sceneID="JoU-XQ-uMd">
+            <objects>
+                <viewController id="Hvk-Fz-2hM" customClass="JTCertificateViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="18W-ox-PDx"/>
+                        <viewControllerLayoutGuide type="bottom" id="jo2-i9-Ds7"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="BBY-hy-Ji8">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pVQ-r5-KLx">
+                                <rect key="frame" x="101" y="454" width="119" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="E-Mail Certificate">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="didTapEmailButton:" destination="Hvk-Fz-2hM" eventType="touchUpInside" id="Dk4-zj-gAY"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Super cool webview of cert" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="6Rl-FR-LXg">
+                                <rect key="frame" x="33" y="25" width="240" height="366"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="jo2-i9-Ds7" firstAttribute="top" secondItem="pVQ-r5-KLx" secondAttribute="bottom" constant="10" id="aGT-Bo-2Pf"/>
+                        </constraints>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
+                    <navigationItem key="navigationItem" title="Your Certificate" id="ZTn-iJ-Uyv"/>
+                    <connections>
+                        <outlet property="emailButton" destination="pVQ-r5-KLx" id="yiR-8p-cvs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FJs-gq-lK9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2498" y="1617"/>
         </scene>
         <!--Quiz View Controller-->
         <scene sceneID="o1T-DT-Oo2">

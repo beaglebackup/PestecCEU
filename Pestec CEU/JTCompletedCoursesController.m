@@ -7,6 +7,7 @@
 //
 
 #import "JTCompletedCoursesController.h"
+#import "JTCertificateViewController.h"
 #import "UserCourse.h"
 
 @interface JTCompletedCoursesController ()
@@ -92,6 +93,7 @@
     }
     
     UserCourse* userCourse = (UserCourse*)self.objects[indexPath.row];
+    
 
     cell.textLabel.text = userCourse.course.name;
     cell.detailTextLabel.text = userCourse.course.categoryType;
@@ -107,7 +109,7 @@
     
     UITableViewCell* cell = [aTableView cellForRowAtIndexPath:indexPath];
     
-    [self performSegueWithIdentifier:@"" sender:cell];
+    [self performSegueWithIdentifier:@"toCertificate" sender:cell];
     
     
 }
@@ -115,21 +117,21 @@
 
 
 
-//
-//#pragma mark - Navigation
-//- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-//{
-//    // Get the new view controller using [segue destinationViewController].
-//    UITableViewCell* cell = (UITableViewCell*)sender;
-//    
-//    // Subdetails
-//    if ([[segue identifier] isEqualToString:@"toCompleted"])
-//    {
-//        JTCourseViewController *courseVC = [segue destinationViewController];
-//        courseVC.tag = [NSNumber numberWithInt:cell.tag];
-//        courseVC.workerType = self.workerType;
-//    }
+
+#pragma mark - Navigation
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    // Get the new view controller using [segue destinationViewController].
+    UITableViewCell* cell = (UITableViewCell*)sender;
+    
+    // Subdetails
+    if ([[segue identifier] isEqualToString:@"toCertificate"])
+    {
+        JTCertificateViewController *certVC = [segue destinationViewController];
+//        certVC.tag = [NSNumber numberWithInt:cell.tag];
+    }
 //}
+}
 
 
 

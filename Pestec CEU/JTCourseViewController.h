@@ -10,7 +10,7 @@
 #import "MZTimerLabel.h"
 #import "Course.h"
 
-@interface JTCourseViewController : UIViewController
+@interface JTCourseViewController : UIViewController <MZTimerLabelDelegate>
 
 
 @property (nonatomic, strong) Course* course;
@@ -28,12 +28,14 @@
 @property (strong, nonatomic) IBOutlet MZTimerLabel *courseTimer;
 
 //textview
-@property (strong, nonatomic) IBOutlet UITextView *applicatorsTopic1TextView;
+@property (strong, nonatomic) IBOutlet UITextView *textView;
 
 
 //Buttons
-@property (strong, nonatomic) IBOutlet UIButton *applicatorsTopic1SaveExitButton;
-@property (strong, nonatomic) IBOutlet UIButton *applicatorsTopic1QuizButton;
+@property (strong, nonatomic) IBOutlet UIButton *saveButton;
+@property (strong, nonatomic) IBOutlet UIButton *quizButton;
 
+- (IBAction)didTapSaveButton:(id)sender;
+- (IBAction)didTapQuizButton:(id)sender;
 
 @end

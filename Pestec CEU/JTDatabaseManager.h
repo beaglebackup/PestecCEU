@@ -24,8 +24,10 @@
 
 #pragma mark - Updates
 + (void)updateUserProfile:(PFUser*)user firstName:(NSString*)firstName lastName:(NSString*)lastName license:(NSString*)license position:(NSString*)position withCallback:(void(^)(BOOL succeeded, NSError *error))callback;
-+ (void)updateUserCourse:(UserCourse*)userCourse withTime:(NSNumber*)time withCallback:(void(^)(BOOL succeeded, NSError *error))callback;
 
+//- (void)updateUserCourse:(UserCourse*)userCourse withTime:(NSNumber*)time withCallback:(void(^)(BOOL succeeded, NSError *error))callback;
+
+- (void)update:(PFObject*)object withCallback:(void(^)(BOOL succeeded, NSError *error))callback;
 
 #pragma mark - Utility
 + (BOOL)user:(User*)user hasCourse:(Course*)course;

@@ -48,6 +48,8 @@
         JTCourseViewController *courseVC = [segue destinationViewController];
         courseVC.tag = [NSNumber numberWithInt:button.tag];
         courseVC.workerType = self.workerType;
+        
+        
     }
 }
 

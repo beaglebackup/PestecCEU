@@ -10,6 +10,16 @@
 #import "User.h"
 #import "Course.h"
 
+@interface JTDatabaseManager ()
+
+@property (nonatomic, assign) UIBackgroundTaskIdentifier backgroundUpdateTask;
+
+- (void) beginBackgroundUpdateTask;
+- (void) endBackgroundUpdateTask;
+
+@end
+
+
 @implementation JTDatabaseManager
 
 - (id)init
@@ -53,6 +63,7 @@
     UserCourse* userCourse = [UserCourse object];
     userCourse.course = course;
     userCourse.user = user;
+    userCourse.status = [NSNumber numberWithInt:JTCourseStatusStarted];
     userCourse.timePassed = [NSNumber numberWithFloat:0.0f];
     
     [userCourse saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
@@ -94,15 +105,37 @@
     }];
 }
 
-+ (void)updateUserCourse:(UserCourse*)userCourse withTime:(NSNumber*)time withCallback:(void(^)(BOOL succeeded, NSError *error))callback {
+//- (void)updateUserCourse:(UserCourse*)userCourse withTime:(NSNumber*)time withCallback:(void(^)(BOOL succeeded, NSError *error))callback {
+//
+//    // Do this in a background task to make sure it saves if called in applicationDidEnterBackground
+//    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+//        
+//        [self beginBackgroundUpdateTask];
+//        
+//        userCourse.timePassed = time;
+//        
+//        [userCourse saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+//            callback(succeeded,error);
+//            
+//            [self endBackgroundUpdateTask];
+//        }];
+//    });
+//}
 
-    userCourse.timePassed = time;
-    
-    [userCourse saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
-        callback(succeeded,error);
-    }];
+- (void)update:(PFObject*)object withCallback:(void(^)(BOOL succeeded, NSError *error))callback {
+    // Do this in a background task to make sure it saves if called in applicationDidEnterBackground
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        
+        [self beginBackgroundUpdateTask];
+        
+        [object saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+            callback(succeeded,error);
+            
+            [self endBackgroundUpdateTask];
+        }];
+    });
+
 }
-
 
 #pragma mark - Utility
 + (BOOL)user:(User*)user hasCourse:(Course*)course {
@@ -123,6 +156,21 @@
   
     return hasCourse;
     
+}
+
+
+#pragma mark - Background Tasks
+- (void) beginBackgroundUpdateTask
+{
+    self.backgroundUpdateTask = [[UIApplication sharedApplication] beginBackgroundTaskWithExpirationHandler:^{
+        [self endBackgroundUpdateTask];
+    }];
+}
+
+- (void) endBackgroundUpdateTask
+{
+    [[UIApplication sharedApplication] endBackgroundTask: self.backgroundUpdateTask];
+    self.backgroundUpdateTask = UIBackgroundTaskInvalid;
 }
 
 

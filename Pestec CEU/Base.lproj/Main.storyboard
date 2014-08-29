@@ -456,17 +456,17 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="MEQ-rZ-FOc" kind="push" identifier="topicToCourse" id="Dln-4W-mlv"/>
+                                    <segue destination="MEQ-rZ-FOc" kind="push" identifier="topicToCourse" id="4bn-d7-ez6"/>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Topic 5" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jHl-EE-WOZ">
-                                <rect key="frame" x="132" y="266" width="56" height="21"/>
+                                <rect key="frame" x="134" y="271" width="56" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="6" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Topic 6" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vsU-sn-v5u">
-                                <rect key="frame" x="132" y="291" width="56" height="21"/>
+                                <rect key="frame" x="134" y="296" width="56" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
@@ -478,25 +478,25 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="7" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Topic 7" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MpA-kr-6uT">
-                                <rect key="frame" x="132" y="316" width="56" height="21"/>
+                                <rect key="frame" x="134" y="321" width="56" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="8" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Topic 8" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="niL-ur-5lr">
-                                <rect key="frame" x="132" y="337" width="56" height="21"/>
+                                <rect key="frame" x="134" y="342" width="56" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="9" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Topic 9" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A0J-qS-6Ap">
-                                <rect key="frame" x="132" y="360" width="56" height="21"/>
+                                <rect key="frame" x="134" y="365" width="56" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="10" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Topic 10" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tbs-Nw-4Bl">
-                                <rect key="frame" x="127" y="380" width="65" height="21"/>
+                                <rect key="frame" x="129" y="385" width="65" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
@@ -519,14 +519,14 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FSM-3H-6gz">
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FSM-3H-6gz" customClass="JTTopicButton">
                                 <rect key="frame" x="135" y="171" width="50" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Topic 2">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lil-g0-fGd">
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lil-g0-fGd" customClass="JTTopicButton">
                                 <rect key="frame" x="135" y="195" width="50" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Topic 3">
@@ -539,7 +539,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="thO-e0-eIp">
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="thO-e0-eIp" customClass="JTTopicButton">
                                 <rect key="frame" x="134" y="218" width="50" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Topic 4">
@@ -555,16 +555,13 @@
                         <outlet property="applicatorIPMLabel" destination="4fs-cP-L1W" id="hum-we-mII"/>
                         <outlet property="applicatorPesticideLabel" destination="0yR-TA-AoD" id="Njc-ZH-Dr8"/>
                         <outlet property="applicatorRulesLabel" destination="46D-g2-VzD" id="M4k-le-oxh"/>
-                        <outlet property="applicatorTopic1Button" destination="M5R-7Q-9Vt" id="kzr-Vz-PhK"/>
-                        <outlet property="applicatorTopic2Button" destination="FSM-3H-6gz" id="flg-xF-2he"/>
-                        <outlet property="applicatorTopic3Button" destination="Lil-g0-fGd" id="HOm-G7-PRU"/>
-                        <outlet property="applicatorTopic4Button" destination="thO-e0-eIp" id="JIv-AD-cB4"/>
+                        <outlet property="applicatorTopic1Button" destination="M5R-7Q-9Vt" id="dnZ-BA-Yfe"/>
                         <outlet property="applicatorsLabel" destination="Ysd-lD-8YW" id="cF5-Lf-x5j"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4og-SC-ubp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1654" y="137"/>
+            <point key="canvasLocation" x="1690" y="105"/>
         </scene>
         <!--Course View Controller-->
         <scene sceneID="P9h-qv-Jb2">
@@ -578,7 +575,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zbf-FE-q91">
+                            <view alpha="0.90000000000000036" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zbf-FE-q91">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -622,14 +619,9 @@
                                 <state key="normal" title="Save &amp; Exit">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aED-5m-4cb">
-                                <rect key="frame" x="207" y="408" width="36" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                <state key="normal" title="QUIZ">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
+                                <connections>
+                                    <action selector="didTapSaveButton:" destination="MEQ-rZ-FOc" eventType="touchUpInside" id="eKF-7J-QEh"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.49051842350000002" green="0.57323511380000003" blue="0.92055606840000004" alpha="1" colorSpace="calibratedRGB"/>
@@ -640,15 +632,31 @@
                             <constraint firstAttribute="trailing" secondItem="Zbf-FE-q91" secondAttribute="trailing" id="b1j-J1-NL2"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="TxN-kN-4jT"/>
+                    <navigationItem key="navigationItem" id="TxN-kN-4jT">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="2Rk-UE-Fdr">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="aED-5m-4cb">
+                                <rect key="frame" x="268" y="7" width="36" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Quiz">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="didTapQuizButton:" destination="MEQ-rZ-FOc" eventType="touchUpInside" id="sme-rN-CJK"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
-                        <outlet property="applicatorsTopic1QuizButton" destination="aED-5m-4cb" id="wQA-7K-QAa"/>
-                        <outlet property="applicatorsTopic1SaveExitButton" destination="O4E-Q8-oUA" id="SMm-mu-11P"/>
-                        <outlet property="applicatorsTopic1TextView" destination="heZ-1n-WPN" id="KDp-LX-D1r"/>
                         <outlet property="categoryLabel" destination="OT4-p7-ITW" id="Hb2-oe-fFf"/>
                         <outlet property="courseTimer" destination="5hI-R6-DE6" id="a1a-OT-KnB"/>
                         <outlet property="loadingView" destination="Zbf-FE-q91" id="RKQ-CQ-KaY"/>
+                        <outlet property="quizButton" destination="aED-5m-4cb" id="ILE-Vr-2Hm"/>
+                        <outlet property="saveButton" destination="O4E-Q8-oUA" id="kaK-af-S7W"/>
+                        <outlet property="textView" destination="heZ-1n-WPN" id="vge-Hk-7Lx"/>
                         <outlet property="workerLabel" destination="49a-BS-kcj" id="m0n-xm-mD6"/>
+                        <segue destination="kV2-eG-8ic" kind="push" identifier="courseToQuiz" id="2Lo-ck-j9a"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IYc-Yj-M5F" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -814,6 +822,34 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VZv-kz-i9K" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1658" y="795"/>
+        </scene>
+        <!--Quiz View Controller-->
+        <scene sceneID="o1T-DT-Oo2">
+            <objects>
+                <viewController id="kV2-eG-8ic" customClass="JTQuizViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="s9e-Dc-dbu"/>
+                        <viewControllerLayoutGuide type="bottom" id="ZNP-Da-0uE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="t8w-bO-eTi">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Quiz" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3eO-Ld-pXg">
+                                <rect key="frame" x="26" y="84" width="122" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="MA7-bP-Rvs"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VnQ-Y7-nMg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2504" y="153"/>
         </scene>
         <!--Field Rep Courses View Controller-->
         <scene sceneID="B4h-dS-X19">

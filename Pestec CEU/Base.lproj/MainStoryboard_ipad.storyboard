@@ -388,10 +388,10 @@
             </objects>
             <point key="canvasLocation" x="1650" y="-1059"/>
         </scene>
-        <!--Applicator Courses View Controller-->
+        <!--Topic View Controller-->
         <scene sceneID="grd-BU-DCV">
             <objects>
-                <viewController id="DfO-6n-jPU" customClass="ApplicatorCoursesViewController" sceneMemberID="viewController">
+                <viewController id="DfO-6n-jPU" customClass="JTTopicViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="GbN-UO-BKX"/>
                         <viewControllerLayoutGuide type="bottom" id="Vk9-VE-hOz"/>

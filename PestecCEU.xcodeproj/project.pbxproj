@@ -48,6 +48,7 @@
 		8434C54919AFD6FC00245F05 /* JTCourseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8434C54819AFD6FC00245F05 /* JTCourseManager.m */; };
 		8434C54C19AFFB9A00245F05 /* JTCEUConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 8434C54B19AFFB9A00245F05 /* JTCEUConstants.m */; };
 		8434C55019B017AD00245F05 /* JTQuizViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8434C54F19B017AD00245F05 /* JTQuizViewController.m */; };
+		8434C55319B03F7C00245F05 /* JTWorkerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8434C55219B03F7C00245F05 /* JTWorkerViewController.m */; };
 		EF29836C196A574F000A6BE0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF29836B196A574F000A6BE0 /* Foundation.framework */; };
 		EF29836E196A574F000A6BE0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF29836D196A574F000A6BE0 /* CoreGraphics.framework */; };
 		EF298370196A574F000A6BE0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF29836F196A574F000A6BE0 /* UIKit.framework */; };
@@ -68,7 +69,7 @@
 		EF5B574F196BA39B00883F6A /* MainStoryboard_ipad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF5B574D196BA39B00883F6A /* MainStoryboard_ipad.storyboard */; };
 		EF5D112E196A664C00539B3E /* FieldRepViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5D112D196A664C00539B3E /* FieldRepViewController.m */; };
 		EF5D1131196A669700539B3E /* OperatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5D1130196A669700539B3E /* OperatorViewController.m */; };
-		EF5D1134196A6BAF00539B3E /* ApplicatorCoursesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5D1133196A6BAF00539B3E /* ApplicatorCoursesViewController.m */; };
+		EF5D1134196A6BAF00539B3E /* JTApplicatorCoursesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5D1133196A6BAF00539B3E /* JTApplicatorCoursesViewController.m */; };
 		EF5D1137196A6BC300539B3E /* FieldRepCoursesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5D1136196A6BC300539B3E /* FieldRepCoursesViewController.m */; };
 		EF5D113A196A6BD600539B3E /* OperatorCoursesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5D1139196A6BD600539B3E /* OperatorCoursesViewController.m */; };
 		EF5D113D196A73EC00539B3E /* JTCourseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5D113C196A73EC00539B3E /* JTCourseViewController.m */; };
@@ -156,6 +157,8 @@
 		8434C54B19AFFB9A00245F05 /* JTCEUConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTCEUConstants.m; sourceTree = "<group>"; };
 		8434C54E19B017AD00245F05 /* JTQuizViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTQuizViewController.h; sourceTree = "<group>"; };
 		8434C54F19B017AD00245F05 /* JTQuizViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTQuizViewController.m; sourceTree = "<group>"; };
+		8434C55119B03F7C00245F05 /* JTWorkerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTWorkerViewController.h; sourceTree = "<group>"; };
+		8434C55219B03F7C00245F05 /* JTWorkerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTWorkerViewController.m; sourceTree = "<group>"; };
 		EF298368196A574F000A6BE0 /* PestecCEU.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PestecCEU.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF29836B196A574F000A6BE0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		EF29836D196A574F000A6BE0 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -186,8 +189,8 @@
 		EF5D112D196A664C00539B3E /* FieldRepViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FieldRepViewController.m; sourceTree = "<group>"; };
 		EF5D112F196A669700539B3E /* OperatorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OperatorViewController.h; sourceTree = "<group>"; };
 		EF5D1130196A669700539B3E /* OperatorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OperatorViewController.m; sourceTree = "<group>"; };
-		EF5D1132196A6BAF00539B3E /* ApplicatorCoursesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApplicatorCoursesViewController.h; sourceTree = "<group>"; };
-		EF5D1133196A6BAF00539B3E /* ApplicatorCoursesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApplicatorCoursesViewController.m; sourceTree = "<group>"; };
+		EF5D1132196A6BAF00539B3E /* JTApplicatorCoursesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTApplicatorCoursesViewController.h; sourceTree = "<group>"; };
+		EF5D1133196A6BAF00539B3E /* JTApplicatorCoursesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTApplicatorCoursesViewController.m; sourceTree = "<group>"; };
 		EF5D1135196A6BC300539B3E /* FieldRepCoursesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FieldRepCoursesViewController.h; sourceTree = "<group>"; };
 		EF5D1136196A6BC300539B3E /* FieldRepCoursesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FieldRepCoursesViewController.m; sourceTree = "<group>"; };
 		EF5D1138196A6BD600539B3E /* OperatorCoursesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OperatorCoursesViewController.h; sourceTree = "<group>"; };
@@ -316,8 +319,8 @@
 				EF5D1136196A6BC300539B3E /* FieldRepCoursesViewController.m */,
 				EF5D1138196A6BD600539B3E /* OperatorCoursesViewController.h */,
 				EF5D1139196A6BD600539B3E /* OperatorCoursesViewController.m */,
-				EF5D1132196A6BAF00539B3E /* ApplicatorCoursesViewController.h */,
-				EF5D1133196A6BAF00539B3E /* ApplicatorCoursesViewController.m */,
+				EF5D1132196A6BAF00539B3E /* JTApplicatorCoursesViewController.h */,
+				EF5D1133196A6BAF00539B3E /* JTApplicatorCoursesViewController.m */,
 				841A325419AEB5B5000BCFD9 /* JTTopicButton.h */,
 				841A325519AEB5B5000BCFD9 /* JTTopicButton.m */,
 				841A325819AEB826000BCFD9 /* JTTopicBaseViewController.h */,
@@ -335,6 +338,8 @@
 				EF5D112D196A664C00539B3E /* FieldRepViewController.m */,
 				EF5D112F196A669700539B3E /* OperatorViewController.h */,
 				EF5D1130196A669700539B3E /* OperatorViewController.m */,
+				8434C55119B03F7C00245F05 /* JTWorkerViewController.h */,
+				8434C55219B03F7C00245F05 /* JTWorkerViewController.m */,
 			);
 			name = Workers;
 			sourceTree = "<group>";
@@ -646,11 +651,12 @@
 				EF2983A8196A6015000A6BE0 /* ApplicatorViewController.m in Sources */,
 				841A323819AE9463000BCFD9 /* UIColor+Extensions.m in Sources */,
 				EF298378196A574F000A6BE0 /* main.m in Sources */,
+				8434C55319B03F7C00245F05 /* JTWorkerViewController.m in Sources */,
 				8434C54319AFD1EF00245F05 /* JGProgressHUDIndicatorView.m in Sources */,
 				841A324C19AEA406000BCFD9 /* UIImage+Extensions.m in Sources */,
 				EF5D114C196A779500539B3E /* OperatorCoursesCompletedViewController.m in Sources */,
 				EF5D1137196A6BC300539B3E /* FieldRepCoursesViewController.m in Sources */,
-				EF5D1134196A6BAF00539B3E /* ApplicatorCoursesViewController.m in Sources */,
+				EF5D1134196A6BAF00539B3E /* JTApplicatorCoursesViewController.m in Sources */,
 				EF5D1131196A669700539B3E /* OperatorViewController.m in Sources */,
 				841A324319AE9559000BCFD9 /* JTWelcomeViewController.m in Sources */,
 				EF5D113A196A6BD600539B3E /* OperatorCoursesViewController.m in Sources */,

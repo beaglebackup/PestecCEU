@@ -11,6 +11,8 @@
 
 @interface JTTopicBaseViewController ()
 
+
+
 @end
 
 @implementation JTTopicBaseViewController
@@ -27,7 +29,14 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+
+    // Set the title
+    self.title = [NSString stringWithFormat:@"%@ Courses", self.workerType];
+    
+    // UITableView
+    self.tableView.sectionFooterHeight = 0.0;
+
+
 }
 
 - (void)didReceiveMemoryWarning
@@ -35,6 +44,32 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+
+#pragma mark - Data
+- (void) loadObjects {
+    
+    // Get the course object
+    [JTDatabaseManager queryForCourses:self.workerType withCallback:^(NSArray *courses, NSError *error) {
+        if (error) {
+            NSLog(@"error = %@",error);
+            return;
+        }
+        
+        self.objects = courses;
+        
+        [self objectsDidLoad];
+        
+    }];
+}
+
+
+- (void) objectsDidLoad {
+    
+    [self.tableView reloadData];
+    
+}
+
 
 #pragma mark - Navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender

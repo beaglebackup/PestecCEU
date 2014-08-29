@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Pestec CEU/JTTopicBaseViewController.m"
-            timestampString = "430961376.178812"
+            timestampString = "430980337.152341"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "52"
-            endingLineNumber = "52"
+            startingLineNumber = "87"
+            endingLineNumber = "87"
             landmarkName = "-prepareForSegue:sender:"
             landmarkType = "5">
          </BreakpointContent>
@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Pestec CEU/JTTopicBaseViewController.m"
-            timestampString = "430961437.432258"
+            timestampString = "430980337.152341"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "63"
-            endingLineNumber = "63"
+            startingLineNumber = "98"
+            endingLineNumber = "98"
             landmarkName = "-didTapTopicButton:"
             landmarkType = "5">
          </BreakpointContent>
@@ -42,11 +42,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Pestec CEU/JTCourseViewController.m"
-            timestampString = "430971003.238211"
+            timestampString = "430975898.178851"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "109"
-            endingLineNumber = "109"
+            startingLineNumber = "113"
+            endingLineNumber = "113"
             landmarkName = "-loadObjects"
             landmarkType = "5">
          </BreakpointContent>
@@ -58,11 +58,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Pestec CEU/JTCourseViewController.m"
-            timestampString = "430971003.238211"
+            timestampString = "430975898.178851"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "122"
-            endingLineNumber = "122"
+            startingLineNumber = "126"
+            endingLineNumber = "126"
             landmarkName = "-loadObjects"
             landmarkType = "5">
          </BreakpointContent>
@@ -74,11 +74,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Pestec CEU/JTCourseViewController.m"
-            timestampString = "430971003.238211"
+            timestampString = "430975898.178851"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "136"
-            endingLineNumber = "136"
+            startingLineNumber = "140"
+            endingLineNumber = "140"
             landmarkName = "-loadObjects"
             landmarkType = "5">
          </BreakpointContent>
@@ -106,12 +106,44 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Pestec CEU/JTCourseViewController.m"
-            timestampString = "430971003.238211"
+            timestampString = "430975898.178851"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "250"
-            endingLineNumber = "250"
+            startingLineNumber = "254"
+            endingLineNumber = "254"
             landmarkName = "-didTapQuizButton:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Pestec CEU/JTCourseViewController.m"
+            timestampString = "430975898.178851"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "47"
+            endingLineNumber = "47"
+            landmarkName = "-viewDidLoad"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Pestec CEU/JTApplicatorCoursesViewController.m"
+            timestampString = "430975854.55445"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "185"
+            endingLineNumber = "185"
+            landmarkName = "-didTapTopicButton:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

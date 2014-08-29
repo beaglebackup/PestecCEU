@@ -49,6 +49,7 @@
 		8434C54C19AFFB9A00245F05 /* JTCEUConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 8434C54B19AFFB9A00245F05 /* JTCEUConstants.m */; };
 		8434C55019B017AD00245F05 /* JTQuizViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8434C54F19B017AD00245F05 /* JTQuizViewController.m */; };
 		8434C55619B046C700245F05 /* JTWorkerBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8434C55519B046C700245F05 /* JTWorkerBaseViewController.m */; };
+		8434C55A19B0E6E800245F05 /* DAKeyboardControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 8434C55919B0E6E800245F05 /* DAKeyboardControl.m */; };
 		EF29836C196A574F000A6BE0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF29836B196A574F000A6BE0 /* Foundation.framework */; };
 		EF29836E196A574F000A6BE0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF29836D196A574F000A6BE0 /* CoreGraphics.framework */; };
 		EF298370196A574F000A6BE0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF29836F196A574F000A6BE0 /* UIKit.framework */; };
@@ -157,6 +158,8 @@
 		8434C54F19B017AD00245F05 /* JTQuizViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTQuizViewController.m; sourceTree = "<group>"; };
 		8434C55419B046C700245F05 /* JTWorkerBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTWorkerBaseViewController.h; sourceTree = "<group>"; };
 		8434C55519B046C700245F05 /* JTWorkerBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTWorkerBaseViewController.m; sourceTree = "<group>"; };
+		8434C55819B0E6E800245F05 /* DAKeyboardControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DAKeyboardControl.h; sourceTree = "<group>"; };
+		8434C55919B0E6E800245F05 /* DAKeyboardControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DAKeyboardControl.m; sourceTree = "<group>"; };
 		EF298368196A574F000A6BE0 /* PestecCEU.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PestecCEU.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF29836B196A574F000A6BE0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		EF29836D196A574F000A6BE0 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -358,6 +361,7 @@
 		8434C51019AFB09900245F05 /* Externals */ = {
 			isa = PBXGroup;
 			children = (
+				8434C55719B0E6E800245F05 /* DAKeyboardControl */,
 				8434C52619AFD1EF00245F05 /* JGProgressHUD */,
 				8434C51819AFB50F00245F05 /* NSNumber+NSTimeInterval */,
 				8434C51419AFB28F00245F05 /* MZTimerLabel */,
@@ -422,6 +426,16 @@
 			);
 			name = Quiz;
 			sourceTree = "<group>";
+		};
+		8434C55719B0E6E800245F05 /* DAKeyboardControl */ = {
+			isa = PBXGroup;
+			children = (
+				8434C55819B0E6E800245F05 /* DAKeyboardControl.h */,
+				8434C55919B0E6E800245F05 /* DAKeyboardControl.m */,
+			);
+			name = DAKeyboardControl;
+			path = Externals/DAKeyboardControl;
+			sourceTree = SOURCE_ROOT;
 		};
 		EF29835F196A574F000A6BE0 = {
 			isa = PBXGroup;
@@ -633,6 +647,7 @@
 				8434C54419AFD1EF00245F05 /* JGProgressHUDPieIndicatorView.m in Sources */,
 				8434C54519AFD1EF00245F05 /* JGProgressHUDRingIndicatorView.m in Sources */,
 				EF2983A2196A5A66000A6BE0 /* JTLicenseMenuController.m in Sources */,
+				8434C55A19B0E6E800245F05 /* DAKeyboardControl.m in Sources */,
 				841A324519AE9559000BCFD9 /* JTSignUpViewController.m in Sources */,
 				8434C51B19AFB50F00245F05 /* NSNumber+NSTimeInterval.m in Sources */,
 				8434C54119AFD1EF00245F05 /* JGProgressHUDFadeZoomAnimation.m in Sources */,

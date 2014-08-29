@@ -8,19 +8,28 @@
 
 #import "ProfileViewController.h"
 #import "User.h"
+#import "DAKeyboardControl.h"
+#import "JGProgressHUD.h"
+
+
 
 @interface ProfileViewController ()
+
+@property (nonatomic, strong) JGProgressHUD* progressHUD;
+
 
 @end
 
 @implementation ProfileViewController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+
+
+- (id)initWithCoder:(NSCoder*)decoder {
+    self = [super initWithCoder:decoder];
     if (self) {
-        // Custom initialization
+        
     }
+
     return self;
 }
 
@@ -28,13 +37,17 @@
 {
     [super viewDidLoad];
     
-    // Set delegates
-    _firstNameTextField.delegate = self;
-    _lastNameTextField.delegate = self;
-    _licenseTextField.delegate = self;
-    _positionTextField.delegate =self;
     
-    _scrollView.delegate = self;
+    
+    // Dismiss keyboard on scroll
+    [self.view addKeyboardPanningWithFrameBasedActionHandler:^(CGRect keyboardFrameInView, BOOL opening, BOOL closing) {
+        /*
+         Try not to call "self" inside this block (retain cycle).
+         But if you do, make sure to remove DAKeyboardControl
+         when you are done with the view controller by calling:
+         [self.view removeKeyboardControl];
+         */
+    } constraintBasedActionHandler:nil];
     
 
     // Fill fields with existing data
@@ -42,8 +55,8 @@
     
     if (user.firstName) _firstNameTextField.text = user.firstName;
     if (user.lastName) _lastNameTextField.text = user.lastName;
-    if (user.firstName) _licenseTextField.text = user.license;
-    if (user.firstName) _positionTextField.text = user.position;
+    if (user.license) _licenseTextField.text = user.license;
+    if (user.position) _positionTextField.text = user.position;
 }
 
 
@@ -89,27 +102,36 @@
     
 }
 
-#pragma mark - UIScrollView Delegate
-- (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView
-{
-    
-    [_firstNameTextField resignFirstResponder];
-    [_lastNameTextField resignFirstResponder];
-    [_licenseTextField resignFirstResponder];
-    [_positionTextField resignFirstResponder];
-
-}
+//#pragma mark - UIScrollView Delegate
+//- (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView
+//{
+//    
+//    [_firstNameTextField resignFirstResponder];
+//    [_lastNameTextField resignFirstResponder];
+//    [_licenseTextField resignFirstResponder];
+//    [_positionTextField resignFirstResponder];
+//
+//}
 
 
 #pragma mark - Actions
 - (IBAction)didTapSave:(id)sender {
     
-    [JTDatabaseManager updateUserProfile:[PFUser currentUser] firstName:_firstNameTextField.text lastName:_lastNameTextField.text license:_lastNameTextField.text position:_positionTextField.text withCallback:^(BOOL succeeded, NSError *error) {
+    // Loading HUD
+    self.progressHUD = [JGProgressHUD progressHUDWithStyle:JGProgressHUDStyleLight];
+    self.progressHUD.textLabel.text = @"Saving Profile";
+    [self.progressHUD showInView:self.view];
+
+    
+    [JTDatabaseManager updateUserProfile:[PFUser currentUser] firstName:_firstNameTextField.text lastName:_lastNameTextField.text license:_licenseTextField.text position:_positionTextField.text withCallback:^(BOOL succeeded, NSError *error) {
         
-        if (succeeded) {
-            
-            
+        [self.progressHUD dismissAnimated:YES];
+        
+        if (error) {
+            NSLog(@"error = %@",error);
+            return;
         }
+
         
     }];
 

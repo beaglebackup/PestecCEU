@@ -32,6 +32,7 @@
     // Hide back button for this view
     [self.navigationItem setHidesBackButton:YES animated:YES];
     [self.navigationItem setBackBarButtonItem:nil];
+    
 }
 
 - (void)didReceiveMemoryWarning

@@ -14,6 +14,7 @@
 @property (retain) NSString *categoryType;
 @property (retain) NSString *name;
 @property (retain) NSNumber *tag;
+@property (retain) NSArray* quizQuestions;
 
 + (NSString *)parseClassName;
 
@@ -21,5 +22,6 @@
 + (NSString *)categoryTypeKey;
 + (NSString *)nameKey;
 + (NSString *)tagKey;
++ (NSString *)quizQuestionsKey;
 
 @end

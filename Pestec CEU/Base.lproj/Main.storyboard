@@ -153,7 +153,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KmS-1t-fYG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="896" y="-678"/>
+            <point key="canvasLocation" x="960" y="-598"/>
         </scene>
         <!--License Menu Controller - Pestec CEU-->
         <scene sceneID="nu0-nH-cI6">

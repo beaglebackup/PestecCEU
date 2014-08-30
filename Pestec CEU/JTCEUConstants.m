@@ -8,3 +8,6 @@
 
 #import "JTCEUConstants.h"
 
+#pragma mark - Quiz Question Types
+NSString *const kJTQuizQuestionTypeMC = @"mc";
+NSString *const kJTQuizQuestionTypeTF = @"tf";

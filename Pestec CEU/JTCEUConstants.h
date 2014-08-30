@@ -7,6 +7,7 @@
 //
 
 
+#pragma mark - Misc Enums
 
 typedef enum JTCourseStatusIndex : NSUInteger {
     JTCourseStatusNotStarted = 0,
@@ -21,6 +22,11 @@ typedef enum JTWorkerTypeIndex : NSUInteger {
     JTWorkerTypeFieldRep,
     JTWorkerTypeOperator
 } JTWorkerTypeIndex;
+
+
+#pragma mark - Quiz Question Types
+extern NSString *const kJTQuizQuestionTypeMC; // Multiple Choice
+extern NSString *const kJTQuizQuestionTypeTF; // True/False
 
 
 

@@ -14,6 +14,7 @@
 @dynamic categoryType;
 @dynamic name;
 @dynamic tag;
+@dynamic quizQuestions;
 
 + (NSString *)parseClassName {
     return @"Course";
@@ -33,6 +34,10 @@
 
 + (NSString *)tagKey {
     return @"tag";
+}
+
++ (NSString *)quizQuestionsKey {
+    return @"quizQuestions";
 }
 
 @end

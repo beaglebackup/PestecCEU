@@ -13,6 +13,9 @@
 #import "User.h"
 #import "Course.h"
 #import "UserCourse.h"
+#import "QuizAnswer.h"
+#import "QuizQuestion.h"
+#import "UserAnswer.h"
 
 
 
@@ -32,6 +35,9 @@
     [User registerSubclass];
     [Course registerSubclass];
     [UserCourse registerSubclass];
+    [QuizQuestion registerSubclass];
+    [QuizAnswer registerSubclass];
+    [UserAnswer registerSubclass];
 
     
     // Initialize Parse
@@ -49,7 +55,9 @@
     
     
     // Admin
-    [JTDatabaseManager copyClass:@"Topic" toClass:@"Course"];
+//    [JTDatabaseManager copyClass:@"QuizQuestions" toClass:@"QuizQuestion"];
+//    [JTDatabaseManager copyClass:@"QuizAnswers" toClass:@"QuizAnswer"];
+//    [JTDatabaseManager copyClass:@"UserAnswers" toClass:@"UserAnswer"];
 
 
     

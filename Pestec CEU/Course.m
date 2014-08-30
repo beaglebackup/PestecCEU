@@ -15,6 +15,7 @@
 @dynamic name;
 @dynamic tag;
 @dynamic quizQuestions;
+@dynamic numPassed;
 
 + (NSString *)parseClassName {
     return @"Course";
@@ -38,6 +39,10 @@
 
 + (NSString *)quizQuestionsKey {
     return @"quizQuestions";
+}
+
++ (NSString *)numPassedKey {
+    return @"numPassed";
 }
 
 @end

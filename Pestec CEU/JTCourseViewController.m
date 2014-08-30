@@ -236,6 +236,7 @@
     if ([[segue identifier] isEqualToString:@"courseToQuiz"])
     {
         JTQuizViewController *quizVC = [segue destinationViewController];
+        quizVC.course = self.course;
     }
 }
 

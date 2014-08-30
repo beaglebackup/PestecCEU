@@ -13,6 +13,9 @@
 @dynamic text;
 @dynamic type;
 @dynamic answerObjects;
+@dynamic order;
+
+
 
 + (NSString *)parseClassName {
     return @"QuizQuestion";
@@ -29,5 +32,10 @@
 + (NSString *)answerObjectsKey {
     return @"answerObjects";
 }
+
++ (NSString *)orderKey {
+    return @"order";
+}
+
 
 @end

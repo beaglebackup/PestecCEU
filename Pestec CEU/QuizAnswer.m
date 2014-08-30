@@ -12,6 +12,7 @@
 
 @dynamic text;
 @dynamic isAnswer;
+@dynamic order;
 
 + (NSString *)parseClassName {
     return @"QuizAnswer";
@@ -23,6 +24,10 @@
 
 + (NSString *)isAnswerKey {
     return @"isAnswer";
+}
+
++ (NSString *)orderKey {
+    return @"order";
 }
 
 @end

@@ -18,6 +18,7 @@
 + (void)queryForCourse:(NSNumber*)tag workerType:(NSString*)workerType withCallback:(void(^)(Course *course, NSError *error))callback;
 + (void)queryForUserCourse:(Course*)course user:(User*)user withCallback:(void(^)(UserCourse *course, NSError *error))callback;
 + (void)queryForCompletedCourses:(User*)user withCallback:(void(^)(NSArray *completedCourses, NSError *error))callback;
++ (void)queryForQuizQuestions:(Course*)course withCallback:(void(^)(NSArray *quizQuestions, NSError *error))callback;
 
 #pragma mark - Creates
 + (void)createUserCourse:(Course*)course user:(User*)user withCallback:(void(^)(UserCourse *course, NSError *error))callback;
@@ -25,8 +26,6 @@
 
 #pragma mark - Updates
 + (void)updateUserProfile:(PFUser*)user firstName:(NSString*)firstName lastName:(NSString*)lastName license:(NSString*)license position:(NSString*)position withCallback:(void(^)(BOOL succeeded, NSError *error))callback;
-
-//- (void)updateUserCourse:(UserCourse*)userCourse withTime:(NSNumber*)time withCallback:(void(^)(BOOL succeeded, NSError *error))callback;
 
 - (void)update:(PFObject*)object withCallback:(void(^)(BOOL succeeded, NSError *error))callback;
 

@@ -12,6 +12,7 @@
 
 @property (retain) NSString *text;
 @property (retain) NSString *type;
+@property (retain) NSNumber *order;
 @property (retain) NSArray *answerObjects;
 
 
@@ -20,5 +21,6 @@
 + (NSString *)textKey;
 + (NSString *)typeKey;
 + (NSString *)answerObjectsKey;
++ (NSString *)orderKey;
 
 @end

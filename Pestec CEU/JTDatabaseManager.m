@@ -9,6 +9,7 @@
 #import "JTDatabaseManager.h"
 #import "User.h"
 #import "Course.h"
+#import "QuizQuestion.h"
 
 @interface JTDatabaseManager ()
 
@@ -87,6 +88,22 @@
 
 }
 
++ (void)queryForQuizQuestions:(Course*)course withCallback:(void(^)(NSArray *quizQuestions, NSError *error))callback {
+    
+    // Re-query Course object to include quizQuestions && quizAnswers
+    PFQuery* quizQuestionsQuery = [PFQuery queryWithClassName:[Course parseClassName]];
+    [quizQuestionsQuery orderByAscending:[QuizQuestion orderKey]];
+    [quizQuestionsQuery includeKey:[NSString stringWithFormat:@"%@.%@",[Course quizQuestionsKey],[QuizQuestion answerObjectsKey]]]; // Double pointer retrieval
+    
+    [quizQuestionsQuery getObjectInBackgroundWithId:course.objectId block:^(PFObject *object, NSError *error) {
+        
+        Course* queriedCourse = (Course*)object;
+        NSArray* quizQuestions = queriedCourse.quizQuestions;
+        
+        callback(quizQuestions, error);
+    }];
+ }
+
 
 #pragma mark - Creates
 + (void)createUserCourse:(Course*)course user:(User*)user withCallback:(void(^)(UserCourse *course, NSError *error))callback {
@@ -136,7 +153,7 @@
     }];
 }
 
-//- (void)updateUserCourse:(UserCourse*)userCourse withTime:(NSNumber*)time withCallback:(void(^)(BOOL succeeded, NSError *error))callback {
+//- (void)updateUserCourseAsPassed:(UserCourse*)userCourse  withCallback:(void(^)(BOOL succeeded, NSError *error))callback {
 //
 //    // Do this in a background task to make sure it saves if called in applicationDidEnterBackground
 //    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{

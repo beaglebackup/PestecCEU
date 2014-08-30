@@ -54,6 +54,7 @@
 		8434C56019B260F800245F05 /* UserAnswer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8434C55F19B260F800245F05 /* UserAnswer.m */; };
 		8434C56319B2610400245F05 /* QuizQuestion.m in Sources */ = {isa = PBXBuildFile; fileRef = 8434C56219B2610400245F05 /* QuizQuestion.m */; };
 		8434C56619B2611400245F05 /* QuizAnswer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8434C56519B2611400245F05 /* QuizAnswer.m */; };
+		8434C56919B2701400245F05 /* JTQuizAnswerTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8434C56819B2701400245F05 /* JTQuizAnswerTableViewCell.m */; };
 		EF29836C196A574F000A6BE0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF29836B196A574F000A6BE0 /* Foundation.framework */; };
 		EF29836E196A574F000A6BE0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF29836D196A574F000A6BE0 /* CoreGraphics.framework */; };
 		EF298370196A574F000A6BE0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF29836F196A574F000A6BE0 /* UIKit.framework */; };
@@ -172,6 +173,8 @@
 		8434C56219B2610400245F05 /* QuizQuestion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuizQuestion.m; sourceTree = "<group>"; };
 		8434C56419B2611400245F05 /* QuizAnswer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuizAnswer.h; sourceTree = "<group>"; };
 		8434C56519B2611400245F05 /* QuizAnswer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuizAnswer.m; sourceTree = "<group>"; };
+		8434C56719B2701400245F05 /* JTQuizAnswerTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTQuizAnswerTableViewCell.h; sourceTree = "<group>"; };
+		8434C56819B2701400245F05 /* JTQuizAnswerTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTQuizAnswerTableViewCell.m; sourceTree = "<group>"; };
 		EF298368196A574F000A6BE0 /* PestecCEU.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PestecCEU.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF29836B196A574F000A6BE0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		EF29836D196A574F000A6BE0 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -443,6 +446,8 @@
 			children = (
 				8434C54E19B017AD00245F05 /* JTQuizViewController.h */,
 				8434C54F19B017AD00245F05 /* JTQuizViewController.m */,
+				8434C56719B2701400245F05 /* JTQuizAnswerTableViewCell.h */,
+				8434C56819B2701400245F05 /* JTQuizAnswerTableViewCell.m */,
 			);
 			name = Quiz;
 			sourceTree = "<group>";
@@ -693,6 +698,7 @@
 				841A324919AE984B000BCFD9 /* User.m in Sources */,
 				8434C54219AFD1EF00245F05 /* JGProgressHUDIndeterminateIndicatorView.m in Sources */,
 				8434C54C19AFFB9A00245F05 /* JTCEUConstants.m in Sources */,
+				8434C56919B2701400245F05 /* JTQuizAnswerTableViewCell.m in Sources */,
 				EF2983A5196A5B43000A6BE0 /* ProfileViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

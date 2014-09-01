@@ -34,33 +34,67 @@
 {
     [super viewDidLoad];
     
-//    CGSize certSize = self.certImageView.frame.size;
-//    
-//    UIImage *certImage = [UIImage imageWithPDFNamed:@"educertificatesample.pdf" atSize:CGSizeMake(certSize.width,
-//                                                                                                   certSize.height)];
-//    
-//    self.certImageView.image = certImage;
+    CGFloat labelFontSize = 22.0f;
+
     
-    
+    User* user = (User*)[PFUser currentUser];
     
     
     // Create the full-sized Cert
     self.originalSizeCertImage = [UIImage originalSizeImageWithPDFNamed:@"educertificatesample.pdf"];
-    
+    self.originalSizeCertImageView = [[UIImageView alloc] initWithImage:self.originalSizeCertImage];
+
     NSLog(@"NSStringFromCGSize(originalSizeCertImage.size = %@",NSStringFromCGSize(self.originalSizeCertImage.size));
     
     // Add all labels
-    UILabel* nameLabel = [[UILabel alloc] initWithFrame:CGRectMake(150.0f, 60.0f, 0.0f, 0.0f)];
+    UILabel* nameLabel = [[UILabel alloc] initWithFrame:CGRectMake(170.0f, 175.0f, 0.0f, 0.0f)];
     [nameLabel setTextAlignment:NSTextAlignmentLeft];
     [nameLabel setBackgroundColor:[UIColor clearColor]];
     [nameLabel setTextColor:[UIColor redColor]];
-    [nameLabel setFont:[UIFont systemFontOfSize:28.0f]];
-    [nameLabel setText:@"Ramsel Ruiz"];
+    [nameLabel setFont:[UIFont systemFontOfSize:labelFontSize]];
+    [nameLabel setText:[NSString stringWithFormat:@"%@ %@",user.firstName, user.lastName]];
     [nameLabel sizeToFit];
-    
-    self.originalSizeCertImageView = [[UIImageView alloc] initWithImage:self.originalSizeCertImage];
     [self.originalSizeCertImageView addSubview:nameLabel];
     [self.originalSizeCertImageView bringSubviewToFront:nameLabel];
+    
+    
+    UILabel* licenseNumLabel = [[UILabel alloc] initWithFrame:CGRectMake(590.0f, 175.0f, 0.0f, 0.0f)];
+    [licenseNumLabel setTextAlignment:NSTextAlignmentLeft];
+    [licenseNumLabel setBackgroundColor:[UIColor clearColor]];
+    [licenseNumLabel setTextColor:[UIColor redColor]];
+    [licenseNumLabel setFont:[UIFont systemFontOfSize:labelFontSize]];
+    [licenseNumLabel setText:[NSString stringWithFormat:@"%@",user.license]];
+    [licenseNumLabel sizeToFit];
+    [self.originalSizeCertImageView addSubview:licenseNumLabel];
+    [self.originalSizeCertImageView bringSubviewToFront:licenseNumLabel];
+    
+    
+    UILabel* activityDateLabel = [[UILabel alloc] initWithFrame:CGRectMake(590.0f, 205.0f, 0.0f, 0.0f)];
+    [activityDateLabel setTextAlignment:NSTextAlignmentLeft];
+    [activityDateLabel setBackgroundColor:[UIColor clearColor]];
+    [activityDateLabel setTextColor:[UIColor redColor]];
+    [activityDateLabel setFont:[UIFont systemFontOfSize:labelFontSize]];
+    [activityDateLabel setText:[NSString stringWithFormat:@"%@",self.userCourse.dateCompleted]];
+    [activityDateLabel sizeToFit];
+    [self.originalSizeCertImageView addSubview:activityDateLabel];
+    [self.originalSizeCertImageView bringSubviewToFront:activityDateLabel];
+    
+    
+    
+    
+    UILabel* sigDataLabel = [[UILabel alloc] initWithFrame:CGRectMake(600.0f, 440.0f, 0.0f, 0.0f)];
+    [sigDataLabel setTextAlignment:NSTextAlignmentLeft];
+    [sigDataLabel setBackgroundColor:[UIColor clearColor]];
+    [sigDataLabel setTextColor:[UIColor redColor]];
+    [sigDataLabel setFont:[UIFont systemFontOfSize:labelFontSize]];
+    [sigDataLabel setText:[NSDateFormatter localizedStringFromDate:[NSDate date]
+                                                         dateStyle:NSDateFormatterShortStyle
+                                                         timeStyle:NSDateFormatterNoStyle]];
+    [sigDataLabel sizeToFit];
+    [self.originalSizeCertImageView addSubview:sigDataLabel];
+    [self.originalSizeCertImageView bringSubviewToFront:sigDataLabel];
+
+    
     
     
     NSLog(@"NSStringFromCGSize(originalSizeCertImageView.size = %@",NSStringFromCGSize(self.originalSizeCertImageView.frame.size));
@@ -145,7 +179,10 @@
             
             break;
         case MFMailComposeResultSent:
-            
+        {
+            UIAlertView* alertView = [[UIAlertView alloc] initWithTitle:@"E-mail sent successfully." message:nil delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+            [alertView show];
+        }
             break;
         case MFMailComposeResultFailed:
             
@@ -174,10 +211,10 @@
         
         // Attach an image to the email
         NSData *myData = UIImagePNGRepresentation(emailImage);
-        [picker addAttachmentData:myData mimeType:@"image/png" fileName:@"coolImage.png"];
+        [picker addAttachmentData:myData mimeType:@"image/png" fileName:@"pestec_cert.png"];
         
         // Fill out the email body text
-        NSString *emailBody = [NSString stringWithFormat:@"%@ - %@",self.courseName, self.categoryType];
+        NSString *emailBody = [NSString stringWithFormat:@"%@ - %@",self.userCourse.course.name, self.userCourse.course.categoryType];
         [picker setMessageBody:emailBody isHTML:NO];
         
         // Set the user

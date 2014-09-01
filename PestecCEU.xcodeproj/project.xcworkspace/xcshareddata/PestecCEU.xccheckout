@@ -10,29 +10,29 @@
 	<string>PestecCEU</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>1C37D96D-ACA0-4EBC-9A03-4EBFF72029E3</key>
+		<key>E6868BAE4723C8DA2D1EEF1FDD8F340E05263BE5</key>
 		<string>https://github.com/beaglebackup/PestecCEU.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>PestecCEU.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>1C37D96D-ACA0-4EBC-9A03-4EBFF72029E3</key>
+		<key>E6868BAE4723C8DA2D1EEF1FDD8F340E05263BE5</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/beaglebackup/PestecCEU.git</string>
 	<key>IDESourceControlProjectVersion</key>
-	<integer>110</integer>
+	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>1C37D96D-ACA0-4EBC-9A03-4EBFF72029E3</string>
+	<string>E6868BAE4723C8DA2D1EEF1FDD8F340E05263BE5</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>1C37D96D-ACA0-4EBC-9A03-4EBFF72029E3</string>
+			<string>E6868BAE4723C8DA2D1EEF1FDD8F340E05263BE5</string>
 			<key>IDESourceControlWCCName</key>
 			<string>CEU</string>
 		</dict>

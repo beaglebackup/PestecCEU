@@ -307,6 +307,7 @@
         // Save to db
         UserCourse* userCourse = [[JTCourseManager shared] userCourse];
         userCourse.status = [NSNumber numberWithInt:JTCourseStatusCompleted];
+        userCourse.dateCompleted = [NSDate date];
         
         JTDatabaseManager* databaseManager = [[JTDatabaseManager alloc] init];
         [databaseManager update:userCourse withCallback:^(BOOL succeeded, NSError *error) {

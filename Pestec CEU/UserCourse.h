@@ -15,6 +15,8 @@
 @property (retain) User *user;
 @property (retain) Course *course;
 @property (retain) NSNumber *timePassed;
+@property (retain) NSDate * dateCompleted;
+
 
 /**
  What stage the user is at in the course
@@ -29,5 +31,6 @@
 + (NSString *)userKey;
 + (NSString *)courseKey;
 + (NSString *)statusKey;
++ (NSString *)dateCompletedKey;
 
 @end

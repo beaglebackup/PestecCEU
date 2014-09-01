@@ -130,9 +130,7 @@
         JTCertificateViewController *certVC = [segue destinationViewController];
         
         UserCourse* userCourse = (UserCourse*)self.objects[cell.tag];
-        
-        certVC.courseName = userCourse.course.name;
-        certVC.categoryType = userCourse.course.categoryType;
+        certVC.userCourse = userCourse;
     }
 //}
 }

@@ -128,7 +128,11 @@
     if ([[segue identifier] isEqualToString:@"toCertificate"])
     {
         JTCertificateViewController *certVC = [segue destinationViewController];
-//        certVC.tag = [NSNumber numberWithInt:cell.tag];
+        
+        UserCourse* userCourse = (UserCourse*)self.objects[cell.tag];
+        
+        certVC.courseName = userCourse.course.name;
+        certVC.categoryType = userCourse.course.categoryType;
     }
 //}
 }

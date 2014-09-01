@@ -447,7 +447,7 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Running Time 00:00 AM" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5hI-R6-DE6" customClass="MZTimerLabel">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Running Time 00:00 AM" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5hI-R6-DE6" customClass="MZTimerLabel">
                                 <rect key="frame" x="110" y="446" width="185" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -461,6 +461,7 @@
                             <constraint firstItem="tQJ-Lz-YCs" firstAttribute="top" secondItem="Zbf-FE-q91" secondAttribute="bottom" id="HG7-kq-tmZ"/>
                             <constraint firstItem="Zbf-FE-q91" firstAttribute="top" secondItem="euh-c4-qcC" secondAttribute="top" id="SJA-ce-EuX"/>
                             <constraint firstAttribute="trailing" secondItem="Zbf-FE-q91" secondAttribute="trailing" id="b1j-J1-NL2"/>
+                            <constraint firstItem="tQJ-Lz-YCs" firstAttribute="top" secondItem="5hI-R6-DE6" secondAttribute="bottom" constant="10" id="rAv-Xk-Leb"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="TxN-kN-4jT">
@@ -679,13 +680,11 @@
                                     <action selector="didTapEmailButton:" destination="Hvk-Fz-2hM" eventType="touchUpInside" id="Dk4-zj-gAY"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Super cool webview of cert" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="6Rl-FR-LXg">
-                                <rect key="frame" x="33" y="25" width="240" height="366"/>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xrY-dD-SSR">
+                                <rect key="frame" x="10" y="9" width="300" height="232"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
+                                <color key="backgroundColor" red="0.80000001190000003" green="0.64868093100000002" blue="0.1091530639" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -695,6 +694,7 @@
                     <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
                     <navigationItem key="navigationItem" title="Your Certificate" id="ZTn-iJ-Uyv"/>
                     <connections>
+                        <outlet property="certView" destination="xrY-dD-SSR" id="hNR-Zc-Itr"/>
                         <outlet property="emailButton" destination="pVQ-r5-KLx" id="yiR-8p-cvs"/>
                     </connections>
                 </viewController>

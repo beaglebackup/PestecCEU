@@ -29,6 +29,7 @@
 		841A325019AEA43A000BCFD9 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 841A324F19AEA43A000BCFD9 /* Social.framework */; };
 		841A325619AEB5B5000BCFD9 /* JTTopicButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 841A325519AEB5B5000BCFD9 /* JTTopicButton.m */; };
 		841A325A19AEB826000BCFD9 /* JTTopicBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 841A325919AEB826000BCFD9 /* JTTopicBaseViewController.m */; };
+		842A932D19B3F813007CBFA8 /* educertificatesample.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 842A932C19B3F813007CBFA8 /* educertificatesample.pdf */; };
 		8434C51719AFB28F00245F05 /* MZTimerLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8434C51619AFB28F00245F05 /* MZTimerLabel.m */; };
 		8434C51B19AFB50F00245F05 /* NSNumber+NSTimeInterval.m in Sources */ = {isa = PBXBuildFile; fileRef = 8434C51A19AFB50F00245F05 /* NSNumber+NSTimeInterval.m */; };
 		8434C51E19AFB5AD00245F05 /* UserCourse.m in Sources */ = {isa = PBXBuildFile; fileRef = 8434C51D19AFB5AD00245F05 /* UserCourse.m */; };
@@ -55,6 +56,12 @@
 		8434C56319B2610400245F05 /* QuizQuestion.m in Sources */ = {isa = PBXBuildFile; fileRef = 8434C56219B2610400245F05 /* QuizQuestion.m */; };
 		8434C56619B2611400245F05 /* QuizAnswer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8434C56519B2611400245F05 /* QuizAnswer.m */; };
 		8434C56919B2701400245F05 /* JTQuizAnswerTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8434C56819B2701400245F05 /* JTQuizAnswerTableViewCell.m */; };
+		8434C5A319B3F54B00245F05 /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8434C59819B3F54B00245F05 /* LICENSE.txt */; };
+		8434C5A419B3F54B00245F05 /* NSData+MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = 8434C59A19B3F54B00245F05 /* NSData+MD5.m */; };
+		8434C5A519B3F54B00245F05 /* NSString+MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = 8434C59C19B3F54B00245F05 /* NSString+MD5.m */; };
+		8434C5A619B3F54B00245F05 /* PDFView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8434C59E19B3F54B00245F05 /* PDFView.m */; };
+		8434C5A719B3F54B00245F05 /* UIImage+PDF.m in Sources */ = {isa = PBXBuildFile; fileRef = 8434C5A019B3F54B00245F05 /* UIImage+PDF.m */; };
+		8434C5A819B3F54B00245F05 /* UIView+Image.m in Sources */ = {isa = PBXBuildFile; fileRef = 8434C5A219B3F54B00245F05 /* UIView+Image.m */; };
 		EF29836C196A574F000A6BE0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF29836B196A574F000A6BE0 /* Foundation.framework */; };
 		EF29836E196A574F000A6BE0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF29836D196A574F000A6BE0 /* CoreGraphics.framework */; };
 		EF298370196A574F000A6BE0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF29836F196A574F000A6BE0 /* UIKit.framework */; };
@@ -124,6 +131,7 @@
 		841A325519AEB5B5000BCFD9 /* JTTopicButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTTopicButton.m; sourceTree = "<group>"; };
 		841A325819AEB826000BCFD9 /* JTTopicBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTTopicBaseViewController.h; sourceTree = "<group>"; };
 		841A325919AEB826000BCFD9 /* JTTopicBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTTopicBaseViewController.m; sourceTree = "<group>"; };
+		842A932C19B3F813007CBFA8 /* educertificatesample.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = educertificatesample.pdf; sourceTree = "<group>"; };
 		8434C51519AFB28F00245F05 /* MZTimerLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MZTimerLabel.h; sourceTree = "<group>"; };
 		8434C51619AFB28F00245F05 /* MZTimerLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MZTimerLabel.m; sourceTree = "<group>"; };
 		8434C51919AFB50F00245F05 /* NSNumber+NSTimeInterval.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNumber+NSTimeInterval.h"; sourceTree = "<group>"; };
@@ -175,6 +183,17 @@
 		8434C56519B2611400245F05 /* QuizAnswer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuizAnswer.m; sourceTree = "<group>"; };
 		8434C56719B2701400245F05 /* JTQuizAnswerTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTQuizAnswerTableViewCell.h; sourceTree = "<group>"; };
 		8434C56819B2701400245F05 /* JTQuizAnswerTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTQuizAnswerTableViewCell.m; sourceTree = "<group>"; };
+		8434C59819B3F54B00245F05 /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		8434C59919B3F54B00245F05 /* NSData+MD5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+MD5.h"; sourceTree = "<group>"; };
+		8434C59A19B3F54B00245F05 /* NSData+MD5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+MD5.m"; sourceTree = "<group>"; };
+		8434C59B19B3F54B00245F05 /* NSString+MD5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MD5.h"; sourceTree = "<group>"; };
+		8434C59C19B3F54B00245F05 /* NSString+MD5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MD5.m"; sourceTree = "<group>"; };
+		8434C59D19B3F54B00245F05 /* PDFView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDFView.h; sourceTree = "<group>"; };
+		8434C59E19B3F54B00245F05 /* PDFView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDFView.m; sourceTree = "<group>"; };
+		8434C59F19B3F54B00245F05 /* UIImage+PDF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+PDF.h"; sourceTree = "<group>"; };
+		8434C5A019B3F54B00245F05 /* UIImage+PDF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+PDF.m"; sourceTree = "<group>"; };
+		8434C5A119B3F54B00245F05 /* UIView+Image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Image.h"; sourceTree = "<group>"; };
+		8434C5A219B3F54B00245F05 /* UIView+Image.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Image.m"; sourceTree = "<group>"; };
 		EF298368196A574F000A6BE0 /* PestecCEU.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PestecCEU.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF29836B196A574F000A6BE0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		EF29836D196A574F000A6BE0 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -381,9 +400,26 @@
 			name = Course;
 			sourceTree = "<group>";
 		};
+		842A932A19B3F7FA007CBFA8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				842A932B19B3F7FE007CBFA8 /* PDF */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		842A932B19B3F7FE007CBFA8 /* PDF */ = {
+			isa = PBXGroup;
+			children = (
+				842A932C19B3F813007CBFA8 /* educertificatesample.pdf */,
+			);
+			name = PDF;
+			sourceTree = "<group>";
+		};
 		8434C51019AFB09900245F05 /* Externals */ = {
 			isa = PBXGroup;
 			children = (
+				8434C59719B3F54B00245F05 /* UIImage+PDF */,
 				8434C55719B0E6E800245F05 /* DAKeyboardControl */,
 				8434C52619AFD1EF00245F05 /* JGProgressHUD */,
 				8434C51819AFB50F00245F05 /* NSNumber+NSTimeInterval */,
@@ -462,6 +498,24 @@
 			path = Externals/DAKeyboardControl;
 			sourceTree = SOURCE_ROOT;
 		};
+		8434C59719B3F54B00245F05 /* UIImage+PDF */ = {
+			isa = PBXGroup;
+			children = (
+				8434C59819B3F54B00245F05 /* LICENSE.txt */,
+				8434C59919B3F54B00245F05 /* NSData+MD5.h */,
+				8434C59A19B3F54B00245F05 /* NSData+MD5.m */,
+				8434C59B19B3F54B00245F05 /* NSString+MD5.h */,
+				8434C59C19B3F54B00245F05 /* NSString+MD5.m */,
+				8434C59D19B3F54B00245F05 /* PDFView.h */,
+				8434C59E19B3F54B00245F05 /* PDFView.m */,
+				8434C59F19B3F54B00245F05 /* UIImage+PDF.h */,
+				8434C5A019B3F54B00245F05 /* UIImage+PDF.m */,
+				8434C5A119B3F54B00245F05 /* UIView+Image.h */,
+				8434C5A219B3F54B00245F05 /* UIView+Image.m */,
+			);
+			path = "UIImage+PDF";
+			sourceTree = "<group>";
+		};
 		EF29835F196A574F000A6BE0 = {
 			isa = PBXGroup;
 			children = (
@@ -508,6 +562,7 @@
 		EF298371196A574F000A6BE0 /* Pestec CEU */ = {
 			isa = PBXGroup;
 			children = (
+				842A932A19B3F7FA007CBFA8 /* Resources */,
 				8434C51019AFB09900245F05 /* Externals */,
 				841A324619AE9825000BCFD9 /* Data */,
 				841A323519AE9458000BCFD9 /* Extensions */,
@@ -630,6 +685,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				842A932D19B3F813007CBFA8 /* educertificatesample.pdf in Resources */,
+				8434C5A319B3F54B00245F05 /* LICENSE.txt in Resources */,
 				EF298384196A574F000A6BE0 /* Images.xcassets in Resources */,
 				8434C53C19AFD1EF00245F05 /* JGProgressHUD Resources.bundle in Resources */,
 				EF5B574F196BA39B00883F6A /* MainStoryboard_ipad.storyboard in Resources */,
@@ -666,12 +723,14 @@
 				8434C52119AFB60E00245F05 /* Course.m in Sources */,
 				8434C51E19AFB5AD00245F05 /* UserCourse.m in Sources */,
 				8434C54019AFD1EF00245F05 /* JGProgressHUDFadeAnimation.m in Sources */,
+				8434C5A519B3F54B00245F05 /* NSString+MD5.m in Sources */,
 				8434C51719AFB28F00245F05 /* MZTimerLabel.m in Sources */,
 				8434C53D19AFD1EF00245F05 /* JGProgressHUD.m in Sources */,
 				841A325A19AEB826000BCFD9 /* JTTopicBaseViewController.m in Sources */,
 				8434C54919AFD6FC00245F05 /* JTCourseManager.m in Sources */,
 				EF29837C196A574F000A6BE0 /* AppDelegate.m in Sources */,
 				8434C55019B017AD00245F05 /* JTQuizViewController.m in Sources */,
+				8434C5A419B3F54B00245F05 /* NSData+MD5.m in Sources */,
 				8434C54419AFD1EF00245F05 /* JGProgressHUDPieIndicatorView.m in Sources */,
 				8434C54519AFD1EF00245F05 /* JGProgressHUDRingIndicatorView.m in Sources */,
 				EF2983A2196A5A66000A6BE0 /* JTLicenseMenuController.m in Sources */,
@@ -696,8 +755,11 @@
 				8434C53E19AFD1EF00245F05 /* JGProgressHUDAnimation.m in Sources */,
 				8434C55619B046C700245F05 /* JTWorkerBaseViewController.m in Sources */,
 				841A324919AE984B000BCFD9 /* User.m in Sources */,
+				8434C5A619B3F54B00245F05 /* PDFView.m in Sources */,
 				8434C54219AFD1EF00245F05 /* JGProgressHUDIndeterminateIndicatorView.m in Sources */,
 				8434C54C19AFFB9A00245F05 /* JTCEUConstants.m in Sources */,
+				8434C5A819B3F54B00245F05 /* UIView+Image.m in Sources */,
+				8434C5A719B3F54B00245F05 /* UIImage+PDF.m in Sources */,
 				8434C56919B2701400245F05 /* JTQuizAnswerTableViewCell.m in Sources */,
 				EF2983A5196A5B43000A6BE0 /* ProfileViewController.m in Sources */,
 			);

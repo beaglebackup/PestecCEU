@@ -8,9 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
-@interface JTCertificateViewController : UIViewController
+@interface JTCertificateViewController : UIViewController <UIAlertViewDelegate>
 
 @property (strong, nonatomic) IBOutlet UIButton *emailButton;
+
+@property (strong, nonatomic) IBOutlet UIView *certView;
+
+@property (strong, nonatomic) NSString* courseName;
+@property (strong, nonatomic) NSString* categoryType;
+
 
 - (IBAction)didTapEmailButton:(id)sender;
 

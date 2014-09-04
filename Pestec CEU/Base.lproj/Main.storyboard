@@ -299,25 +299,12 @@
                                     <segue destination="DfO-6n-jPU" kind="push" identifier="workerToTopics" id="SOe-jq-PRj"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7v5-Fh-9mD">
-                                <rect key="frame" x="50" y="437" width="223" height="41"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <state key="normal" title="Courses Completed">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="x3M-0y-I1y" kind="push" identifier="toCompleted" id="etL-8m-l1n"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.42082377300000001" green="0.72347119950000005" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="31N-3m-5Nm"/>
                     <connections>
                         <outlet property="applicatorCoursesAvailableButton" destination="lcQ-fl-1Rf" id="H52-1k-PWa"/>
-                        <outlet property="applicatorCoursesCompletedButton" destination="7v5-Fh-9mD" id="mwy-yk-gq4"/>
                         <outlet property="applicatorIPMLabel" destination="dqw-II-J0t" id="X0s-SD-lfS"/>
                         <outlet property="applicatorPesticideLabel" destination="Mzs-Us-UTj" id="fqw-gg-KIY"/>
                         <outlet property="applicatorProofTextView" destination="FWt-Qs-vrr" id="lT8-9g-Q6g"/>
@@ -594,18 +581,6 @@
                                     <segue destination="DfO-6n-jPU" kind="push" identifier="workerToTopics" id="Diw-m3-cB3"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lfI-j2-YGN">
-                                <rect key="frame" x="49" y="434" width="223" height="41"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <state key="normal" title="Courses Completed">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="x3M-0y-I1y" kind="push" identifier="toCompleted" id="E1L-Yf-HuP"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="2 HRS GENERAL" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SYK-co-hfs">
                                 <rect key="frame" x="44" y="364" width="133" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -618,7 +593,6 @@
                     <navigationItem key="navigationItem" id="mpM-kI-z3W"/>
                     <connections>
                         <outlet property="fieldRepCoursesAvailableButton" destination="owO-qV-aMN" id="xxE-iH-ENV"/>
-                        <outlet property="fieldRepCoursesCompletedButton" destination="lfI-j2-YGN" id="z5A-Qt-0TR"/>
                         <outlet property="fieldRepGeneralLabel" destination="SYK-co-hfs" id="x7O-nV-Jdh"/>
                         <outlet property="fieldRepIPMLabel" destination="oum-dA-4ll" id="mwB-gc-axy"/>
                         <outlet property="fieldRepProofTextView" destination="LrL-uP-CyS" id="beU-Rn-agK"/>
@@ -640,11 +614,11 @@
                         <viewControllerLayoutGuide type="bottom" id="YOS-oL-5kY"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="1wX-j4-MJw">
-                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="64" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="xNo-ht-HKj">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
@@ -871,18 +845,6 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cDE-Fe-hrB">
-                                <rect key="frame" x="49" y="441" width="223" height="41"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <state key="normal" title="Courses Completed">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="x3M-0y-I1y" kind="push" identifier="toCompleted" id="cEW-RZ-SD3"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="2 HRS GENERAL" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eok-cl-BCG">
                                 <rect key="frame" x="44" y="369" width="133" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -895,7 +857,6 @@
                     <navigationItem key="navigationItem" id="k5H-BJ-YiR"/>
                     <connections>
                         <outlet property="operatorCoursesAvailableButton" destination="WIc-tb-gpT" id="cPx-E5-u1M"/>
-                        <outlet property="operatorCoursesCompletedButton" destination="cDE-Fe-hrB" id="ngj-Pk-czv"/>
                         <outlet property="operatorGeneralLabel" destination="eok-cl-BCG" id="9FI-pb-9Hd"/>
                         <outlet property="operatorIPMLabel" destination="iXL-Xs-w9u" id="gaw-Oy-HcM"/>
                         <outlet property="operatorProofTextView" destination="JHu-Mt-kEU" id="NqI-EE-eOq"/>
@@ -917,8 +878,7 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="etL-8m-l1n"/>
-        <segue reference="SOe-jq-PRj"/>
+        <segue reference="koD-58-mPc"/>
         <segue reference="ODo-5v-S6f"/>
     </inferredMetricsTieBreakers>
 </document>

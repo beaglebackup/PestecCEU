@@ -124,16 +124,16 @@
     }
     
     switch (section) {
-        case 0:
-            headerView.textLabel.text = @"Rules & Regulations";
+        case JTWorkerTypeApplicator:
+            headerView.textLabel.text = [JTDatabaseManager workerString:JTWorkerTypeApplicator];
             break;
             
-        case 1:
-            headerView.textLabel.text = @"Pesticide";
+        case JTWorkerTypeFieldRep:
+            headerView.textLabel.text = [JTDatabaseManager workerString:JTWorkerTypeFieldRep];
             break;
             
-        case 2:
-            headerView.textLabel.text = @"IPM";
+        case JTWorkerTypeOperator:
+            headerView.textLabel.text = [JTDatabaseManager workerString:JTWorkerTypeOperator];
             break;
             
         default:

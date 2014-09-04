@@ -27,7 +27,6 @@
 		841A324C19AEA406000BCFD9 /* UIImage+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 841A324A19AEA406000BCFD9 /* UIImage+Extensions.m */; };
 		841A324E19AEA435000BCFD9 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 841A324D19AEA435000BCFD9 /* Accounts.framework */; };
 		841A325019AEA43A000BCFD9 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 841A324F19AEA43A000BCFD9 /* Social.framework */; };
-		841A325619AEB5B5000BCFD9 /* JTTopicButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 841A325519AEB5B5000BCFD9 /* JTTopicButton.m */; };
 		841A325A19AEB826000BCFD9 /* JTTopicBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 841A325919AEB826000BCFD9 /* JTTopicBaseViewController.m */; };
 		842A932D19B3F813007CBFA8 /* educertificatesample.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 842A932C19B3F813007CBFA8 /* educertificatesample.pdf */; };
 		842A933019B78C6B007CBFA8 /* CourseSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 842A932F19B78C6B007CBFA8 /* CourseSet.m */; };
@@ -84,9 +83,6 @@
 		EF5B574F196BA39B00883F6A /* MainStoryboard_ipad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF5B574D196BA39B00883F6A /* MainStoryboard_ipad.storyboard */; };
 		EF5D112E196A664C00539B3E /* FieldRepViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5D112D196A664C00539B3E /* FieldRepViewController.m */; };
 		EF5D1131196A669700539B3E /* OperatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5D1130196A669700539B3E /* OperatorViewController.m */; };
-		EF5D1134196A6BAF00539B3E /* JTApplicatorCoursesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5D1133196A6BAF00539B3E /* JTApplicatorCoursesViewController.m */; };
-		EF5D1137196A6BC300539B3E /* FieldRepCoursesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5D1136196A6BC300539B3E /* FieldRepCoursesViewController.m */; };
-		EF5D113A196A6BD600539B3E /* OperatorCoursesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5D1139196A6BD600539B3E /* OperatorCoursesViewController.m */; };
 		EF5D113D196A73EC00539B3E /* JTCourseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5D113C196A73EC00539B3E /* JTCourseViewController.m */; };
 		EF5D1146196A775C00539B3E /* JTCompletedCoursesController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5D1145196A775C00539B3E /* JTCompletedCoursesController.m */; };
 /* End PBXBuildFile section */
@@ -129,8 +125,6 @@
 		841A324B19AEA406000BCFD9 /* UIImage+Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Extensions.h"; sourceTree = "<group>"; };
 		841A324D19AEA435000BCFD9 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		841A324F19AEA43A000BCFD9 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
-		841A325419AEB5B5000BCFD9 /* JTTopicButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTTopicButton.h; sourceTree = "<group>"; };
-		841A325519AEB5B5000BCFD9 /* JTTopicButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTTopicButton.m; sourceTree = "<group>"; };
 		841A325819AEB826000BCFD9 /* JTTopicBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTTopicBaseViewController.h; sourceTree = "<group>"; };
 		841A325919AEB826000BCFD9 /* JTTopicBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTTopicBaseViewController.m; sourceTree = "<group>"; };
 		842A932C19B3F813007CBFA8 /* educertificatesample.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = educertificatesample.pdf; sourceTree = "<group>"; };
@@ -230,12 +224,6 @@
 		EF5D112D196A664C00539B3E /* FieldRepViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FieldRepViewController.m; sourceTree = "<group>"; };
 		EF5D112F196A669700539B3E /* OperatorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OperatorViewController.h; sourceTree = "<group>"; };
 		EF5D1130196A669700539B3E /* OperatorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OperatorViewController.m; sourceTree = "<group>"; };
-		EF5D1132196A6BAF00539B3E /* JTApplicatorCoursesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTApplicatorCoursesViewController.h; sourceTree = "<group>"; };
-		EF5D1133196A6BAF00539B3E /* JTApplicatorCoursesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTApplicatorCoursesViewController.m; sourceTree = "<group>"; };
-		EF5D1135196A6BC300539B3E /* FieldRepCoursesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FieldRepCoursesViewController.h; sourceTree = "<group>"; };
-		EF5D1136196A6BC300539B3E /* FieldRepCoursesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FieldRepCoursesViewController.m; sourceTree = "<group>"; };
-		EF5D1138196A6BD600539B3E /* OperatorCoursesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OperatorCoursesViewController.h; sourceTree = "<group>"; };
-		EF5D1139196A6BD600539B3E /* OperatorCoursesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OperatorCoursesViewController.m; sourceTree = "<group>"; };
 		EF5D113B196A73EC00539B3E /* JTCourseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTCourseViewController.h; sourceTree = "<group>"; };
 		EF5D113C196A73EC00539B3E /* JTCourseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTCourseViewController.m; sourceTree = "<group>"; };
 		EF5D1144196A775C00539B3E /* JTCompletedCoursesController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTCompletedCoursesController.h; sourceTree = "<group>"; };
@@ -359,14 +347,6 @@
 		841A325119AEB557000BCFD9 /* Topics */ = {
 			isa = PBXGroup;
 			children = (
-				EF5D1135196A6BC300539B3E /* FieldRepCoursesViewController.h */,
-				EF5D1136196A6BC300539B3E /* FieldRepCoursesViewController.m */,
-				EF5D1138196A6BD600539B3E /* OperatorCoursesViewController.h */,
-				EF5D1139196A6BD600539B3E /* OperatorCoursesViewController.m */,
-				EF5D1132196A6BAF00539B3E /* JTApplicatorCoursesViewController.h */,
-				EF5D1133196A6BAF00539B3E /* JTApplicatorCoursesViewController.m */,
-				841A325419AEB5B5000BCFD9 /* JTTopicButton.h */,
-				841A325519AEB5B5000BCFD9 /* JTTopicButton.m */,
 				841A325819AEB826000BCFD9 /* JTTopicBaseViewController.h */,
 				841A325919AEB826000BCFD9 /* JTTopicBaseViewController.m */,
 				842A933119B8E3BF007CBFA8 /* JTTopicTableViewCell.h */,
@@ -727,7 +707,6 @@
 				EF5D1146196A775C00539B3E /* JTCompletedCoursesController.m in Sources */,
 				8434C56019B260F800245F05 /* UserAnswer.m in Sources */,
 				EF5D112E196A664C00539B3E /* FieldRepViewController.m in Sources */,
-				841A325619AEB5B5000BCFD9 /* JTTopicButton.m in Sources */,
 				8434C56319B2610400245F05 /* QuizQuestion.m in Sources */,
 				841A324419AE9559000BCFD9 /* JTLogInViewController.m in Sources */,
 				8434C52119AFB60E00245F05 /* Course.m in Sources */,
@@ -757,12 +736,9 @@
 				EF298378196A574F000A6BE0 /* main.m in Sources */,
 				8434C54319AFD1EF00245F05 /* JGProgressHUDIndicatorView.m in Sources */,
 				841A324C19AEA406000BCFD9 /* UIImage+Extensions.m in Sources */,
-				EF5D1137196A6BC300539B3E /* FieldRepCoursesViewController.m in Sources */,
-				EF5D1134196A6BAF00539B3E /* JTApplicatorCoursesViewController.m in Sources */,
 				842A933319B8E3BF007CBFA8 /* JTTopicTableViewCell.m in Sources */,
 				EF5D1131196A669700539B3E /* OperatorViewController.m in Sources */,
 				841A324319AE9559000BCFD9 /* JTWelcomeViewController.m in Sources */,
-				EF5D113A196A6BD600539B3E /* OperatorCoursesViewController.m in Sources */,
 				841A323B19AE946A000BCFD9 /* JTDatabaseManager.m in Sources */,
 				8434C53E19AFD1EF00245F05 /* JGProgressHUDAnimation.m in Sources */,
 				8434C55619B046C700245F05 /* JTWorkerBaseViewController.m in Sources */,

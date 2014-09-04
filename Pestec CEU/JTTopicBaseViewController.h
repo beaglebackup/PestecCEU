@@ -9,7 +9,8 @@
 #import <UIKit/UIKit.h>
 
 
-@interface JTTopicBaseViewController : UIViewController
+@interface JTTopicBaseViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
+
 @property (assign) JTWorkerTypeIndex workerType;
 
 @property (strong, nonatomic) IBOutlet UITableView *tableView;

@@ -16,7 +16,7 @@
 #import "QuizAnswer.h"
 #import "QuizQuestion.h"
 #import "UserAnswer.h"
-
+#import "CourseSet.h"
 
 
 @interface AppDelegate ()
@@ -38,6 +38,7 @@
     [QuizQuestion registerSubclass];
     [QuizAnswer registerSubclass];
     [UserAnswer registerSubclass];
+    [CourseSet registerSubclass];
 
     
     // Initialize Parse

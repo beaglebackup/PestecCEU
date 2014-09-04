@@ -328,12 +328,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mav-ND-jGt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1365" y="240"/>
+            <point key="canvasLocation" x="1514" y="194"/>
         </scene>
-        <!--Applicator Courses View Controller-->
+        <!--Topic Base View Controller-->
         <scene sceneID="grd-BU-DCV">
             <objects>
-                <viewController id="DfO-6n-jPU" customClass="JTApplicatorCoursesViewController" sceneMemberID="viewController">
+                <viewController id="DfO-6n-jPU" customClass="JTTopicBaseViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="GbN-UO-BKX"/>
                         <viewControllerLayoutGuide type="bottom" id="Vk9-VE-hOz"/>
@@ -365,7 +365,7 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.80000001190000003" green="0.64868093099601554" blue="0.10915306387216948" alpha="1" colorSpace="calibratedRGB"/>
                                     </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationLevel="2" indentationWidth="10" reuseIdentifier="topicCell" textLabel="o36-hh-Gne" style="IBUITableViewCellStyleDefault" id="2ci-6u-qDF">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationLevel="2" indentationWidth="10" reuseIdentifier="topicCell" textLabel="o36-hh-Gne" style="IBUITableViewCellStyleDefault" id="2ci-6u-qDF" customClass="JTTopicTableViewCell">
                                         <rect key="frame" x="0.0" y="99" width="337" height="44"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2ci-6u-qDF" id="H3x-Ph-6kz">
@@ -497,6 +497,7 @@
         <!--Field Rep View Controller-->
         <scene sceneID="oGR-ap-q4o">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ife-oI-Fy0" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="btx-6H-swg" customClass="FieldRepViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="g63-Hy-QPb"/>
@@ -593,7 +594,6 @@
                         <outlet property="fieldRepTechnicalLabel" destination="LGy-cP-gzB" id="01V-R0-PQc"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ife-oI-Fy0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1394" y="951"/>
         </scene>
@@ -614,7 +614,7 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="bUS-Em-7ic">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="completedSectionHeaderCell" id="bUS-Em-7ic">
                                         <rect key="frame" x="0.0" y="22" width="320" height="64"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="bUS-Em-7ic" id="l5g-2s-dZj">
@@ -883,7 +883,7 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="SOe-jq-PRj"/>
         <segue reference="etL-8m-l1n"/>
+        <segue reference="SOe-jq-PRj"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -9,6 +9,7 @@
 #import "JTDatabaseManager.h"
 #import "User.h"
 #import "Course.h"
+#import "CourseSet.h"
 #import "QuizQuestion.h"
 
 @interface JTDatabaseManager ()
@@ -33,6 +34,20 @@
 }
 
 #pragma mark - Reads
++ (void)queryForCourseSet:(NSString*)workerType withCallback:(void(^)(NSArray* courses, NSError *error))callback {
+    
+    PFQuery* coursesQuery = [PFQuery queryWithClassName:[CourseSet parseClassName]];
+    [coursesQuery whereKey:[CourseSet workerTypeKey] equalTo:workerType];
+    [coursesQuery includeKey:[CourseSet coursesKey]];
+    
+    [coursesQuery orderByAscending:[CourseSet orderKey]];
+    
+    [coursesQuery findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+        callback(objects, error);
+    }];
+}
+
+
 + (void)queryForCourses:(NSString*)workerType withCallback:(void(^)(NSArray* courses, NSError *error))callback {
 
     PFQuery* coursesQuery = [PFQuery queryWithClassName:[Course parseClassName]];

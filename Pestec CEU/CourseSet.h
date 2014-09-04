@@ -8,6 +8,20 @@
 
 #import <Parse/Parse.h>
 
-@interface CourseSet : PFObject
+@interface CourseSet : PFObject <PFSubclassing>
+
+
+@property (retain) NSString *categoryType;
+@property (retain) NSString *workerType;
+@property (retain) NSNumber *order;
+@property (retain) NSArray *courses;
+
+
++ (NSString *)parseClassName;
+
++ (NSString *)categoryTypeKey;
++ (NSString *)workerTypeKey;
++ (NSString *)orderKey;
++ (NSString *)coursesKey;
 
 @end

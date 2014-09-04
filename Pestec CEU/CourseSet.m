@@ -10,4 +10,31 @@
 
 @implementation CourseSet
 
+@dynamic categoryType;
+@dynamic workerType;
+@dynamic order;
+@dynamic courses;
+
++ (NSString *)parseClassName {
+    return @"CourseSet";
+}
+
++ (NSString *)categoryTypeKey {
+    return @"categoryType";
+}
+
++ (NSString *)workerTypeKey {
+    return @"workerType";
+}
+
++ (NSString *)orderKey {
+    return @"order";
+}
+
++ (NSString *)coursesKey {
+    return @"courses";
+}
+
+
+
 @end

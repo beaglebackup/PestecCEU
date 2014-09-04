@@ -75,34 +75,5 @@
 }
 
 
-#pragma mark - Navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    // Get the new view controller using [segue destinationViewController].
-    JTTopicButton* button = (JTTopicButton*)sender;
-    
-    // Subdetails
-    if ([[segue identifier] isEqualToString:@"topicToCourse"])
-    {
-        JTCourseViewController *courseVC = [segue destinationViewController];
-        courseVC.tag = [NSNumber numberWithInt:button.tag];
-        courseVC.workerType = self.workerType;
-        
-        
-    }
-}
-
-#pragma mark - JTTopicButton Delegate
-- (void)didTapTopicButton:(JTTopicButton *)button {
-    
-    NSInteger tag = button.tag;
-    
-    NSLog(@"tag = %d",tag);
-    
-    
-    [self performSegueWithIdentifier:@"topicToCourse" sender:button];
-    
-}
-
 
 @end

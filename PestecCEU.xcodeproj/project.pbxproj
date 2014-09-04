@@ -30,6 +30,7 @@
 		841A325619AEB5B5000BCFD9 /* JTTopicButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 841A325519AEB5B5000BCFD9 /* JTTopicButton.m */; };
 		841A325A19AEB826000BCFD9 /* JTTopicBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 841A325919AEB826000BCFD9 /* JTTopicBaseViewController.m */; };
 		842A932D19B3F813007CBFA8 /* educertificatesample.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 842A932C19B3F813007CBFA8 /* educertificatesample.pdf */; };
+		842A933019B78C6B007CBFA8 /* CourseSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 842A932F19B78C6B007CBFA8 /* CourseSet.m */; };
 		8434C51719AFB28F00245F05 /* MZTimerLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8434C51619AFB28F00245F05 /* MZTimerLabel.m */; };
 		8434C51B19AFB50F00245F05 /* NSNumber+NSTimeInterval.m in Sources */ = {isa = PBXBuildFile; fileRef = 8434C51A19AFB50F00245F05 /* NSNumber+NSTimeInterval.m */; };
 		8434C51E19AFB5AD00245F05 /* UserCourse.m in Sources */ = {isa = PBXBuildFile; fileRef = 8434C51D19AFB5AD00245F05 /* UserCourse.m */; };
@@ -132,6 +133,8 @@
 		841A325819AEB826000BCFD9 /* JTTopicBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTTopicBaseViewController.h; sourceTree = "<group>"; };
 		841A325919AEB826000BCFD9 /* JTTopicBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTTopicBaseViewController.m; sourceTree = "<group>"; };
 		842A932C19B3F813007CBFA8 /* educertificatesample.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = educertificatesample.pdf; sourceTree = "<group>"; };
+		842A932E19B78C6A007CBFA8 /* CourseSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CourseSet.h; sourceTree = "<group>"; };
+		842A932F19B78C6B007CBFA8 /* CourseSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CourseSet.m; sourceTree = "<group>"; };
 		8434C51519AFB28F00245F05 /* MZTimerLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MZTimerLabel.h; sourceTree = "<group>"; };
 		8434C51619AFB28F00245F05 /* MZTimerLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MZTimerLabel.m; sourceTree = "<group>"; };
 		8434C51919AFB50F00245F05 /* NSNumber+NSTimeInterval.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNumber+NSTimeInterval.h"; sourceTree = "<group>"; };
@@ -344,6 +347,8 @@
 				8434C56519B2611400245F05 /* QuizAnswer.m */,
 				8434C56119B2610400245F05 /* QuizQuestion.h */,
 				8434C56219B2610400245F05 /* QuizQuestion.m */,
+				842A932E19B78C6A007CBFA8 /* CourseSet.h */,
+				842A932F19B78C6B007CBFA8 /* CourseSet.m */,
 			);
 			name = Data;
 			sourceTree = "<group>";
@@ -743,6 +748,7 @@
 				EF5D113D196A73EC00539B3E /* JTCourseViewController.m in Sources */,
 				EF2983A8196A6015000A6BE0 /* ApplicatorViewController.m in Sources */,
 				841A323819AE9463000BCFD9 /* UIColor+Extensions.m in Sources */,
+				842A933019B78C6B007CBFA8 /* CourseSet.m in Sources */,
 				EF298378196A574F000A6BE0 /* main.m in Sources */,
 				8434C54319AFD1EF00245F05 /* JGProgressHUDIndicatorView.m in Sources */,
 				841A324C19AEA406000BCFD9 /* UIImage+Extensions.m in Sources */,

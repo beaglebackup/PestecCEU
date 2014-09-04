@@ -15,8 +15,8 @@
 
 @property (nonatomic, strong) Course* course;
 
-@property (assign) JTWorkerTypeIndex workerType;
-@property (nonatomic, strong) NSNumber* tag;
+//@property (assign) JTWorkerTypeIndex workerType;
+//@property (nonatomic, strong) NSNumber* tag;
 
 
 @property (strong, nonatomic) IBOutlet UIView *loadingView;

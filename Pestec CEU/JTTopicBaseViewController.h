@@ -7,11 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "JTTopicButton.h"
 
 
-@interface JTTopicBaseViewController : UIViewController <JTTopicButtonDelegate>
-
+@interface JTTopicBaseViewController : UIViewController
 @property (assign) JTWorkerTypeIndex workerType;
 
 @property (strong, nonatomic) IBOutlet UITableView *tableView;

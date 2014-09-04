@@ -20,8 +20,6 @@
 @property (retain) NSArray *courses;
 
 
-@property (retain) NSArray *userCourses;
-
 
 
 + (NSString *)firstNameKey;

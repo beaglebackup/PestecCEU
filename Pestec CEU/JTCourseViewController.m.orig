@@ -41,10 +41,13 @@
 {
     [super viewDidLoad];
     
-//    NSLog(@"self.workerType = %u",self.workerType);
-//    NSLog(@"self.tag = %@",self.tag);
+<<<<<<< HEAD
+=======
+    NSLog(@"self.workerType = %@",self.workerType);
+    NSLog(@"self.tag = %@",self.tag);
 
     
+>>>>>>> tableview
     // Loading HUD
     [self.view bringSubviewToFront:self.loadingView];
     self.loadingView.hidden = NO;
@@ -52,16 +55,30 @@
     self.progressHUD.textLabel.text = @"Loading Course";
     [self.progressHUD showInView:self.view];
 
+<<<<<<< HEAD
+    
+    // Setup JTCourseManager
+    [[JTCourseManager shared] setCourseTimer:self.courseTimer];
+    self.courseTimer.delegate = self;
+=======
     
     // Setup JTCourseManager
     [[JTCourseManager shared] setCourseTimer:self.courseTimer];
     self.courseTimer.delegate = self;
     
+>>>>>>> tableview
     
     // Other view stuff
     [self setQuizButtonState];
 
     
+<<<<<<< HEAD
+    // Other view stuff
+    [self setQuizButtonState];
+
+    
+=======
+>>>>>>> tableview
     // Register for Notifications
     [self registerForNotifications];
     
@@ -107,16 +124,13 @@
 - (void) loadObjects {
     
     // Get the course object
-//    NSString* workerString = [JTDatabaseManager workerString:self.workerType];
-//    [JTDatabaseManager queryForCourse:self.tag workerType:workerString withCallback:^(Course *course, NSError *error) {
-//        if (error) {
-//            NSLog(@"error = %@",error);
-//            return;
-//        }
-    
-//        self.course = course;
-    
+    [JTDatabaseManager queryForCourse:self.tag workerType:self.workerType withCallback:^(Course *course, NSError *error) {
+        if (error) {
+            NSLog(@"error = %@",error);
+            return;
+        }
         
+        self.course = course;
         
         // Does the user have the course
         if ([JTDatabaseManager user:(User*)[PFUser currentUser] hasCourse:self.course]) {
@@ -137,10 +151,7 @@
         
         // ELSE create a new UserCourse
         else {
-            
             [JTDatabaseManager createUserCourse:self.course user:(User*)[PFUser currentUser] withCallback:^(UserCourse *course, NSError *error) {
-                
-                
                 if (error) {
                     NSLog(@"error = %@",error);
                     return;
@@ -151,9 +162,7 @@
                 [self objectsDidLoad];
             }];
         }
-        
-        
-//    }];
+    }];
 }
 
 - (void) objectsDidLoad {
@@ -170,6 +179,7 @@
 //    
 //    [[JTCourseManager shared].courseTimer setStopWatchTime:timeInterval];
 //    [[JTCourseManager shared].courseTimer start];
+<<<<<<< HEAD
     
     
 }
@@ -177,6 +187,15 @@
 #pragma mark - NSNotifications
 - (void) registerForNotifications {
     
+=======
+    
+    
+}
+
+#pragma mark - NSNotifications
+- (void) registerForNotifications {
+    
+>>>>>>> tableview
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(applicationDidEnterBackground) name:UIApplicationDidEnterBackgroundNotification object:nil];
 
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(applicationDidBecomeActive) name:UIApplicationDidBecomeActiveNotification object:nil];
@@ -238,14 +257,11 @@
 #pragma mark - Navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
+    UIButton* button = (UIButton*)sender;
     
     if ([[segue identifier] isEqualToString:@"courseToQuiz"])
     {
         JTQuizViewController *quizVC = [segue destinationViewController];
-        
-        NSLog(@"self.course = %@",self.course);
-        
-        quizVC.course = self.course;
     }
 }
 
@@ -254,6 +270,11 @@
 
 
 #pragma mark - Buttons
+- (IBAction)didTapSaveButton:(id)sender {
+    
+    
+}
+
 - (IBAction)didTapQuizButton:(id)sender {
     
     if ([[JTCourseManager shared] isCourseRead]) {

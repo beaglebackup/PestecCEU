@@ -10,7 +10,9 @@
 #import "User.h"
 #import "Course.h"
 #import "CourseSet.h"
+#import "UserCourseSet.h"
 #import "QuizQuestion.h"
+
 
 @interface JTDatabaseManager ()
 
@@ -34,15 +36,28 @@
 }
 
 #pragma mark - Reads
-+ (void)queryForCourseSet:(NSString*)workerType withCallback:(void(^)(NSArray* courses, NSError *error))callback {
++ (void)queryForCourseSets:(NSString*)workerType withCallback:(void(^)(NSArray* courseSets, NSError *error))callback {
     
-    PFQuery* coursesQuery = [PFQuery queryWithClassName:[CourseSet parseClassName]];
-    [coursesQuery whereKey:[CourseSet workerTypeKey] equalTo:workerType];
-    [coursesQuery includeKey:[CourseSet coursesKey]];
+    PFQuery* courseSetsQuery = [PFQuery queryWithClassName:[CourseSet parseClassName]];
+    [courseSetsQuery whereKey:[CourseSet workerTypeKey] equalTo:workerType];
+    [courseSetsQuery includeKey:[CourseSet coursesKey]];
     
-    [coursesQuery orderByAscending:[CourseSet orderKey]];
+    [courseSetsQuery orderByAscending:[CourseSet orderKey]];
     
-    [coursesQuery findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+    [courseSetsQuery findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+        callback(objects, error);
+    }];
+}
+
++ (void)queryForUserCourseSets:(NSString*)workerType user:(User*)user withCallback:(void(^)(NSArray* userCourseSets, NSError *error))callback {
+    
+    PFQuery* userCourseSetsQuery = [PFQuery queryWithClassName:[UserCourseSet parseClassName]];
+    [userCourseSetsQuery whereKey:[UserCourseSet workerTypeKey] equalTo:workerType];
+    [userCourseSetsQuery whereKey:[UserCourseSet userKey] equalTo:user];
+    
+    [userCourseSetsQuery includeKey:[UserCourseSet userCoursesKey]];
+
+    [userCourseSetsQuery findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
         callback(objects, error);
     }];
 }
@@ -123,6 +138,7 @@
 #pragma mark - Creates
 + (void)createUserCourse:(Course*)course user:(User*)user withCallback:(void(^)(UserCourse *course, NSError *error))callback {
     
+    // Create the userCourse object
     UserCourse* userCourse = [UserCourse object];
     userCourse.course = course;
     userCourse.user = user;
@@ -131,23 +147,59 @@
     
     [userCourse saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
         
-        // Add the Course to the User
-        NSMutableArray* coursesForUser = [user.courses mutableCopy];
+      
+        __block UserCourseSet* userCourseSet;
         
-        if (!coursesForUser) {
-            coursesForUser = [NSMutableArray new];
-        }
-        
-        [coursesForUser addObject:course];
-        user.courses = coursesForUser;
-        
-        [user saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
-            callback(userCourse, error);
+        // Check for UserCourseSet for this workerType/categoryType combo -- Create a userCourseSet object if none
+        PFQuery* userCourseSetQuery = [PFQuery queryWithClassName:[UserCourseSet parseClassName]];
+        [userCourseSetQuery whereKey:[UserCourseSet workerTypeKey] equalTo:course.workerType];
+        [userCourseSetQuery whereKey:[UserCourseSet categoryTypeKey] equalTo:course.categoryType];
+         
+        [userCourseSetQuery getFirstObjectInBackgroundWithBlock:^(PFObject *object, NSError *error) {
+            
+            // Add to existing set
+            if (object) {
+                
+                userCourseSet = (UserCourseSet*)object;
+                [userCourseSet addObject:userCourse forKey:[UserCourseSet userCoursesKey]];
+                
+            }
+            
+            // Create new set
+            else {
+                
+                // Create the userCourse object
+                userCourseSet = [UserCourseSet object];
+                userCourseSet.categoryType = course.categoryType;
+                userCourseSet.user = user;
+                userCourseSet.workerType =  course.workerType;
+                
+                NSArray* userCoursesArray = [NSArray arrayWithObject:userCourse];
+                userCourseSet.userCourses = userCoursesArray;
+                
+            }
+            
+            // Now save it
+            [userCourseSet saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+                
+                // Add the Course to the User
+                NSMutableArray* coursesForUser = [user.courses mutableCopy];
+                
+                if (!coursesForUser) {
+                    coursesForUser = [NSMutableArray new];
+                }
+                
+                [coursesForUser addObject:course];
+                user.courses = coursesForUser;
+                
+                [user saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+                    callback(userCourse, error);
+                }];
+
+            }];
+
         }];
-        
-        
     }];
-    
 }
 
 #pragma mark - Updates

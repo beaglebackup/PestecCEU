@@ -10,9 +10,11 @@
 #import "JTCourseViewController.h"
 #import "JTTopicTableViewCell.h"
 #import "CourseSet.h"
+#import "UserCourseSet.h"
 
 @interface JTTopicBaseViewController ()
 
+@property (nonatomic, strong) NSArray* userCourseSets;
 
 
 @end
@@ -45,8 +47,13 @@
     
     [self loadObjects];
 
+}
 
-
+- (void)viewDidAppear:(BOOL)animated {
+    
+    [super viewDidAppear:animated];
+    
+    [self loadUserCourses];
 }
 
 - (void)didReceiveMemoryWarning
@@ -62,7 +69,7 @@
     
     // Get the course object
     NSString* workerString = [JTDatabaseManager workerString:self.workerType];
-    [JTDatabaseManager queryForCourseSet:workerString withCallback:^(NSArray *courseSets, NSError *error) {
+    [JTDatabaseManager queryForCourseSets:workerString withCallback:^(NSArray *courseSets, NSError *error) {
         
         if (error) {
             NSLog(@"error = %@",error);
@@ -96,12 +103,35 @@
         
         [self objectsDidLoad];
     }];
+    
+    
+
+
 }
 
+- (void) loadUserCourses {
+
+    // Get the userCourses
+    NSString* workerString = [JTDatabaseManager workerString:self.workerType];
+    [JTDatabaseManager queryForUserCourseSets:workerString user:(User*)[PFUser currentUser] withCallback:^(NSArray *userCourseSets, NSError *error) {
+        
+        if (error) {
+            NSLog(@"error = %@",error);
+            return;
+        }
+        
+        self.userCourseSets = userCourseSets;
+        
+        [self.tableView reloadData];
+    }];
+
+}
 
 - (void) objectsDidLoad {
     
     [self.tableView reloadData];
+    
+    [self loadUserCourses];
 }
 
 
@@ -147,6 +177,69 @@
     cell.textLabel.text = course.name;
     cell.section = indexPath.section;
     cell.tag = indexPath.row;
+    
+    
+    // Set the course status
+    
+    if (self.userCourseSets.count > 0) {
+        
+        __block NSString* status;
+        
+        // Enumerate UserCourseSets to find if there's a userCourse that matches this cell's course
+        [self.userCourseSets enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+            
+            UserCourseSet* userCourseSet = (UserCourseSet*)obj;
+            
+            if ([courseSet.categoryType isEqualToString:userCourseSet.categoryType]) {
+                
+                // If we've found a category match then enumerate the userCourses
+                [userCourseSet.userCourses enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+                    
+                    UserCourse* userCourse = (UserCourse*)obj;
+                    
+                    if ([userCourse.course.objectId isEqualToString:course.objectId]) {
+                        
+                        NSInteger statusEnum = [userCourse.status integerValue];
+                        
+                        switch (statusEnum) {
+                            case JTCourseStatusStarted: {
+                                status = @"Reading";
+                                cell.detailTextLabel.textColor = [UIColor lightGrayColor];
+                            }
+                                break;
+                                
+                            case JTCourseStatusRead:
+                            {
+                                status = @"Quiz";
+                                cell.detailTextLabel.textColor = [UIColor grayColor];
+                            }
+                                break;
+                            
+                            case JTCourseStatusCompleted:
+                            {
+                                status = @"Completed";
+                                cell.detailTextLabel.textColor = [UIColor darkGrayColor];
+                            }
+                                break;
+                                
+                            default:
+                                status = @"Not Started";
+                                break;
+                        }
+                        
+                    }
+                }];
+            }
+        
+            
+        }];
+        
+        
+        cell.detailTextLabel.text = status;
+    }
+//    else {
+//        cell.detailTextLabel.text = @"Not Started"; // default for all
+//    }
     
     return cell;
 }

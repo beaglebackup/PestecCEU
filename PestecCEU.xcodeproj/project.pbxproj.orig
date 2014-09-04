@@ -27,11 +27,8 @@
 		841A324C19AEA406000BCFD9 /* UIImage+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 841A324A19AEA406000BCFD9 /* UIImage+Extensions.m */; };
 		841A324E19AEA435000BCFD9 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 841A324D19AEA435000BCFD9 /* Accounts.framework */; };
 		841A325019AEA43A000BCFD9 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 841A324F19AEA43A000BCFD9 /* Social.framework */; };
+		841A325619AEB5B5000BCFD9 /* JTTopicButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 841A325519AEB5B5000BCFD9 /* JTTopicButton.m */; };
 		841A325A19AEB826000BCFD9 /* JTTopicBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 841A325919AEB826000BCFD9 /* JTTopicBaseViewController.m */; };
-		842A932D19B3F813007CBFA8 /* educertificatesample.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 842A932C19B3F813007CBFA8 /* educertificatesample.pdf */; };
-		842A933019B78C6B007CBFA8 /* CourseSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 842A932F19B78C6B007CBFA8 /* CourseSet.m */; };
-		842A933319B8E3BF007CBFA8 /* JTTopicTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 842A933219B8E3BF007CBFA8 /* JTTopicTableViewCell.m */; };
-		842A933719B8F8D7007CBFA8 /* UserCourseSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 842A933619B8F8D7007CBFA8 /* UserCourseSet.m */; };
 		8434C51719AFB28F00245F05 /* MZTimerLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8434C51619AFB28F00245F05 /* MZTimerLabel.m */; };
 		8434C51B19AFB50F00245F05 /* NSNumber+NSTimeInterval.m in Sources */ = {isa = PBXBuildFile; fileRef = 8434C51A19AFB50F00245F05 /* NSNumber+NSTimeInterval.m */; };
 		8434C51E19AFB5AD00245F05 /* UserCourse.m in Sources */ = {isa = PBXBuildFile; fileRef = 8434C51D19AFB5AD00245F05 /* UserCourse.m */; };
@@ -51,19 +48,10 @@
 		8434C54919AFD6FC00245F05 /* JTCourseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8434C54819AFD6FC00245F05 /* JTCourseManager.m */; };
 		8434C54C19AFFB9A00245F05 /* JTCEUConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 8434C54B19AFFB9A00245F05 /* JTCEUConstants.m */; };
 		8434C55019B017AD00245F05 /* JTQuizViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8434C54F19B017AD00245F05 /* JTQuizViewController.m */; };
-		8434C55619B046C700245F05 /* JTWorkerBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8434C55519B046C700245F05 /* JTWorkerBaseViewController.m */; };
-		8434C55A19B0E6E800245F05 /* DAKeyboardControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 8434C55919B0E6E800245F05 /* DAKeyboardControl.m */; };
-		8434C55D19B0EEEF00245F05 /* JTCertificateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8434C55C19B0EEEF00245F05 /* JTCertificateViewController.m */; };
-		8434C56019B260F800245F05 /* UserAnswer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8434C55F19B260F800245F05 /* UserAnswer.m */; };
-		8434C56319B2610400245F05 /* QuizQuestion.m in Sources */ = {isa = PBXBuildFile; fileRef = 8434C56219B2610400245F05 /* QuizQuestion.m */; };
-		8434C56619B2611400245F05 /* QuizAnswer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8434C56519B2611400245F05 /* QuizAnswer.m */; };
-		8434C56919B2701400245F05 /* JTQuizAnswerTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8434C56819B2701400245F05 /* JTQuizAnswerTableViewCell.m */; };
-		8434C5A319B3F54B00245F05 /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8434C59819B3F54B00245F05 /* LICENSE.txt */; };
-		8434C5A419B3F54B00245F05 /* NSData+MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = 8434C59A19B3F54B00245F05 /* NSData+MD5.m */; };
-		8434C5A519B3F54B00245F05 /* NSString+MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = 8434C59C19B3F54B00245F05 /* NSString+MD5.m */; };
-		8434C5A619B3F54B00245F05 /* PDFView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8434C59E19B3F54B00245F05 /* PDFView.m */; };
-		8434C5A719B3F54B00245F05 /* UIImage+PDF.m in Sources */ = {isa = PBXBuildFile; fileRef = 8434C5A019B3F54B00245F05 /* UIImage+PDF.m */; };
-		8434C5A819B3F54B00245F05 /* UIView+Image.m in Sources */ = {isa = PBXBuildFile; fileRef = 8434C5A219B3F54B00245F05 /* UIView+Image.m */; };
+<<<<<<< HEAD
+=======
+		8434C55319B03F7C00245F05 /* JTWorkerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8434C55219B03F7C00245F05 /* JTWorkerViewController.m */; };
+>>>>>>> tableview
 		EF29836C196A574F000A6BE0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF29836B196A574F000A6BE0 /* Foundation.framework */; };
 		EF29836E196A574F000A6BE0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF29836D196A574F000A6BE0 /* CoreGraphics.framework */; };
 		EF298370196A574F000A6BE0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF29836F196A574F000A6BE0 /* UIKit.framework */; };
@@ -78,14 +66,19 @@
 		EF29838D196A574F000A6BE0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF29836F196A574F000A6BE0 /* UIKit.framework */; };
 		EF298395196A574F000A6BE0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EF298393196A574F000A6BE0 /* InfoPlist.strings */; };
 		EF298397196A574F000A6BE0 /* Pestec_CEUTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EF298396196A574F000A6BE0 /* Pestec_CEUTests.m */; };
-		EF2983A2196A5A66000A6BE0 /* JTLicenseMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF2983A1196A5A66000A6BE0 /* JTLicenseMenuController.m */; };
+		EF2983A2196A5A66000A6BE0 /* LicenseTypeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF2983A1196A5A66000A6BE0 /* LicenseTypeViewController.m */; };
 		EF2983A5196A5B43000A6BE0 /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF2983A4196A5B43000A6BE0 /* ProfileViewController.m */; };
 		EF2983A8196A6015000A6BE0 /* ApplicatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF2983A7196A6015000A6BE0 /* ApplicatorViewController.m */; };
 		EF5B574F196BA39B00883F6A /* MainStoryboard_ipad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF5B574D196BA39B00883F6A /* MainStoryboard_ipad.storyboard */; };
 		EF5D112E196A664C00539B3E /* FieldRepViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5D112D196A664C00539B3E /* FieldRepViewController.m */; };
 		EF5D1131196A669700539B3E /* OperatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5D1130196A669700539B3E /* OperatorViewController.m */; };
+		EF5D1134196A6BAF00539B3E /* JTApplicatorCoursesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5D1133196A6BAF00539B3E /* JTApplicatorCoursesViewController.m */; };
+		EF5D1137196A6BC300539B3E /* FieldRepCoursesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5D1136196A6BC300539B3E /* FieldRepCoursesViewController.m */; };
+		EF5D113A196A6BD600539B3E /* OperatorCoursesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5D1139196A6BD600539B3E /* OperatorCoursesViewController.m */; };
 		EF5D113D196A73EC00539B3E /* JTCourseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5D113C196A73EC00539B3E /* JTCourseViewController.m */; };
-		EF5D1146196A775C00539B3E /* JTCompletedCoursesController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5D1145196A775C00539B3E /* JTCompletedCoursesController.m */; };
+		EF5D1146196A775C00539B3E /* ApplicatorsCoursesCompletedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5D1145196A775C00539B3E /* ApplicatorsCoursesCompletedViewController.m */; };
+		EF5D1149196A777C00539B3E /* FieldRepCoursesCompletedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5D1148196A777C00539B3E /* FieldRepCoursesCompletedViewController.m */; };
+		EF5D114C196A779500539B3E /* OperatorCoursesCompletedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5D114B196A779500539B3E /* OperatorCoursesCompletedViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -126,15 +119,10 @@
 		841A324B19AEA406000BCFD9 /* UIImage+Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Extensions.h"; sourceTree = "<group>"; };
 		841A324D19AEA435000BCFD9 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		841A324F19AEA43A000BCFD9 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		841A325419AEB5B5000BCFD9 /* JTTopicButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTTopicButton.h; sourceTree = "<group>"; };
+		841A325519AEB5B5000BCFD9 /* JTTopicButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTTopicButton.m; sourceTree = "<group>"; };
 		841A325819AEB826000BCFD9 /* JTTopicBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTTopicBaseViewController.h; sourceTree = "<group>"; };
 		841A325919AEB826000BCFD9 /* JTTopicBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTTopicBaseViewController.m; sourceTree = "<group>"; };
-		842A932C19B3F813007CBFA8 /* educertificatesample.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = educertificatesample.pdf; sourceTree = "<group>"; };
-		842A932E19B78C6A007CBFA8 /* CourseSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CourseSet.h; sourceTree = "<group>"; };
-		842A932F19B78C6B007CBFA8 /* CourseSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CourseSet.m; sourceTree = "<group>"; };
-		842A933119B8E3BF007CBFA8 /* JTTopicTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTTopicTableViewCell.h; sourceTree = "<group>"; };
-		842A933219B8E3BF007CBFA8 /* JTTopicTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTTopicTableViewCell.m; sourceTree = "<group>"; };
-		842A933519B8F8D7007CBFA8 /* UserCourseSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserCourseSet.h; sourceTree = "<group>"; };
-		842A933619B8F8D7007CBFA8 /* UserCourseSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserCourseSet.m; sourceTree = "<group>"; };
 		8434C51519AFB28F00245F05 /* MZTimerLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MZTimerLabel.h; sourceTree = "<group>"; };
 		8434C51619AFB28F00245F05 /* MZTimerLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MZTimerLabel.m; sourceTree = "<group>"; };
 		8434C51919AFB50F00245F05 /* NSNumber+NSTimeInterval.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNumber+NSTimeInterval.h"; sourceTree = "<group>"; };
@@ -172,31 +160,11 @@
 		8434C54B19AFFB9A00245F05 /* JTCEUConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTCEUConstants.m; sourceTree = "<group>"; };
 		8434C54E19B017AD00245F05 /* JTQuizViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTQuizViewController.h; sourceTree = "<group>"; };
 		8434C54F19B017AD00245F05 /* JTQuizViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTQuizViewController.m; sourceTree = "<group>"; };
-		8434C55419B046C700245F05 /* JTWorkerBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTWorkerBaseViewController.h; sourceTree = "<group>"; };
-		8434C55519B046C700245F05 /* JTWorkerBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTWorkerBaseViewController.m; sourceTree = "<group>"; };
-		8434C55819B0E6E800245F05 /* DAKeyboardControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DAKeyboardControl.h; sourceTree = "<group>"; };
-		8434C55919B0E6E800245F05 /* DAKeyboardControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DAKeyboardControl.m; sourceTree = "<group>"; };
-		8434C55B19B0EEEF00245F05 /* JTCertificateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTCertificateViewController.h; sourceTree = "<group>"; };
-		8434C55C19B0EEEF00245F05 /* JTCertificateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTCertificateViewController.m; sourceTree = "<group>"; };
-		8434C55E19B260F800245F05 /* UserAnswer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserAnswer.h; sourceTree = "<group>"; };
-		8434C55F19B260F800245F05 /* UserAnswer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserAnswer.m; sourceTree = "<group>"; };
-		8434C56119B2610400245F05 /* QuizQuestion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuizQuestion.h; sourceTree = "<group>"; };
-		8434C56219B2610400245F05 /* QuizQuestion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuizQuestion.m; sourceTree = "<group>"; };
-		8434C56419B2611400245F05 /* QuizAnswer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuizAnswer.h; sourceTree = "<group>"; };
-		8434C56519B2611400245F05 /* QuizAnswer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuizAnswer.m; sourceTree = "<group>"; };
-		8434C56719B2701400245F05 /* JTQuizAnswerTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTQuizAnswerTableViewCell.h; sourceTree = "<group>"; };
-		8434C56819B2701400245F05 /* JTQuizAnswerTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTQuizAnswerTableViewCell.m; sourceTree = "<group>"; };
-		8434C59819B3F54B00245F05 /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
-		8434C59919B3F54B00245F05 /* NSData+MD5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+MD5.h"; sourceTree = "<group>"; };
-		8434C59A19B3F54B00245F05 /* NSData+MD5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+MD5.m"; sourceTree = "<group>"; };
-		8434C59B19B3F54B00245F05 /* NSString+MD5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MD5.h"; sourceTree = "<group>"; };
-		8434C59C19B3F54B00245F05 /* NSString+MD5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MD5.m"; sourceTree = "<group>"; };
-		8434C59D19B3F54B00245F05 /* PDFView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDFView.h; sourceTree = "<group>"; };
-		8434C59E19B3F54B00245F05 /* PDFView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDFView.m; sourceTree = "<group>"; };
-		8434C59F19B3F54B00245F05 /* UIImage+PDF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+PDF.h"; sourceTree = "<group>"; };
-		8434C5A019B3F54B00245F05 /* UIImage+PDF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+PDF.m"; sourceTree = "<group>"; };
-		8434C5A119B3F54B00245F05 /* UIView+Image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Image.h"; sourceTree = "<group>"; };
-		8434C5A219B3F54B00245F05 /* UIView+Image.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Image.m"; sourceTree = "<group>"; };
+<<<<<<< HEAD
+=======
+		8434C55119B03F7C00245F05 /* JTWorkerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTWorkerViewController.h; sourceTree = "<group>"; };
+		8434C55219B03F7C00245F05 /* JTWorkerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTWorkerViewController.m; sourceTree = "<group>"; };
+>>>>>>> tableview
 		EF298368196A574F000A6BE0 /* PestecCEU.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PestecCEU.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF29836B196A574F000A6BE0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		EF29836D196A574F000A6BE0 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -216,8 +184,8 @@
 		EF298392196A574F000A6BE0 /* PestecCEUTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PestecCEUTests-Info.plist"; sourceTree = "<group>"; };
 		EF298394196A574F000A6BE0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		EF298396196A574F000A6BE0 /* Pestec_CEUTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Pestec_CEUTests.m; sourceTree = "<group>"; };
-		EF2983A0196A5A66000A6BE0 /* JTLicenseMenuController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTLicenseMenuController.h; sourceTree = "<group>"; };
-		EF2983A1196A5A66000A6BE0 /* JTLicenseMenuController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTLicenseMenuController.m; sourceTree = "<group>"; };
+		EF2983A0196A5A66000A6BE0 /* LicenseTypeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LicenseTypeViewController.h; sourceTree = "<group>"; };
+		EF2983A1196A5A66000A6BE0 /* LicenseTypeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LicenseTypeViewController.m; sourceTree = "<group>"; };
 		EF2983A3196A5B43000A6BE0 /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
 		EF2983A4196A5B43000A6BE0 /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
 		EF2983A6196A6015000A6BE0 /* ApplicatorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApplicatorViewController.h; sourceTree = "<group>"; };
@@ -227,10 +195,20 @@
 		EF5D112D196A664C00539B3E /* FieldRepViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FieldRepViewController.m; sourceTree = "<group>"; };
 		EF5D112F196A669700539B3E /* OperatorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OperatorViewController.h; sourceTree = "<group>"; };
 		EF5D1130196A669700539B3E /* OperatorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OperatorViewController.m; sourceTree = "<group>"; };
+		EF5D1132196A6BAF00539B3E /* JTApplicatorCoursesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTApplicatorCoursesViewController.h; sourceTree = "<group>"; };
+		EF5D1133196A6BAF00539B3E /* JTApplicatorCoursesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTApplicatorCoursesViewController.m; sourceTree = "<group>"; };
+		EF5D1135196A6BC300539B3E /* FieldRepCoursesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FieldRepCoursesViewController.h; sourceTree = "<group>"; };
+		EF5D1136196A6BC300539B3E /* FieldRepCoursesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FieldRepCoursesViewController.m; sourceTree = "<group>"; };
+		EF5D1138196A6BD600539B3E /* OperatorCoursesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OperatorCoursesViewController.h; sourceTree = "<group>"; };
+		EF5D1139196A6BD600539B3E /* OperatorCoursesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OperatorCoursesViewController.m; sourceTree = "<group>"; };
 		EF5D113B196A73EC00539B3E /* JTCourseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTCourseViewController.h; sourceTree = "<group>"; };
 		EF5D113C196A73EC00539B3E /* JTCourseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTCourseViewController.m; sourceTree = "<group>"; };
-		EF5D1144196A775C00539B3E /* JTCompletedCoursesController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTCompletedCoursesController.h; sourceTree = "<group>"; };
-		EF5D1145196A775C00539B3E /* JTCompletedCoursesController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTCompletedCoursesController.m; sourceTree = "<group>"; };
+		EF5D1144196A775C00539B3E /* ApplicatorsCoursesCompletedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApplicatorsCoursesCompletedViewController.h; sourceTree = "<group>"; };
+		EF5D1145196A775C00539B3E /* ApplicatorsCoursesCompletedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApplicatorsCoursesCompletedViewController.m; sourceTree = "<group>"; };
+		EF5D1147196A777C00539B3E /* FieldRepCoursesCompletedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FieldRepCoursesCompletedViewController.h; sourceTree = "<group>"; };
+		EF5D1148196A777C00539B3E /* FieldRepCoursesCompletedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FieldRepCoursesCompletedViewController.m; sourceTree = "<group>"; };
+		EF5D114A196A779500539B3E /* OperatorCoursesCompletedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OperatorCoursesCompletedViewController.h; sourceTree = "<group>"; };
+		EF5D114B196A779500539B3E /* OperatorCoursesCompletedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OperatorCoursesCompletedViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -281,10 +259,11 @@
 				841A323C19AE954F000BCFD9 /* Login */,
 				EF298380196A574F000A6BE0 /* ViewController.h */,
 				EF298381196A574F000A6BE0 /* ViewController.m */,
-				EF2983A0196A5A66000A6BE0 /* JTLicenseMenuController.h */,
-				EF2983A1196A5A66000A6BE0 /* JTLicenseMenuController.m */,
+				EF2983A0196A5A66000A6BE0 /* LicenseTypeViewController.h */,
+				EF2983A1196A5A66000A6BE0 /* LicenseTypeViewController.m */,
 				EF2983A3196A5B43000A6BE0 /* ProfileViewController.h */,
 				EF2983A4196A5B43000A6BE0 /* ProfileViewController.m */,
+				EF5D114B196A779500539B3E /* OperatorCoursesCompletedViewController.m */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -335,16 +314,6 @@
 				8434C51D19AFB5AD00245F05 /* UserCourse.m */,
 				8434C51F19AFB60E00245F05 /* Course.h */,
 				8434C52019AFB60E00245F05 /* Course.m */,
-				8434C55E19B260F800245F05 /* UserAnswer.h */,
-				8434C55F19B260F800245F05 /* UserAnswer.m */,
-				8434C56419B2611400245F05 /* QuizAnswer.h */,
-				8434C56519B2611400245F05 /* QuizAnswer.m */,
-				8434C56119B2610400245F05 /* QuizQuestion.h */,
-				8434C56219B2610400245F05 /* QuizQuestion.m */,
-				842A932E19B78C6A007CBFA8 /* CourseSet.h */,
-				842A932F19B78C6B007CBFA8 /* CourseSet.m */,
-				842A933519B8F8D7007CBFA8 /* UserCourseSet.h */,
-				842A933619B8F8D7007CBFA8 /* UserCourseSet.m */,
 			);
 			name = Data;
 			sourceTree = "<group>";
@@ -352,10 +321,16 @@
 		841A325119AEB557000BCFD9 /* Topics */ = {
 			isa = PBXGroup;
 			children = (
+				EF5D1135196A6BC300539B3E /* FieldRepCoursesViewController.h */,
+				EF5D1136196A6BC300539B3E /* FieldRepCoursesViewController.m */,
+				EF5D1138196A6BD600539B3E /* OperatorCoursesViewController.h */,
+				EF5D1139196A6BD600539B3E /* OperatorCoursesViewController.m */,
+				EF5D1132196A6BAF00539B3E /* JTApplicatorCoursesViewController.h */,
+				EF5D1133196A6BAF00539B3E /* JTApplicatorCoursesViewController.m */,
+				841A325419AEB5B5000BCFD9 /* JTTopicButton.h */,
+				841A325519AEB5B5000BCFD9 /* JTTopicButton.m */,
 				841A325819AEB826000BCFD9 /* JTTopicBaseViewController.h */,
 				841A325919AEB826000BCFD9 /* JTTopicBaseViewController.m */,
-				842A933119B8E3BF007CBFA8 /* JTTopicTableViewCell.h */,
-				842A933219B8E3BF007CBFA8 /* JTTopicTableViewCell.m */,
 			);
 			name = Topics;
 			sourceTree = "<group>";
@@ -369,8 +344,8 @@
 				EF5D112D196A664C00539B3E /* FieldRepViewController.m */,
 				EF5D112F196A669700539B3E /* OperatorViewController.h */,
 				EF5D1130196A669700539B3E /* OperatorViewController.m */,
-				8434C55419B046C700245F05 /* JTWorkerBaseViewController.h */,
-				8434C55519B046C700245F05 /* JTWorkerBaseViewController.m */,
+				8434C55119B03F7C00245F05 /* JTWorkerViewController.h */,
+				8434C55219B03F7C00245F05 /* JTWorkerViewController.m */,
 			);
 			name = Workers;
 			sourceTree = "<group>";
@@ -378,10 +353,11 @@
 		841A325319AEB594000BCFD9 /* Completed */ = {
 			isa = PBXGroup;
 			children = (
-				EF5D1144196A775C00539B3E /* JTCompletedCoursesController.h */,
-				EF5D1145196A775C00539B3E /* JTCompletedCoursesController.m */,
-				8434C55B19B0EEEF00245F05 /* JTCertificateViewController.h */,
-				8434C55C19B0EEEF00245F05 /* JTCertificateViewController.m */,
+				EF5D1144196A775C00539B3E /* ApplicatorsCoursesCompletedViewController.h */,
+				EF5D1145196A775C00539B3E /* ApplicatorsCoursesCompletedViewController.m */,
+				EF5D1147196A777C00539B3E /* FieldRepCoursesCompletedViewController.h */,
+				EF5D1148196A777C00539B3E /* FieldRepCoursesCompletedViewController.m */,
+				EF5D114A196A779500539B3E /* OperatorCoursesCompletedViewController.h */,
 			);
 			name = Completed;
 			sourceTree = "<group>";
@@ -395,27 +371,9 @@
 			name = Course;
 			sourceTree = "<group>";
 		};
-		842A932A19B3F7FA007CBFA8 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				842A932B19B3F7FE007CBFA8 /* PDF */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
-		842A932B19B3F7FE007CBFA8 /* PDF */ = {
-			isa = PBXGroup;
-			children = (
-				842A932C19B3F813007CBFA8 /* educertificatesample.pdf */,
-			);
-			name = PDF;
-			sourceTree = "<group>";
-		};
 		8434C51019AFB09900245F05 /* Externals */ = {
 			isa = PBXGroup;
 			children = (
-				8434C59719B3F54B00245F05 /* UIImage+PDF */,
-				8434C55719B0E6E800245F05 /* DAKeyboardControl */,
 				8434C52619AFD1EF00245F05 /* JGProgressHUD */,
 				8434C51819AFB50F00245F05 /* NSNumber+NSTimeInterval */,
 				8434C51419AFB28F00245F05 /* MZTimerLabel */,
@@ -477,38 +435,8 @@
 			children = (
 				8434C54E19B017AD00245F05 /* JTQuizViewController.h */,
 				8434C54F19B017AD00245F05 /* JTQuizViewController.m */,
-				8434C56719B2701400245F05 /* JTQuizAnswerTableViewCell.h */,
-				8434C56819B2701400245F05 /* JTQuizAnswerTableViewCell.m */,
 			);
 			name = Quiz;
-			sourceTree = "<group>";
-		};
-		8434C55719B0E6E800245F05 /* DAKeyboardControl */ = {
-			isa = PBXGroup;
-			children = (
-				8434C55819B0E6E800245F05 /* DAKeyboardControl.h */,
-				8434C55919B0E6E800245F05 /* DAKeyboardControl.m */,
-			);
-			name = DAKeyboardControl;
-			path = Externals/DAKeyboardControl;
-			sourceTree = SOURCE_ROOT;
-		};
-		8434C59719B3F54B00245F05 /* UIImage+PDF */ = {
-			isa = PBXGroup;
-			children = (
-				8434C59819B3F54B00245F05 /* LICENSE.txt */,
-				8434C59919B3F54B00245F05 /* NSData+MD5.h */,
-				8434C59A19B3F54B00245F05 /* NSData+MD5.m */,
-				8434C59B19B3F54B00245F05 /* NSString+MD5.h */,
-				8434C59C19B3F54B00245F05 /* NSString+MD5.m */,
-				8434C59D19B3F54B00245F05 /* PDFView.h */,
-				8434C59E19B3F54B00245F05 /* PDFView.m */,
-				8434C59F19B3F54B00245F05 /* UIImage+PDF.h */,
-				8434C5A019B3F54B00245F05 /* UIImage+PDF.m */,
-				8434C5A119B3F54B00245F05 /* UIView+Image.h */,
-				8434C5A219B3F54B00245F05 /* UIView+Image.m */,
-			);
-			path = "UIImage+PDF";
 			sourceTree = "<group>";
 		};
 		EF29835F196A574F000A6BE0 = {
@@ -557,7 +485,6 @@
 		EF298371196A574F000A6BE0 /* Pestec CEU */ = {
 			isa = PBXGroup;
 			children = (
-				842A932A19B3F7FA007CBFA8 /* Resources */,
 				8434C51019AFB09900245F05 /* Externals */,
 				841A324619AE9825000BCFD9 /* Data */,
 				841A323519AE9458000BCFD9 /* Extensions */,
@@ -680,8 +607,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				842A932D19B3F813007CBFA8 /* educertificatesample.pdf in Resources */,
-				8434C5A319B3F54B00245F05 /* LICENSE.txt in Resources */,
 				EF298384196A574F000A6BE0 /* Images.xcassets in Resources */,
 				8434C53C19AFD1EF00245F05 /* JGProgressHUD Resources.bundle in Resources */,
 				EF5B574F196BA39B00883F6A /* MainStoryboard_ipad.storyboard in Resources */,
@@ -707,54 +632,46 @@
 			files = (
 				8434C52519AFB8F700245F05 /* PFObject+Copy.m in Sources */,
 				8434C54619AFD1EF00245F05 /* JGProgressHUDSuccessIndicatorView.m in Sources */,
-				8434C56619B2611400245F05 /* QuizAnswer.m in Sources */,
 				EF298382196A574F000A6BE0 /* ViewController.m in Sources */,
-				EF5D1146196A775C00539B3E /* JTCompletedCoursesController.m in Sources */,
-				842A933719B8F8D7007CBFA8 /* UserCourseSet.m in Sources */,
-				8434C56019B260F800245F05 /* UserAnswer.m in Sources */,
+				EF5D1146196A775C00539B3E /* ApplicatorsCoursesCompletedViewController.m in Sources */,
 				EF5D112E196A664C00539B3E /* FieldRepViewController.m in Sources */,
-				8434C56319B2610400245F05 /* QuizQuestion.m in Sources */,
+				841A325619AEB5B5000BCFD9 /* JTTopicButton.m in Sources */,
 				841A324419AE9559000BCFD9 /* JTLogInViewController.m in Sources */,
 				8434C52119AFB60E00245F05 /* Course.m in Sources */,
 				8434C51E19AFB5AD00245F05 /* UserCourse.m in Sources */,
 				8434C54019AFD1EF00245F05 /* JGProgressHUDFadeAnimation.m in Sources */,
-				8434C5A519B3F54B00245F05 /* NSString+MD5.m in Sources */,
 				8434C51719AFB28F00245F05 /* MZTimerLabel.m in Sources */,
 				8434C53D19AFD1EF00245F05 /* JGProgressHUD.m in Sources */,
 				841A325A19AEB826000BCFD9 /* JTTopicBaseViewController.m in Sources */,
 				8434C54919AFD6FC00245F05 /* JTCourseManager.m in Sources */,
 				EF29837C196A574F000A6BE0 /* AppDelegate.m in Sources */,
 				8434C55019B017AD00245F05 /* JTQuizViewController.m in Sources */,
-				8434C5A419B3F54B00245F05 /* NSData+MD5.m in Sources */,
 				8434C54419AFD1EF00245F05 /* JGProgressHUDPieIndicatorView.m in Sources */,
 				8434C54519AFD1EF00245F05 /* JGProgressHUDRingIndicatorView.m in Sources */,
-				EF2983A2196A5A66000A6BE0 /* JTLicenseMenuController.m in Sources */,
-				8434C55A19B0E6E800245F05 /* DAKeyboardControl.m in Sources */,
+				EF2983A2196A5A66000A6BE0 /* LicenseTypeViewController.m in Sources */,
 				841A324519AE9559000BCFD9 /* JTSignUpViewController.m in Sources */,
 				8434C51B19AFB50F00245F05 /* NSNumber+NSTimeInterval.m in Sources */,
 				8434C54119AFD1EF00245F05 /* JGProgressHUDFadeZoomAnimation.m in Sources */,
-				8434C55D19B0EEEF00245F05 /* JTCertificateViewController.m in Sources */,
 				8434C53F19AFD1EF00245F05 /* JGProgressHUDErrorIndicatorView.m in Sources */,
 				EF5D113D196A73EC00539B3E /* JTCourseViewController.m in Sources */,
 				EF2983A8196A6015000A6BE0 /* ApplicatorViewController.m in Sources */,
 				841A323819AE9463000BCFD9 /* UIColor+Extensions.m in Sources */,
-				842A933019B78C6B007CBFA8 /* CourseSet.m in Sources */,
 				EF298378196A574F000A6BE0 /* main.m in Sources */,
+				8434C55319B03F7C00245F05 /* JTWorkerViewController.m in Sources */,
 				8434C54319AFD1EF00245F05 /* JGProgressHUDIndicatorView.m in Sources */,
 				841A324C19AEA406000BCFD9 /* UIImage+Extensions.m in Sources */,
-				842A933319B8E3BF007CBFA8 /* JTTopicTableViewCell.m in Sources */,
+				EF5D114C196A779500539B3E /* OperatorCoursesCompletedViewController.m in Sources */,
+				EF5D1137196A6BC300539B3E /* FieldRepCoursesViewController.m in Sources */,
+				EF5D1134196A6BAF00539B3E /* JTApplicatorCoursesViewController.m in Sources */,
 				EF5D1131196A669700539B3E /* OperatorViewController.m in Sources */,
 				841A324319AE9559000BCFD9 /* JTWelcomeViewController.m in Sources */,
+				EF5D113A196A6BD600539B3E /* OperatorCoursesViewController.m in Sources */,
+				EF5D1149196A777C00539B3E /* FieldRepCoursesCompletedViewController.m in Sources */,
 				841A323B19AE946A000BCFD9 /* JTDatabaseManager.m in Sources */,
 				8434C53E19AFD1EF00245F05 /* JGProgressHUDAnimation.m in Sources */,
-				8434C55619B046C700245F05 /* JTWorkerBaseViewController.m in Sources */,
 				841A324919AE984B000BCFD9 /* User.m in Sources */,
-				8434C5A619B3F54B00245F05 /* PDFView.m in Sources */,
 				8434C54219AFD1EF00245F05 /* JGProgressHUDIndeterminateIndicatorView.m in Sources */,
 				8434C54C19AFFB9A00245F05 /* JTCEUConstants.m in Sources */,
-				8434C5A819B3F54B00245F05 /* UIView+Image.m in Sources */,
-				8434C5A719B3F54B00245F05 /* UIImage+PDF.m in Sources */,
-				8434C56919B2701400245F05 /* JTQuizAnswerTableViewCell.m in Sources */,
 				EF2983A5196A5B43000A6BE0 /* ProfileViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

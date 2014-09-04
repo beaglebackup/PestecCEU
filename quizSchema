@@ -1,0 +1,24 @@
+QUIZ OPTIONS
+
+(NO) 'Quiz' Class
+
+(YES) 'QuizQuestions' Class
+	xx -- 'course' objectL Points to this (Array)
+	-- Column: type
+	-- Column: question
+	-- Pointer: answers (Array)
+	?? --  Pointer: answerCorrect (Special column to point to correct answer)??
+
+(YES) 'QuizAnswers' Class
+	-- Column: text
+	-- Column: isCorrect (BOOL)
+
+
+
+USERQUIZ OPTIONS
+
+1. 'QuizAnswers' Class
+	xx -- 'userCourse' object: Points to this
+	-- Pointer: to 'user' object
+	?? --  Pointer: to 'quizQuestion' object
+	-- Column: isCorrect (BOOL)

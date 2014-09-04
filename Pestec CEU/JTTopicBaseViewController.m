@@ -9,12 +9,16 @@
 #import "JTTopicBaseViewController.h"
 #import "JTCourseViewController.h"
 #import "JTTopicTableViewCell.h"
+#import "JTCertificateViewController.h"
 #import "CourseSet.h"
 #import "UserCourseSet.h"
 
 @interface JTTopicBaseViewController ()
 
+
 @property (nonatomic, strong) NSArray* userCourseSets;
+
+@property (nonatomic, strong) NSMutableArray* sectionCompletedTracker;
 
 
 @end
@@ -29,6 +33,18 @@
     }
     return self;
 }
+
+- (NSMutableArray*) sectionCompletedTracker {
+    if (!_sectionCompletedTracker) {
+        _sectionCompletedTracker = [[NSMutableArray alloc] initWithCapacity:_objects.count];
+        for (int i = 0; i < _objects.count; i++ )
+        {
+            _sectionCompletedTracker[i] = [NSNumber numberWithBool:NO];
+        }
+    }
+    return _sectionCompletedTracker;
+}
+
 
 - (void)viewDidLoad
 {
@@ -122,9 +138,55 @@
         
         self.userCourseSets = userCourseSets;
         
-        [self.tableView reloadData];
-    }];
+        
+        // Fill in sectionCompletedTracker
+        // 1. First enumerate courseSets (objects)
+        [self.objects enumerateObjectsUsingBlock:^(id obj, NSUInteger idxSection, BOOL *stop) {
+            
+            CourseSet* courseSet = (CourseSet*)obj;
+            
+            // 2. Enumerate UserCourseSets to find if there's a userCourse that matches this cell's course
+            [self.userCourseSets enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+                
+                UserCourseSet* userCourseSet = (UserCourseSet*)obj;
+                
+                if ([courseSet.categoryType isEqualToString:userCourseSet.categoryType]) {
+                    
+                    __block NSInteger completedCount = 0;
+                    
+                    // 3. Enumerate all the courses and check if corresponding userCourse.status = completed
+                    [courseSet.courses enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+                        
+                        Course* course = (Course*)obj;
+                        
+                        // 3. Enumerate all the userCourses
+                        [userCourseSet.userCourses enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+                            
+                            UserCourse* userCourse = (UserCourse*)obj;
+                            
+                            // Check if there's a userCourse that matches this course && it's status is completed
+                            if ([userCourse.course.objectId isEqualToString:course.objectId] && ([userCourse.status integerValue] == JTCourseStatusCompleted)) {
+                                
+                                completedCount++;
+                            }
+                        }];
+                    }];
+                
+                    // NOW FINALLY check if total completed topics equals number of topics in this course
+                    if (completedCount >= courseSet.courses.count) {
+                        self.sectionCompletedTracker[idxSection] = [NSNumber numberWithBool:YES];
+                    }
+                }
+            }];
+        }];
 
+        
+        
+        // AND RELOAD!
+        [self.tableView reloadData];
+
+    }];
+    
 }
 
 - (void) objectsDidLoad {
@@ -151,9 +213,18 @@
     CourseSet* courseSet = (CourseSet*)self.objects[section];
     
     NSLog(@"courseSet.courses.count = %lu",(unsigned long)courseSet.courses.count);
+    
+    NSInteger courseCount = courseSet.courses.count;
+    
+    
+    // If section is completed add a row for the cert
+    if ([self.sectionCompletedTracker[section] boolValue]) {
+        
+        courseCount++;
+    }
 
     
-    return courseSet.courses.count;
+    return courseCount;
     
 }
 
@@ -161,6 +232,35 @@
 
 - (UITableViewCell *)tableView:(UITableView *)aTableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
+
+
+    CourseSet* courseSet = (CourseSet*)self.objects[indexPath.section];
+
+    
+    // Check if this should be a certificateCell
+    if (indexPath.row > (courseSet.courses.count - 1)) {
+        
+        static NSString *cellIdentifier = @"topicCertCell";
+        
+        JTTopicTableViewCell *cell = (JTTopicTableViewCell *)[self.tableView dequeueReusableCellWithIdentifier:cellIdentifier];
+        
+        if (cell == nil) {
+            cell = [[JTTopicTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
+        }
+        
+        cell.section = indexPath.section;
+        cell.tag = indexPath.row;
+
+        
+        cell.textLabel.text = @"Course Completed";
+        cell.detailTextLabel.text = @"Click for certificate";
+        return cell;
+    }
+    
+    
+    
+    
+    // A regular cell
     static NSString *cellIdentifier = @"topicCell";
     
     JTTopicTableViewCell *cell = (JTTopicTableViewCell *)[self.tableView dequeueReusableCellWithIdentifier:cellIdentifier];
@@ -169,18 +269,16 @@
         cell = [[JTTopicTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
     }
     
-    
-    CourseSet* courseSet = (CourseSet*)self.objects[indexPath.section];
-    Course* course = courseSet.courses[indexPath.row];
-    
-    
-    cell.textLabel.text = course.name;
     cell.section = indexPath.section;
     cell.tag = indexPath.row;
     
+
+    
+    Course* course = courseSet.courses[indexPath.row];
+
+    cell.textLabel.text = course.name;
     
     // Set the course status
-    
     if (self.userCourseSets.count > 0) {
         
         __block NSString* status;
@@ -204,21 +302,21 @@
                         switch (statusEnum) {
                             case JTCourseStatusStarted: {
                                 status = @"Reading";
-                                cell.detailTextLabel.textColor = [UIColor lightGrayColor];
+                                cell.detailTextLabel.textColor = [UIColor grayColor];
                             }
                                 break;
                                 
                             case JTCourseStatusRead:
                             {
                                 status = @"Quiz";
-                                cell.detailTextLabel.textColor = [UIColor grayColor];
+                                cell.detailTextLabel.textColor = [UIColor darkGrayColor];
                             }
                                 break;
                             
                             case JTCourseStatusCompleted:
                             {
                                 status = @"Completed";
-                                cell.detailTextLabel.textColor = [UIColor darkGrayColor];
+                                cell.detailTextLabel.textColor = [UIColor blackColor];
                             }
                                 break;
                                 
@@ -250,10 +348,17 @@
 - (void)tableView:(UITableView *)aTableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
     UITableViewCell* cell = [aTableView cellForRowAtIndexPath:indexPath];
+    CourseSet* courseSet = (CourseSet*)self.objects[indexPath.section];
+    
+
+    // Check if this should be a certificateCell
+    if (indexPath.row > (courseSet.courses.count - 1)) {
+        [self performSegueWithIdentifier:@"topicToCert" sender:cell];
+        return;
+    }
+
     
     [self performSegueWithIdentifier:@"topicToCourse" sender:cell];
-    
-    
 }
 
 
@@ -268,6 +373,9 @@
     CourseSet* courseSet = (CourseSet*)self.objects[section];
     
     headerView.textLabel.text = courseSet.categoryType;
+    
+    
+   
 
 
 //    
@@ -315,6 +423,22 @@
         CourseSet* courseSet = (CourseSet*)self.objects[cell.section];
         courseVC.course = courseSet.courses[cell.tag];
     }
+    else if ([[segue identifier] isEqualToString:@"topicToCert"]) {
+        
+        JTCertificateViewController *certVC = [segue destinationViewController];
+        
+        // Get the userCourseSet
+        CourseSet* courseSet = (CourseSet*)self.objects[cell.section];
+        
+        [self.userCourseSets enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+            
+            UserCourseSet* userCourseSet = (UserCourseSet*)obj;
+            if ([courseSet.categoryType isEqualToString:userCourseSet.categoryType]) {
+                certVC.userCourseSet = userCourseSet;
+                *stop = YES;
+            }
+        }];
+    }        
 }
 
 

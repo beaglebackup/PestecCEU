@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "UserCourse.h"
+#import "UserCourseSet.h"
 
 @interface JTCertificateViewController : UIViewController <UIAlertViewDelegate>
 
@@ -16,6 +17,9 @@
 @property (strong, nonatomic) IBOutlet UIView *certView;
 
 @property (strong, nonatomic) UserCourse* userCourse;
+
+@property (strong, nonatomic) UserCourseSet* userCourseSet;
+
 
 //@property (strong, nonatomic) NSString* courseName;
 //@property (strong, nonatomic) NSString* categoryType;

@@ -390,6 +390,32 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.42082377300000001" green="0.72347119950000005" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
                                     </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationLevel="2" indentationWidth="10" reuseIdentifier="topicCertCell" textLabel="4y0-F7-FKj" detailTextLabel="uuT-8w-jKQ" style="IBUITableViewCellStyleSubtitle" id="Wgi-WB-Qak" customClass="JTTopicTableViewCell">
+                                        <rect key="frame" x="0.0" y="143" width="337" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Wgi-WB-Qak" id="P0z-Xu-z9n">
+                                            <rect key="frame" x="0.0" y="0.0" width="337" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="4y0-F7-FKj">
+                                                    <rect key="frame" x="35" y="3" width="36" height="22"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="uuT-8w-jKQ">
+                                                    <rect key="frame" x="35" y="25" width="43" height="15"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.4394449932174494" green="0.75753943670322721" blue="0.84024234693877553" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </tableViewCell>
                                 </prototypes>
                             </tableView>
                         </subviews>
@@ -406,6 +432,7 @@
                     <connections>
                         <outlet property="tableView" destination="QRN-pU-LmE" id="NTB-NK-Ufm"/>
                         <segue destination="MEQ-rZ-FOc" kind="push" identifier="topicToCourse" id="cht-Dg-nlR"/>
+                        <segue destination="Hvk-Fz-2hM" kind="push" identifier="topicToCert" id="ODo-5v-S6f"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4og-SC-ubp" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -715,7 +742,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FJs-gq-lK9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2498" y="1617"/>
+            <point key="canvasLocation" x="2544" y="1469"/>
         </scene>
         <!--Quiz View Controller-->
         <scene sceneID="o1T-DT-Oo2">
@@ -892,5 +919,6 @@
     <inferredMetricsTieBreakers>
         <segue reference="etL-8m-l1n"/>
         <segue reference="SOe-jq-PRj"/>
+        <segue reference="ODo-5v-S6f"/>
     </inferredMetricsTieBreakers>
 </document>

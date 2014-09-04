@@ -69,17 +69,53 @@
     [self.originalSizeCertImageView bringSubviewToFront:licenseNumLabel];
     
     
+    UILabel* activityTitleLabel = [[UILabel alloc] initWithFrame:CGRectMake(170.0f, 205.0f, 0.0f, 0.0f)];
+    [activityTitleLabel setTextAlignment:NSTextAlignmentLeft];
+    [activityTitleLabel setBackgroundColor:[UIColor clearColor]];
+    [activityTitleLabel setTextColor:[UIColor redColor]];
+    [activityTitleLabel setFont:[UIFont systemFontOfSize:labelFontSize]];
+    [activityTitleLabel setText:[NSString stringWithFormat:@"%@ - %@",self.userCourseSet.workerType, self.userCourseSet.categoryType]];
+    [activityTitleLabel sizeToFit];
+    [self.originalSizeCertImageView addSubview:activityTitleLabel];
+    [self.originalSizeCertImageView bringSubviewToFront:activityTitleLabel];
+
+   
+
+    
     UILabel* activityDateLabel = [[UILabel alloc] initWithFrame:CGRectMake(590.0f, 205.0f, 0.0f, 0.0f)];
     [activityDateLabel setTextAlignment:NSTextAlignmentLeft];
     [activityDateLabel setBackgroundColor:[UIColor clearColor]];
     [activityDateLabel setTextColor:[UIColor redColor]];
     [activityDateLabel setFont:[UIFont systemFontOfSize:labelFontSize]];
-    [activityDateLabel setText:[NSString stringWithFormat:@"%@",self.userCourse.dateCompleted]];
+    [activityDateLabel setText:[NSString stringWithFormat:@"%@", [NSDateFormatter localizedStringFromDate:self.userCourseSet.updatedAt
+                                                dateStyle:NSDateFormatterShortStyle
+                                                timeStyle:NSDateFormatterNoStyle]]];
     [activityDateLabel sizeToFit];
     [self.originalSizeCertImageView addSubview:activityDateLabel];
     [self.originalSizeCertImageView bringSubviewToFront:activityDateLabel];
     
     
+    
+    UILabel* hoursAttendedLabel = [[UILabel alloc] initWithFrame:CGRectMake(400.0f, 255.0f, 0.0f, 0.0f)];
+    [hoursAttendedLabel setTextAlignment:NSTextAlignmentLeft];
+    [hoursAttendedLabel setBackgroundColor:[UIColor clearColor]];
+    [hoursAttendedLabel setTextColor:[UIColor redColor]];
+    [hoursAttendedLabel setFont:[UIFont systemFontOfSize:labelFontSize]];
+    [hoursAttendedLabel setText:[NSString stringWithFormat:@"%@",[NSNumber numberWithInteger:self.userCourseSet.userCourses.count]]];
+    [hoursAttendedLabel sizeToFit];
+    [self.originalSizeCertImageView addSubview:hoursAttendedLabel];
+    [self.originalSizeCertImageView bringSubviewToFront:hoursAttendedLabel];
+    
+    
+    UILabel* hoursEarnedLabel = [[UILabel alloc] initWithFrame:CGRectMake(450.0f, 255.0f, 0.0f, 0.0f)];
+    [hoursEarnedLabel setTextAlignment:NSTextAlignmentLeft];
+    [hoursEarnedLabel setBackgroundColor:[UIColor clearColor]];
+    [hoursEarnedLabel setTextColor:[UIColor redColor]];
+    [hoursEarnedLabel setFont:[UIFont systemFontOfSize:labelFontSize]];
+    [hoursEarnedLabel setText:[NSString stringWithFormat:@"%@",[NSNumber numberWithInteger:self.userCourseSet.userCourses.count]]];
+    [hoursEarnedLabel sizeToFit];
+    [self.originalSizeCertImageView addSubview:hoursEarnedLabel];
+    [self.originalSizeCertImageView bringSubviewToFront:hoursEarnedLabel];
     
     
     UILabel* sigDataLabel = [[UILabel alloc] initWithFrame:CGRectMake(600.0f, 440.0f, 0.0f, 0.0f)];
@@ -214,7 +250,7 @@
         [picker addAttachmentData:myData mimeType:@"image/png" fileName:@"pestec_cert.png"];
         
         // Fill out the email body text
-        NSString *emailBody = [NSString stringWithFormat:@"%@ - %@",self.userCourse.course.name, self.userCourse.course.categoryType];
+        NSString *emailBody = [NSString stringWithFormat:@"%@ - %@",self.userCourseSet.workerType, self.userCourseSet.categoryType];
         [picker setMessageBody:emailBody isHTML:NO];
         
         // Set the user

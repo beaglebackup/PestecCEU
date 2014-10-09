@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "JTBaseViewController.h"
 
-@interface JTLicenseMenuController : UIViewController
+@interface JTLicenseMenuController : JTBaseViewController
 
 //labels
 @property (strong, nonatomic) IBOutlet UILabel *licenseTypeLabel;

@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "JTBaseViewController.h"
 
-@interface JTCompletedCoursesController : UIViewController
+@interface JTCompletedCoursesController : JTBaseViewController
 
 @property (strong, nonatomic) IBOutlet UITableView *tableView;
 

@@ -18,6 +18,7 @@
     #import "JTDatabaseManager.h"
     #import "UIColor+Extensions.h"
     #import "JTCEUConstants.h"
+    #import "JTImageConstants.h"
 
 
 #endif

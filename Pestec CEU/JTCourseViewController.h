@@ -9,8 +9,9 @@
 #import <UIKit/UIKit.h>
 #import "MZTimerLabel.h"
 #import "Course.h"
+#import "JTBaseViewController.h"
 
-@interface JTCourseViewController : UIViewController <MZTimerLabelDelegate>
+@interface JTCourseViewController : JTBaseViewController <MZTimerLabelDelegate>
 
 
 @property (nonatomic, strong) Course* course;

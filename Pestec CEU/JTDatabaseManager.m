@@ -157,6 +157,10 @@
          
         [userCourseSetQuery getFirstObjectInBackgroundWithBlock:^(PFObject *object, NSError *error) {
             
+            NSLog(@"object = %@",object);
+            NSLog(@"error = %@",error);
+
+            
             // Add to existing set
             if (object) {
                 

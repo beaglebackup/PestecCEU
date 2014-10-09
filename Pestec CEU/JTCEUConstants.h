@@ -77,18 +77,33 @@ typedef enum {
 #define numRowsOperatorGeneral 2
 
 
-// Misc
+// UI
+#pragma mark - UI
+#pragma mark Sizes
 #define heightForSectionHeader 44.0f
 
-#pragma mark - other
 
+#pragma mark Fonts
+#define kMasterRegularFontName @"AvenirNext-Regular"
+#define kMasterBoldFontName @"AvenirNext-Bold"
+#define kMasterDemiBoldFontName @"AvenirNext-DemiBold"
+
+#pragma mark Font-Sizes
+#define kJTMainButtonFontSize 18.0f
+#define kJTSubLabelFontSize 16.0f
+#define kJTTextVoewFontSize 14.0f
+
+
+
+
+// Othew
+#pragma mark - Other
 #define courseLength 10
 
 
+// Strings
 #pragma mark - Strings
-
 #define workerReqsListApplicatorRules @"4 HRS Rules & Regs";
-
 #define workerReqsListApplicator @"4 HRS Rules & Regs\n 6 HRS Pesticde Use & App\n "
 
 

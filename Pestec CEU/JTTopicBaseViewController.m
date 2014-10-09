@@ -422,6 +422,10 @@
         
         CourseSet* courseSet = (CourseSet*)self.objects[cell.section];
         courseVC.course = courseSet.courses[cell.tag];
+        
+        NSLog(@"courseSet = %@",courseSet);
+        NSLog(@"courseVC.course = %@",courseVC.course);
+
     }
     else if ([[segue identifier] isEqualToString:@"topicToCert"]) {
         

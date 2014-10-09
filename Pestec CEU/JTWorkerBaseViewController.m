@@ -54,7 +54,6 @@
     if ([[segue identifier] isEqualToString:@"workerToTopics"])
     {
         JTTopicBaseViewController *topicVC = [segue destinationViewController];
-        
 
         switch (button.tag) {
             case JTWorkerTypeApplicator:

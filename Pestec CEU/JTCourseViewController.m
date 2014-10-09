@@ -64,10 +64,6 @@
     
     // Register for Notifications
     [self registerForNotifications];
-    
-    
-    // Load Data
-    [self loadObjects];
 }
 
 
@@ -75,7 +71,8 @@
     
     [super viewWillAppear:animated];
     
-   
+    // Load Data
+    [self loadObjects];
     
 }
 - (void)viewWillDisappear:(BOOL)animated {

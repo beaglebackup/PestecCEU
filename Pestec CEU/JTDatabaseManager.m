@@ -259,6 +259,10 @@
 #pragma mark - Utility
 + (BOOL)user:(User*)user hasCourse:(Course*)course {
     
+    NSLog(@"user = %@",user);
+    
+    
+    
     __block BOOL hasCourse = NO;
     
     NSArray* courses = user.courses;

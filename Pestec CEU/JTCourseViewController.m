@@ -41,8 +41,8 @@
 {
     [super viewDidLoad];
     
-    NSLog(@"self.workerType = %u",self.workerType);
-    NSLog(@"self.tag = %@",self.tag);
+//    NSLog(@"self.workerType = %u",self.workerType);
+//    NSLog(@"self.tag = %@",self.tag);
 
     
     // Loading HUD
@@ -107,14 +107,16 @@
 - (void) loadObjects {
     
     // Get the course object
-    NSString* workerString = [JTDatabaseManager workerString:self.workerType];
-    [JTDatabaseManager queryForCourse:self.tag workerType:workerString withCallback:^(Course *course, NSError *error) {
-        if (error) {
-            NSLog(@"error = %@",error);
-            return;
-        }
+//    NSString* workerString = [JTDatabaseManager workerString:self.workerType];
+//    [JTDatabaseManager queryForCourse:self.tag workerType:workerString withCallback:^(Course *course, NSError *error) {
+//        if (error) {
+//            NSLog(@"error = %@",error);
+//            return;
+//        }
+    
+//        self.course = course;
+    
         
-        self.course = course;
         
         // Does the user have the course
         if ([JTDatabaseManager user:(User*)[PFUser currentUser] hasCourse:self.course]) {
@@ -135,7 +137,12 @@
         
         // ELSE create a new UserCourse
         else {
+            
+            
+            
             [JTDatabaseManager createUserCourse:self.course user:(User*)[PFUser currentUser] withCallback:^(UserCourse *course, NSError *error) {
+                
+                
                 if (error) {
                     NSLog(@"error = %@",error);
                     return;
@@ -146,7 +153,9 @@
                 [self objectsDidLoad];
             }];
         }
-    }];
+        
+        
+//    }];
 }
 
 - (void) objectsDidLoad {
@@ -231,11 +240,13 @@
 #pragma mark - Navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    UIButton* button = (UIButton*)sender;
     
     if ([[segue identifier] isEqualToString:@"courseToQuiz"])
     {
         JTQuizViewController *quizVC = [segue destinationViewController];
+        
+        NSLog(@"self.course = %@",self.course);
+        
         quizVC.course = self.course;
     }
 }
@@ -245,11 +256,6 @@
 
 
 #pragma mark - Buttons
-- (IBAction)didTapSaveButton:(id)sender {
-    
-    
-}
-
 - (IBAction)didTapQuizButton:(id)sender {
     
     if ([[JTCourseManager shared] isCourseRead]) {

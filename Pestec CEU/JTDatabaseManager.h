@@ -14,6 +14,8 @@
 
 
 #pragma mark - Reads
++ (void)queryForCourseSets:(NSString*)workerType withCallback:(void(^)(NSArray* courseSets, NSError *error))callback;
++ (void)queryForUserCourseSets:(NSString*)workerType user:(User*)user withCallback:(void(^)(NSArray* userCourseSets, NSError *error))callback;
 + (void)queryForCourses:(NSString*)workerType withCallback:(void(^)(NSArray* courses, NSError *error))callback;
 + (void)queryForCourse:(NSNumber*)tag workerType:(NSString*)workerType withCallback:(void(^)(Course *course, NSError *error))callback;
 + (void)queryForUserCourse:(Course*)course user:(User*)user withCallback:(void(^)(UserCourse *course, NSError *error))callback;

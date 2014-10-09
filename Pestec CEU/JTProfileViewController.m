@@ -6,21 +6,21 @@
 //  Copyright (c) 2014 Gabriel. All rights reserved.
 //
 
-#import "ProfileViewController.h"
+#import "JTProfileViewController.h"
 #import "User.h"
 #import "DAKeyboardControl.h"
 #import "JGProgressHUD.h"
 
 
 
-@interface ProfileViewController ()
+@interface JTProfileViewController ()
 
 @property (nonatomic, strong) JGProgressHUD* progressHUD;
 
 
 @end
 
-@implementation ProfileViewController
+@implementation JTProfileViewController
 
 
 

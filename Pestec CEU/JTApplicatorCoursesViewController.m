@@ -103,7 +103,7 @@
     }
     
     cell.textLabel.text = course.name;
-    cell.tag = indexPath.row + 1; // Course tags start at 1
+    cell.tag = indexPath.row; // Course tags start at 1
     
     return cell;
 }
@@ -169,22 +169,11 @@
     if ([[segue identifier] isEqualToString:@"topicToCourse"])
     {
         JTCourseViewController *courseVC = [segue destinationViewController];
-        courseVC.tag = [NSNumber numberWithInt:cell.tag];
-        courseVC.workerType = self.workerType;
+        
+        courseVC.course = self.objects[cell.tag];
     }
 }
 
-#pragma mark - JTTopicButton Delegate
-- (void)didTapTopicButton:(JTTopicButton *)button {
-    
-    NSInteger tag = button.tag;
-    
-    NSLog(@"tag = %d",tag);
-    
-    
-    [self performSegueWithIdentifier:@"topicToCourse" sender:button];
-    
-}
 
 
 

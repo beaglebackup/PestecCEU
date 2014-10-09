@@ -73,7 +73,7 @@
 
 #pragma mark - UITableView Delegate & Datasource
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 1;
+    return 3;
 }
 
 - (NSInteger)tableView:(UITableView *)aTableView numberOfRowsInSection:(NSInteger)section {
@@ -95,8 +95,8 @@
     UserCourse* userCourse = (UserCourse*)self.objects[indexPath.row];
     
 
-    cell.textLabel.text = userCourse.course.name;
-    cell.detailTextLabel.text = userCourse.course.categoryType;
+    cell.textLabel.text = userCourse.course.categoryType;
+    cell.detailTextLabel.text = userCourse.course.name;
     cell.tag = indexPath.row;
     
     return cell;
@@ -114,6 +114,42 @@
     
 }
 
+
+- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
+    
+    static NSString *CellIdentifier = @"completedSectionHeaderCell";
+    UITableViewCell *headerView = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    if (headerView == nil){
+        [NSException raise:@"headerView == nil.." format:@"No cells with matching CellIdentifier loaded from your storyboard"];
+    }
+    
+    switch (section) {
+        case JTWorkerTypeApplicator:
+            headerView.textLabel.text = [JTDatabaseManager workerString:JTWorkerTypeApplicator];
+            break;
+            
+        case JTWorkerTypeFieldRep:
+            headerView.textLabel.text = [JTDatabaseManager workerString:JTWorkerTypeFieldRep];
+            break;
+            
+        case JTWorkerTypeOperator:
+            headerView.textLabel.text = [JTDatabaseManager workerString:JTWorkerTypeOperator];
+            break;
+            
+        default:
+            break;
+    }
+    
+    
+    return headerView;
+    
+    
+}
+
+
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
+    return heightForSectionHeader;
+}
 
 
 

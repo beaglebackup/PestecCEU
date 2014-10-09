@@ -7,10 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "JTTopicButton.h"
+#import "JTBaseViewController.h"
 
 
-@interface JTTopicBaseViewController : UIViewController <JTTopicButtonDelegate>
+@interface JTTopicBaseViewController : JTBaseViewController <UITableViewDelegate, UITableViewDataSource>
 
 @property (assign) JTWorkerTypeIndex workerType;
 

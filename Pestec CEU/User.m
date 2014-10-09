@@ -16,8 +16,6 @@
 @dynamic position;
 @dynamic courses;
 
-@dynamic userCourses;
-
 
 + (NSString *)firstNameKey {
     return @"firstName";

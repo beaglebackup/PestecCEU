@@ -24,7 +24,7 @@
 
 
 //buttons
-@property (strong, nonatomic) IBOutlet UIButton *applicatorTopic1Button;
+//@property (strong, nonatomic) IBOutlet UIButton *applicatorTopic1Button;
 //@property (strong, nonatomic) IBOutlet UIButton *applicatorTopic2Button;
 //@property (strong, nonatomic) IBOutlet UIButton *applicatorTopic3Button;
 //@property (strong, nonatomic) IBOutlet UIButton *applicatorTopic4Button;

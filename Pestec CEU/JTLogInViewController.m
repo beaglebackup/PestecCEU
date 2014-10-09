@@ -32,9 +32,16 @@
     UILabel *titleLabel = [[UILabel alloc] initWithFrame:CGRectZero];
     [titleLabel setBackgroundColor:[UIColor clearColor]];
     [titleLabel setFont:[UIFont boldSystemFontOfSize:18.0f]];
-//    [titleLabel setTextColor:[UIColor colorNavBarTitle]];
-    [titleLabel setText:@"Gabe's World"];
+    [titleLabel setText:@"Pestec CEU"];
     [titleLabel sizeToFit];
+    
+//    UILabel *subtitleLabel = [[UILabel alloc] initWithFrame:CGRectZero];
+//    [subtitleLabel setBackgroundColor:[UIColor clearColor]];
+//    [subtitleLabel setFont:[UIFont boldSystemFontOfSize:18.0f]];
+//    [subtitleLabel setText:@"Pestec CEU"];
+//    [subtitleLabel sizeToFit];
+
+    
     UIView *titleView = [[UIView alloc] initWithFrame:titleLabel.frame];
     [titleView addSubview:titleLabel];
     self.logInView.logo = titleView;

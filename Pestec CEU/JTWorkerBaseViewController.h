@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "JTBaseViewController.h"
 
-@interface JTWorkerBaseViewController : UIViewController
+@interface JTWorkerBaseViewController : JTBaseViewController
 
 @property (strong, nonatomic) NSString* navTitle;
 @property (assign) JTWorkerTypeIndex workerType;

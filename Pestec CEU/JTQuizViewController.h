@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import "Course.h"
+#import "JTBaseViewController.h"
 
-@interface JTQuizViewController : UIViewController <UITableViewDelegate, UITableViewDataSource, UIAlertViewDelegate>
+@interface JTQuizViewController : JTBaseViewController <UITableViewDelegate, UITableViewDataSource, UIAlertViewDelegate>
 
 
 @property (strong, nonatomic) IBOutlet UITableView *tableView;

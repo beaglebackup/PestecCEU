@@ -10,10 +10,16 @@
 
 @interface UIColor (Extensions)
 
-+ (UIColor *)colorPurple;
 + (UIColor *)colorLavender;
 + (UIColor *)colorLightBeige;
 
++ (UIColor *)colorPurple;
++ (UIColor *)colorOffWhite;
++ (UIColor *)colorGray;
++ (UIColor *)colorMarineBlue;
++ (UIColor *)colorLimeGreen;
++ (UIColor *)colorOffBlack;
++ (UIColor *)colorBrightBlue;
 
 
 @end

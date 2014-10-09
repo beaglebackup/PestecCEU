@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "JTBaseViewController.h"
 
-@interface ProfileViewController : UIViewController <UITextFieldDelegate, UIScrollViewDelegate>
+@interface JTProfileViewController : JTBaseViewController <UITextFieldDelegate, UIScrollViewDelegate>
 
 @property (strong, nonatomic) IBOutlet UIScrollView *scrollView;
 

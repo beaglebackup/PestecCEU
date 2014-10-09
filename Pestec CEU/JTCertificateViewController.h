@@ -9,8 +9,9 @@
 #import <UIKit/UIKit.h>
 #import "UserCourse.h"
 #import "UserCourseSet.h"
+#import "JTBaseViewController.h"
 
-@interface JTCertificateViewController : UIViewController <UIAlertViewDelegate>
+@interface JTCertificateViewController : JTBaseViewController <UIAlertViewDelegate>
 
 @property (strong, nonatomic) IBOutlet UIButton *emailButton;
 

@@ -138,6 +138,8 @@
         // ELSE create a new UserCourse
         else {
             
+            
+            
             [JTDatabaseManager createUserCourse:self.course user:(User*)[PFUser currentUser] withCallback:^(UserCourse *course, NSError *error) {
                 
                 

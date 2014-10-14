@@ -58,6 +58,8 @@
     
     
     // Admin
+    [JTDatabaseManager addQuizQuestionsToCourses];
+    [JTDatabaseManager addQuizAnswersToQuizQuestions];      
 //    [JTDatabaseManager copyClass:@"QuizQuestions" toClass:@"QuizQuestion"];
 //    [JTDatabaseManager copyClass:@"QuizAnswers" toClass:@"QuizAnswer"];
 //    [JTDatabaseManager copyClass:@"UserAnswers" toClass:@"UserAnswer"];

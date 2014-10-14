@@ -12,6 +12,7 @@
 #import "CourseSet.h"
 #import "UserCourseSet.h"
 #import "QuizQuestion.h"
+#import "QuizAnswer.h"
 
 
 @interface JTDatabaseManager ()
@@ -343,6 +344,79 @@
                         
                     }
                     
+                }];
+            }];
+        }
+    }];
+}
+
++ (void)addQuizQuestionsToCourses {
+    
+    // Get all the courses
+    PFQuery* courseQuery = [PFQuery queryWithClassName:[Course parseClassName]];
+    [courseQuery findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+        
+        if (objects) {
+            [objects enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+                
+                Course* course = (Course*)obj;
+                
+                PFQuery* quizQuestionsQuery = [PFQuery queryWithClassName:[QuizQuestion parseClassName]];
+                [quizQuestionsQuery whereKey:@"gabeEnterCOURSEHere" equalTo:course.name];
+                [quizQuestionsQuery findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+                    
+                    [objects enumerateObjectsUsingBlock:^(id quizObj, NSUInteger idx, BOOL *stop) {
+                        [course addUniqueObject:quizObj forKey:@"quizQuestions"];
+                    }];
+                    
+                    [course saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+
+                        if (succeeded) {
+                            
+                            
+                        }
+                        else if (error) {
+                            
+                            
+                        }
+                    }];
+                }];
+            }];
+        }
+    }];
+}
+
+
++ (void)addQuizAnswersToQuizQuestions {
+    
+    // Get all the QuizQuestion
+    PFQuery* questionQuery = [PFQuery queryWithClassName:[QuizQuestion parseClassName]];
+    [questionQuery findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+        
+        if (objects) {
+            [objects enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+                
+                QuizQuestion* question = (QuizQuestion*)obj;
+                
+                PFQuery* quizAnswersQuery = [PFQuery queryWithClassName:[QuizAnswer parseClassName]];
+                [quizAnswersQuery whereKey:@"gabeEnterQUIZQUESTIONHere" equalTo:question.text];
+                [quizAnswersQuery findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+                    
+                    [objects enumerateObjectsUsingBlock:^(id ansObj, NSUInteger idx, BOOL *stop) {
+                        [question addUniqueObject:ansObj forKey:@"answerObjects"];
+                    }];
+                    
+                    [question saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+                        
+                        if (succeeded) {
+                            
+                            
+                        }
+                        else if (error) {
+                            
+                            
+                        }
+                    }];
                 }];
             }];
         }

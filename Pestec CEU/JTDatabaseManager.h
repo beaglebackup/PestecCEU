@@ -38,4 +38,7 @@
 #pragma mark - Admin
 + (void)copyClass:(NSString*)originalClass toClass:(NSString*)newClass;
 
++ (void)addQuizQuestionsToCourses;
++ (void)addQuizAnswersToQuizQuestions;
+
 @end

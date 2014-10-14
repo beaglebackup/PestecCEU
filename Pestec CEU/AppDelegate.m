@@ -7,8 +7,6 @@
 //
 
 #import "AppDelegate.h"
-#import "JTLogInViewController.h"
-#import "JTSignUpViewController.h"
 #import "JTWelcomeViewController.h"
 #import "User.h"
 #import "Course.h"
@@ -58,8 +56,8 @@
     
     
     // Admin
-    [JTDatabaseManager addQuizQuestionsToCourses];
-    [JTDatabaseManager addQuizAnswersToQuizQuestions];      
+//    [JTDatabaseManager addQuizQuestionsToCourses];
+//    [JTDatabaseManager addQuizAnswersToQuizQuestions];      
 //    [JTDatabaseManager copyClass:@"QuizQuestions" toClass:@"QuizQuestion"];
 //    [JTDatabaseManager copyClass:@"QuizAnswers" toClass:@"QuizAnswer"];
 //    [JTDatabaseManager copyClass:@"UserAnswers" toClass:@"UserAnswer"];
@@ -109,74 +107,12 @@
 #pragma mark - Login/Signup
 
 - (void)presentLoginViewControllerAnimated:(BOOL)animated withDismissButton:(BOOL)withDismissButton {
-    
-    JTLogInViewController *loginViewController = [[JTLogInViewController alloc] init];
-    [loginViewController setDelegate:self];
-    
-    if (withDismissButton == YES) {
-        
-        loginViewController.fields =
-        PFLogInFieldsUsernameAndPassword
-        | PFLogInFieldsLogInButton
-        | PFLogInFieldsSignUpButton
-        | PFLogInFieldsPasswordForgotten
-        | PFLogInFieldsDismissButton;
-        
-    } else {
-        
-        loginViewController.fields =
-        PFLogInFieldsUsernameAndPassword
-        | PFLogInFieldsLogInButton
-        | PFLogInFieldsSignUpButton
-        | PFLogInFieldsPasswordForgotten;
-        
-    }
-    
-    
-    
-    JTSignUpViewController *signUpViewController = [[JTSignUpViewController alloc] init];
-    [signUpViewController setDelegate:self];
-    [loginViewController setSignUpController:signUpViewController];
-    
-    
-    
-    [self.welcomeController presentViewController:loginViewController animated:NO completion:nil];
-    
+    [self.welcomeController performSegueWithIdentifier:@"welcomeToLogin" sender:nil];
 }
 
 
 - (void)userDidLogIn:(PFUser*)user {
-    
-    //
-    //    ////////////////////////////////////
-    //    // Subscribe to private push channel
-    //    if (user) {
-    //
-    //        NSString *privateChannelName = [NSString stringWithFormat:@"user_%@", [user objectId]];
-    //        // Add the user to the installation so we can track the owner of the device
-    //        [[PFInstallation currentInstallation] setObject:[PFUser currentUser] forKey:kPAPInstallationUserKey];
-    //        // Subscribe user to private channel
-    //        [[PFInstallation currentInstallation] addUniqueObject:privateChannelName forKey:kPAPInstallationChannelsKey];
-    //        // Save installation object
-    //        [[PFInstallation currentInstallation] saveEventually];
-    //
-    //        [user setObject:privateChannelName forKey:kPAPUserPrivateChannelKey];
-    //        [user saveEventually];
-    //    }
-    //
-    
-    
-    
     [self proceedToMainInterface:user];
-    
-}
-
-
-- (void)userHasLoggedIn {
-    
-    
-    [self proceedToMainInterface:[PFUser currentUser]];
-    
 }
 
 
@@ -188,41 +124,30 @@
     
 }
 
-#pragma mark PFLoginViewController Delegate
+#pragma mark JTLoginViewController Delegate
 
-- (void)logInViewController:(PFLogInViewController *)logInController didLogInUser:(PFUser *)user {
+- (void)logInViewController:(JTLoginViewController *)logInController didLogInUser:(PFUser *)user {
     
-    [self.welcomeController.presentedViewController dismissViewControllerAnimated:NO completion:nil];
-    
-    [self userDidLogIn:user];
-    
-}
-
-- (void)logInViewControllerDidCancelLogIn:(PFLogInViewController *)logInController {
-    
-    //    [self.welcomeController.presentedViewController dismissViewControllerAnimated:NO completion:nil];
-    
+    [self.welcomeController.presentedViewController dismissViewControllerAnimated:YES completion:^{
+        [self userDidLogIn:user];
+    }];
 }
 
 
-#pragma mark PFSignupViewController Delegate
 
-- (void)signUpViewController:(PFSignUpViewController *)signUpController didSignUpUser:(PFUser *)user {
+- (void)logInViewController:(JTLoginViewController *)logInController didSignUpUser:(PFUser *)user {
     
-    //////////////////////
-    // Set the entered username as the displayname
-    //    [user setObject:[user username] forKey:kPAPUserDisplayNameKey];
-    //    [user saveEventually];
-    
-    
-    ////////////////////
-    // Pop the signup screen
-    [self.welcomeController.presentedViewController dismissViewControllerAnimated:NO completion:nil];
-    
-    
-    [self userDidLogIn:user];
+    [self.welcomeController.presentedViewController dismissViewControllerAnimated:YES completion:^{
+        [self userDidLogIn:user];
+    }];
     
 }
+
+- (void)logInViewControllerDidCancelLogIn:(JTLoginViewController *)logInController {
+    
+}
+
+
 
 #pragma mark - ()
 - (void) setupAppearance {

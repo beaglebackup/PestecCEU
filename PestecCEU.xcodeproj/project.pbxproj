@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		841506B919ED8D20002BD73F /* JTTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 841506B819ED8D1F002BD73F /* JTTextField.m */; };
+		841506BD19ED8F99002BD73F /* JTLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 841506BC19ED8F99002BD73F /* JTLoginViewController.m */; };
+		841506C019ED8FB3002BD73F /* JTSignupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 841506BF19ED8FB3002BD73F /* JTSignupViewController.m */; };
 		841A321F19AE9323000BCFD9 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 841A321E19AE9323000BCFD9 /* Bolts.framework */; };
 		841A322119AE932C000BCFD9 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 841A322019AE932C000BCFD9 /* Parse.framework */; };
 		841A322319AE939F000BCFD9 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 841A322219AE939F000BCFD9 /* AudioToolbox.framework */; };
@@ -21,8 +24,6 @@
 		841A323819AE9463000BCFD9 /* UIColor+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 841A323719AE9463000BCFD9 /* UIColor+Extensions.m */; };
 		841A323B19AE946A000BCFD9 /* JTDatabaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 841A323A19AE946A000BCFD9 /* JTDatabaseManager.m */; };
 		841A324319AE9559000BCFD9 /* JTWelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 841A323E19AE9559000BCFD9 /* JTWelcomeViewController.m */; };
-		841A324419AE9559000BCFD9 /* JTLogInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 841A324019AE9559000BCFD9 /* JTLogInViewController.m */; };
-		841A324519AE9559000BCFD9 /* JTSignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 841A324219AE9559000BCFD9 /* JTSignUpViewController.m */; };
 		841A324919AE984B000BCFD9 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 841A324819AE984B000BCFD9 /* User.m */; };
 		841A324C19AEA406000BCFD9 /* UIImage+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 841A324A19AEA406000BCFD9 /* UIImage+Extensions.m */; };
 		841A324E19AEA435000BCFD9 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 841A324D19AEA435000BCFD9 /* Accounts.framework */; };
@@ -137,6 +138,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		841506B719ED8D1F002BD73F /* JTTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTTextField.h; sourceTree = "<group>"; };
+		841506B819ED8D1F002BD73F /* JTTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTTextField.m; sourceTree = "<group>"; };
+		841506BB19ED8F99002BD73F /* JTLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTLoginViewController.h; sourceTree = "<group>"; };
+		841506BC19ED8F99002BD73F /* JTLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTLoginViewController.m; sourceTree = "<group>"; };
+		841506BE19ED8FB3002BD73F /* JTSignupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTSignupViewController.h; sourceTree = "<group>"; };
+		841506BF19ED8FB3002BD73F /* JTSignupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTSignupViewController.m; sourceTree = "<group>"; };
 		841A321E19AE9323000BCFD9 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		841A322019AE932C000BCFD9 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		841A322219AE939F000BCFD9 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
@@ -154,10 +161,6 @@
 		841A323A19AE946A000BCFD9 /* JTDatabaseManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTDatabaseManager.m; sourceTree = "<group>"; };
 		841A323D19AE9559000BCFD9 /* JTWelcomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTWelcomeViewController.h; sourceTree = "<group>"; };
 		841A323E19AE9559000BCFD9 /* JTWelcomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTWelcomeViewController.m; sourceTree = "<group>"; };
-		841A323F19AE9559000BCFD9 /* JTLogInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTLogInViewController.h; sourceTree = "<group>"; };
-		841A324019AE9559000BCFD9 /* JTLogInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTLogInViewController.m; sourceTree = "<group>"; };
-		841A324119AE9559000BCFD9 /* JTSignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTSignUpViewController.h; sourceTree = "<group>"; };
-		841A324219AE9559000BCFD9 /* JTSignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTSignUpViewController.m; sourceTree = "<group>"; };
 		841A324719AE984B000BCFD9 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
 		841A324819AE984B000BCFD9 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
 		841A324A19AEA406000BCFD9 /* UIImage+Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Extensions.m"; sourceTree = "<group>"; };
@@ -353,6 +356,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		841506BA19ED8F4A002BD73F /* old */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = old;
+			sourceTree = "<group>";
+		};
 		841A321D19AE91C6000BCFD9 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -401,12 +411,13 @@
 		841A323C19AE954F000BCFD9 /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				841506BA19ED8F4A002BD73F /* old */,
 				841A323D19AE9559000BCFD9 /* JTWelcomeViewController.h */,
 				841A323E19AE9559000BCFD9 /* JTWelcomeViewController.m */,
-				841A323F19AE9559000BCFD9 /* JTLogInViewController.h */,
-				841A324019AE9559000BCFD9 /* JTLogInViewController.m */,
-				841A324119AE9559000BCFD9 /* JTSignUpViewController.h */,
-				841A324219AE9559000BCFD9 /* JTSignUpViewController.m */,
+				841506BB19ED8F99002BD73F /* JTLoginViewController.h */,
+				841506BC19ED8F99002BD73F /* JTLoginViewController.m */,
+				841506BE19ED8FB3002BD73F /* JTSignupViewController.h */,
+				841506BF19ED8FB3002BD73F /* JTSignupViewController.m */,
 			);
 			name = Login;
 			sourceTree = "<group>";
@@ -641,6 +652,8 @@
 				84D1B62619E6163800C0C4E7 /* JTSubLabel.m */,
 				84D1B62819E617DB00C0C4E7 /* JTTextView.h */,
 				84D1B62919E617DB00C0C4E7 /* JTTextView.m */,
+				841506B719ED8D1F002BD73F /* JTTextField.h */,
+				841506B819ED8D1F002BD73F /* JTTextField.m */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -873,6 +886,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				841506C019ED8FB3002BD73F /* JTSignupViewController.m in Sources */,
 				8434C52519AFB8F700245F05 /* PFObject+Copy.m in Sources */,
 				8434C54619AFD1EF00245F05 /* JGProgressHUDSuccessIndicatorView.m in Sources */,
 				8434C56619B2611400245F05 /* QuizAnswer.m in Sources */,
@@ -884,7 +898,6 @@
 				EF5D112E196A664C00539B3E /* FieldRepViewController.m in Sources */,
 				843D255C19E384DD006B548A /* JTMainPurpleButton.m in Sources */,
 				8434C56319B2610400245F05 /* QuizQuestion.m in Sources */,
-				841A324419AE9559000BCFD9 /* JTLogInViewController.m in Sources */,
 				8434C52119AFB60E00245F05 /* Course.m in Sources */,
 				8434C51E19AFB5AD00245F05 /* UserCourse.m in Sources */,
 				8434C54019AFD1EF00245F05 /* JGProgressHUDFadeAnimation.m in Sources */,
@@ -898,10 +911,11 @@
 				8434C55019B017AD00245F05 /* JTQuizViewController.m in Sources */,
 				8434C5A419B3F54B00245F05 /* NSData+MD5.m in Sources */,
 				8434C54419AFD1EF00245F05 /* JGProgressHUDPieIndicatorView.m in Sources */,
+				841506B919ED8D20002BD73F /* JTTextField.m in Sources */,
 				8434C54519AFD1EF00245F05 /* JGProgressHUDRingIndicatorView.m in Sources */,
+				841506BD19ED8F99002BD73F /* JTLoginViewController.m in Sources */,
 				EF2983A2196A5A66000A6BE0 /* JTLicenseMenuController.m in Sources */,
 				8434C55A19B0E6E800245F05 /* DAKeyboardControl.m in Sources */,
-				841A324519AE9559000BCFD9 /* JTSignUpViewController.m in Sources */,
 				84D1B62A19E617DB00C0C4E7 /* JTTextView.m in Sources */,
 				8434C51B19AFB50F00245F05 /* NSNumber+NSTimeInterval.m in Sources */,
 				8434C54119AFD1EF00245F05 /* JGProgressHUDFadeZoomAnimation.m in Sources */,

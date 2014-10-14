@@ -60,7 +60,6 @@
     
     else {
         
-        /////////////////
         // Or else just start the app if everything checks out
         [(AppDelegate*)[[UIApplication sharedApplication] delegate] userHasLoggedIn];
     }
@@ -75,7 +74,15 @@
     
 }
 
-
+#pragma mark - Navigation
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    
+    if ([[segue identifier] isEqualToString:@"welcomeToLogin"])
+    {
+        JTLoginViewController *loginVC = [segue destinationViewController];        
+        loginVC.delegate = (AppDelegate*)[[UIApplication sharedApplication] delegate];
+    }
+}
 
 
 #pragma mark - ()

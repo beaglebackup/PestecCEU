@@ -7,11 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "JTLoginViewController.h"
+#import "JTSignupViewController.h"
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate, PFLogInViewControllerDelegate, PFSignUpViewControllerDelegate>
+@interface AppDelegate : UIResponder <UIApplicationDelegate, JTLoginViewControllerDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
-
 
 
 - (void)presentLoginViewControllerAnimated:(BOOL)animated withDismissButton:(BOOL)withDismissButton;

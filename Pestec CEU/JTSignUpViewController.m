@@ -1,99 +1,93 @@
 //
-//  WSSignUpViewController.m
-//  WSPhoto
+//  JTSignupViewController.m
+//  PestecCEU
 //
-//  Created by Admin on 1/21/14.
+//  Created by Admin on 10/14/14.
+//  Copyright (c) 2014 Gabriel. All rights reserved.
 //
-//
 
-#import "JTSignUpViewController.h"
-#import "UIImage+Extensions.h"
-
-@interface JTSignUpViewController ()
-
-@end
-
-@implementation JTSignUpViewController
-
-- (id)init
-{
-    self = [super init];
-    if (self) {
-        
-        [self createViews];
-        
-    }
-    return self;
-}
-
--(void)createViews {
-    
-    self.view.backgroundColor = [UIColor lightGrayColor];
-    
-    // Title View
-    UILabel *titleLabel = [[UILabel alloc] initWithFrame:CGRectZero];
-    [titleLabel setBackgroundColor:[UIColor clearColor]];
-    [titleLabel setFont:[UIFont systemFontOfSize:15.0f]];
-//    [titleLabel setTextColor:[UIColor colorNavBarTitle]];
-//    [titleLabel setText:[kLocalizedAppName uppercaseString]];
-    [titleLabel sizeToFit];
-    UIView *titleView = [[UIView alloc] initWithFrame:titleLabel.frame];
-    [titleView addSubview:titleLabel];
-    self.signUpView.logo = titleView;
-    
-    
-    
-    [self.signUpView.signUpButton.titleLabel setFont:[UIFont systemFontOfSize:15.0f]];
-    [self.signUpView.signUpButton setTitleEdgeInsets:UIEdgeInsetsMake( 0.0f, 10.0f, 0.0f, 0.0f)];
-    [self.signUpView.signUpButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-    [self.signUpView.signUpButton setTitleColor:[UIColor blackColor] forState:UIControlStateSelected];
-    [self.signUpView.signUpButton setTitleColor:[UIColor blackColor] forState:UIControlStateHighlighted];
-    [self.signUpView.signUpButton setBackgroundImage:[UIImage imageWithColor:[UIColor whiteColor]] forState:UIControlStateNormal]; // Need to keep these in here to override superclass settings
-    [self.signUpView.signUpButton setBackgroundImage:[UIImage imageWithColor:[UIColor whiteColor]] forState:UIControlStateSelected];
-    [self.signUpView.signUpButton setBackgroundImage:[UIImage imageWithColor:[UIColor whiteColor]] forState:UIControlStateHighlighted];
-    [self.signUpView.signUpButton setTitleShadowColor:[UIColor clearColor] forState:UIControlStateNormal];
-    [self.signUpView.signUpButton setTitleShadowColor:[UIColor clearColor] forState:UIControlStateSelected];
-    [self.signUpView.signUpButton.titleLabel setShadowOffset:CGSizeMake( 0.0f, 0.0f)];
-    
-    
-    self.signUpView.usernameField.backgroundColor = [UIColor darkGrayColor];
-    self.signUpView.usernameField.textColor = [UIColor whiteColor];
-    self.signUpView.usernameField.layer.shadowOpacity = 0.0;
-    self.signUpView.usernameField.font = [UIFont systemFontOfSize:15.0f];
-    self.signUpView.usernameField.borderStyle = UITextBorderStyleNone;
-    self.signUpView.usernameField.clearButtonMode = UITextFieldViewModeWhileEditing;
-    
-    
-    self.signUpView.passwordField.backgroundColor = [UIColor darkGrayColor];
-    self.signUpView.passwordField.textColor = [UIColor whiteColor];
-    self.signUpView.passwordField.layer.shadowOpacity = 0.0;
-    self.signUpView.passwordField.font = [UIFont systemFontOfSize:15.0f];
-    self.signUpView.passwordField.borderStyle = UITextBorderStyleNone;
-    self.signUpView.passwordField.clearButtonMode = UITextFieldViewModeWhileEditing;
-    
-    
-    self.signUpView.emailField.backgroundColor = [UIColor darkGrayColor];
-    self.signUpView.emailField.textColor = [UIColor whiteColor];
-    self.signUpView.emailField.layer.shadowOpacity = 0.0;
-    self.signUpView.emailField.font = [UIFont systemFontOfSize:15.0f];
-    self.signUpView.emailField.borderStyle = UITextBorderStyleNone;
-    self.signUpView.emailField.clearButtonMode = UITextFieldViewModeWhileEditing;
+#import "JTSignupViewController.h"
+#import "DAKeyboardControl.h"
 
 
-    
+@implementation JTSignupViewController
 
-}
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
+    
+    
+    
+    // Dismiss keyboard on scroll
+    [self.view addKeyboardPanningWithFrameBasedActionHandler:^(CGRect keyboardFrameInView, BOOL opening, BOOL closing) {
+        /*
+         Try not to call "self" inside this block (retain cycle).
+         But if you do, make sure to remove DAKeyboardControl
+         when you are done with the view controller by calling:
+         [self.view removeKeyboardControl];
+         */
+    } constraintBasedActionHandler:nil];
+    
+    
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)viewWillAppear:(BOOL)animated {
+    
+    [super viewWillAppear:animated];
+    
+    self.transparentBGView.hidden = YES;
+
 }
+
+- (IBAction)didTapSignupButton:(id)sender {
+    
+    PFUser* user = [PFUser user];
+    user.username = self.usernameTextField.text;
+    user.password = self.passwordTextField.text;
+    user.email = self.emailTextField.text;
+    
+    if (!user.username || !user.password || !user.email) {
+        
+        // Show alert not entered
+        UIAlertView* alertView = [[UIAlertView alloc] initWithTitle:@"Invalid" message:@"Please enter your username, password, and e-mail." delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+        [alertView show];
+        
+        return;
+    }
+    
+    NSError* error;
+    
+    [user signUp:&error];
+    
+    // If an error
+    if (error) {
+        
+        NSLog(@"error = %@",error);
+        
+        // Show alert not entered
+        UIAlertView* alertView = [[UIAlertView alloc] initWithTitle:@"Error" message:error.description delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+        [alertView show];
+        
+        return;
+    }
+    
+    if (_delegate && [_delegate respondsToSelector:@selector(signUpViewController:didSignUpUser:)]) {
+        
+        [_delegate signUpViewController:self didSignUpUser:user];
+    }
+}
+
+
+
+- (IBAction)didTapBackButton:(id)sender {
+    
+    if (_delegate && [_delegate respondsToSelector:@selector(signUpViewController:didTapBackButton:)]) {
+        
+        [_delegate signUpViewController:self didTapBackButton:sender];
+    }
+}
+
+
 
 @end

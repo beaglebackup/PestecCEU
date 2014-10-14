@@ -9,13 +9,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Pestec CEU/JTDatabaseManager.m"
-            timestampString = "434517851.879343"
+            filePath = "Pestec CEU/JTCourseViewController.m"
+            timestampString = "434520827.428759"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "264"
-            endingLineNumber = "264"
-            landmarkName = "+user:hasCourse:"
+            startingLineNumber = "144"
+            endingLineNumber = "144"
+            landmarkName = "-loadObjects"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -25,45 +25,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Pestec CEU/JTDatabaseManager.m"
-            timestampString = "434517965.993254"
+            filePath = "Pestec CEU/JTCourseViewController.m"
+            timestampString = "434520827.428759"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "279"
-            endingLineNumber = "279"
-            landmarkName = "+user:hasCourse:"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Pestec CEU/JTTopicBaseViewController.m"
-            timestampString = "434518177.21137"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "428"
-            endingLineNumber = "428"
-            landmarkName = "-prepareForSegue:sender:"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Pestec CEU/JTTopicBaseViewController.m"
-            timestampString = "434518234.311879"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "431"
-            endingLineNumber = "431"
-            landmarkName = "-prepareForSegue:sender:"
+            startingLineNumber = "151"
+            endingLineNumber = "151"
+            landmarkName = "-loadObjects"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

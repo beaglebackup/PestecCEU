@@ -43,6 +43,9 @@
     
 //    NSLog(@"self.workerType = %u",self.workerType);
 //    NSLog(@"self.tag = %@",self.tag);
+    
+    self.transparentBGView.backgroundColor = [UIColor colorWithWhite:1.0f alpha:0.8f];
+
 
     
     // Loading HUD
@@ -57,9 +60,7 @@
     [[JTCourseManager shared] setCourseTimer:self.courseTimer];
     self.courseTimer.delegate = self;
     
-    
-    // Other view stuff
-    [self setQuizButtonState];
+  
 
     
     // Register for Notifications
@@ -127,15 +128,13 @@
                 }
                 
                 [[JTCourseManager shared] setUserCourse:course];
-                
+                                
                 [self objectsDidLoad];
             }];
         }
         
         // ELSE create a new UserCourse
         else {
-            
-            
             
             [JTDatabaseManager createUserCourse:self.course user:(User*)[PFUser currentUser] withCallback:^(UserCourse *course, NSError *error) {
                 
@@ -146,6 +145,9 @@
                 }
                 
                 [[JTCourseManager shared] setNewUserCourse:course];
+                
+                NSLog(@"[[JTCourseManager shared] userCourse] = %@",[[JTCourseManager shared] userCourse]);
+
                 
                 [self objectsDidLoad];
             }];
@@ -162,6 +164,9 @@
     
     
     [[JTCourseManager shared] setupTimer];
+    
+    
+    [self setQuizButtonState];
 
 //    NSTimeInterval timeInterval = [[JTCourseManager shared].userCourse.timePassed NSTimeIntervalValue];
 //    

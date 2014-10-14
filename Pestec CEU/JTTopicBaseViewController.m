@@ -61,6 +61,9 @@
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
     
+    self.tableView.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:kJTBackgroundImage]];
+    
+    
     [self loadObjects];
 
 }
@@ -423,9 +426,7 @@
         CourseSet* courseSet = (CourseSet*)self.objects[cell.section];
         courseVC.course = courseSet.courses[cell.tag];
         
-        NSLog(@"courseSet = %@",courseSet);
-        NSLog(@"courseVC.course = %@",courseVC.course);
-
+    
     }
     else if ([[segue identifier] isEqualToString:@"topicToCert"]) {
         

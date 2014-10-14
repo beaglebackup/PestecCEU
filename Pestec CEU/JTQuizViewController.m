@@ -43,12 +43,18 @@
     
     // Set state
     _highlightUnanswered = NO;
+
+    self.tableView.delegate = self;
+    self.tableView.dataSource = self;
+    
+}
+
+- (void) viewDidAppear:(BOOL)animated {
+
+    [super viewDidAppear:animated];
     
     // Nav title
     self.title = [NSString stringWithFormat:@"%@ Quiz",self.course.name];
-    
-    self.tableView.delegate = self;
-    self.tableView.dataSource = self;
     
     [self loadObjects];
     
@@ -88,6 +94,7 @@
 #pragma mark - Data
 - (void) loadObjects {
     
+    NSAssert(self.course, @"self.course must be nil!");
     
     // Get the course object
     [JTDatabaseManager queryForQuizQuestions:self.course withCallback:^(NSArray *quizQuestions, NSError *error) {

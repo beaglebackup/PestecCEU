@@ -129,6 +129,7 @@ static JTCourseManager *instance = nil;
 }
 
 - (BOOL)isCourseRead {
+        
     
     if ([self.userCourse.status integerValue] >= JTCourseStatusRead) {
         return YES;

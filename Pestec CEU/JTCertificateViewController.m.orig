@@ -69,6 +69,8 @@
     [self.originalSizeCertImageView bringSubviewToFront:licenseNumLabel];
     
     
+<<<<<<< HEAD
+=======
     UILabel* activityTitleLabel = [[UILabel alloc] initWithFrame:CGRectMake(170.0f, 205.0f, 0.0f, 0.0f)];
     [activityTitleLabel setTextAlignment:NSTextAlignmentLeft];
     [activityTitleLabel setBackgroundColor:[UIColor clearColor]];
@@ -82,20 +84,27 @@
    
 
     
+>>>>>>> coursechange
     UILabel* activityDateLabel = [[UILabel alloc] initWithFrame:CGRectMake(590.0f, 205.0f, 0.0f, 0.0f)];
     [activityDateLabel setTextAlignment:NSTextAlignmentLeft];
     [activityDateLabel setBackgroundColor:[UIColor clearColor]];
     [activityDateLabel setTextColor:[UIColor redColor]];
     [activityDateLabel setFont:[UIFont systemFontOfSize:labelFontSize]];
+<<<<<<< HEAD
+    [activityDateLabel setText:[NSString stringWithFormat:@"%@",self.userCourse.dateCompleted]];
+=======
     [activityDateLabel setText:[NSString stringWithFormat:@"%@", [NSDateFormatter localizedStringFromDate:self.userCourseSet.updatedAt
                                                 dateStyle:NSDateFormatterShortStyle
                                                 timeStyle:NSDateFormatterNoStyle]]];
+>>>>>>> coursechange
     [activityDateLabel sizeToFit];
     [self.originalSizeCertImageView addSubview:activityDateLabel];
     [self.originalSizeCertImageView bringSubviewToFront:activityDateLabel];
     
     
     
+<<<<<<< HEAD
+=======
     UILabel* hoursAttendedLabel = [[UILabel alloc] initWithFrame:CGRectMake(400.0f, 255.0f, 0.0f, 0.0f)];
     [hoursAttendedLabel setTextAlignment:NSTextAlignmentLeft];
     [hoursAttendedLabel setBackgroundColor:[UIColor clearColor]];
@@ -117,6 +126,7 @@
     [self.originalSizeCertImageView addSubview:hoursEarnedLabel];
     [self.originalSizeCertImageView bringSubviewToFront:hoursEarnedLabel];
     
+>>>>>>> coursechange
     
     UILabel* sigDataLabel = [[UILabel alloc] initWithFrame:CGRectMake(600.0f, 440.0f, 0.0f, 0.0f)];
     [sigDataLabel setTextAlignment:NSTextAlignmentLeft];
@@ -239,7 +249,8 @@
     
     if (email) {
         
-         
+        UIImage* emailImage = [UIImage imageWithView:self.originalSizeCertImageView];
+        
         MFMailComposeViewController *picker = [[MFMailComposeViewController alloc] init];
         picker.mailComposeDelegate = self;
         [picker setSubject:@"Your PestecCEU Certificate"];
@@ -249,7 +260,11 @@
         [picker addAttachmentData:myData mimeType:@"image/png" fileName:@"pestec_cert.png"];
         
         // Fill out the email body text
+<<<<<<< HEAD
+        NSString *emailBody = [NSString stringWithFormat:@"%@ - %@",self.userCourse.course.name, self.userCourse.course.categoryType];
+=======
         NSString *emailBody = [NSString stringWithFormat:@"%@ - %@",self.userCourseSet.workerType, self.userCourseSet.categoryType];
+>>>>>>> coursechange
         [picker setMessageBody:emailBody isHTML:NO];
         
         // Set the user

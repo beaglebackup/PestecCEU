@@ -146,8 +146,6 @@
                 
                 [[JTCourseManager shared] setNewUserCourse:course];
                 
-                NSLog(@"[[JTCourseManager shared] userCourse] = %@",[[JTCourseManager shared] userCourse]);
-
                 
                 [self objectsDidLoad];
             }];
